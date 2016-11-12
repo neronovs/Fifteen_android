@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -137,7 +136,7 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         temp *= 60;
         temp += Integer.valueOf(time.substring(3));*/
         Long timeWhenStopped = Long.parseLong(prefs.getString("chronometer", ""));
-        chronometer.setBase(SystemClock.elapsedRealtime()/1000 + timeWhenStopped);
+        chronometer.setBase(timeWhenStopped);
         chronometer.start();
     }
 

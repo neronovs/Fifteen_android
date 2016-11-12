@@ -25,8 +25,8 @@ class Ads {
 
     //methods
     public AdRequest getSpecialAdRequest() {
-        //return realAd(); //this method for working version - NOT TESTING
-        return testAd(); //this method for testing - NOT WORKING
+        return realAd(); //this method for working version - NOT TESTING
+        //return testAd(); //this method for testing - NOT WORKING
     }
 
     private AdRequest realAd () {
