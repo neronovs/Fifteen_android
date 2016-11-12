@@ -1,112 +1,25 @@
--injars 'D:\OneDriveNod\OneDrive\Coding\Examples\android\Fifteen\app\build\intermediates\transforms\jarMerging\release\jars\1\1f\combined.jar'
--outjars 'D:\OneDriveNod\OneDrive\Coding\Examples\android\Fifteen\app\build\intermediates\multi-dex\release\componentClasses.jar'
+-injars 'D:\OneDriveNod\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\transforms\proguard\release\jars\3\1f\main.jar'
+-outjars 'D:\OneDriveNod\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\multi-dex\release\componentClasses.jar'
 
--libraryjars 'D:\Android\sdk\build-tools\23.0.3\lib\shrinkedAndroid.jar'
+-libraryjars 'D:\Android\sdk\build-tools\25.0.0\lib\shrinkedAndroid.jar'
 
 -forceprocessing
 -dontoptimize
 -dontobfuscate
 -dontusemixedcaseclassnames
 -dontpreverify
--dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontnote **
 -dontwarn **
--printconfiguration 'D:\OneDriveNod\OneDrive\Coding\Examples\android\Fifteen\app\build\intermediates\multi-dex\release\components.flags'
+-printconfiguration 'D:\OneDriveNod\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\multi-dex\release\components.flags'
 
 
--keep class ru.narod.nod.fifteen.MainActivity {
+-keep public class * extends android.app.Instrumentation {
     <init>();
 }
 
--keep class ru.narod.nod.fifteen.FieldActivity {
+-keep public class * extends android.app.Application {
     <init>();
-}
-
--keep class ru.narod.nod.fifteen.HighScoresActivity {
-    <init>();
-}
-
--keep class ru.narod.nod.fifteen.RulesActivity {
-    <init>();
-}
-
--keep class com.google.android.gms.ads.AdActivity {
-    <init>();
-}
-
--keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
-    <init>();
-}
-
--keep class com.google.android.gms.common.api.GoogleApiActivity {
-    <init>();
-}
-
--keep class com.google.android.gms.appinvite.PreviewActivity {
-    <init>();
-}
-
--keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
-    <init>();
-}
-
--keep class com.google.android.gms.auth.api.signin.RevocationBoundService {
-    <init>();
-}
-
--keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver {
-    <init>();
-}
-
--keep class com.google.android.gms.cast.framework.media.MediaNotificationService {
-    <init>();
-}
-
--keep class com.google.android.gms.cast.framework.ReconnectionService {
-    <init>();
-}
-
--keep class com.google.firebase.iid.FirebaseInstanceIdReceiver {
-    <init>();
-}
-
--keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver {
-    <init>();
-}
-
--keep class com.google.firebase.iid.FirebaseInstanceIdService {
-    <init>();
-}
-
--keep class com.google.firebase.provider.FirebaseInitProvider {
-    <init>();
-}
-
--keep class com.google.firebase.crash.internal.service.FirebaseCrashReceiverService {
-    <init>();
-}
-
--keep class com.google.firebase.crash.internal.service.FirebaseCrashSenderService {
-    <init>();
-}
-
--keep class com.google.android.gms.measurement.AppMeasurementReceiver {
-    <init>();
-}
-
--keep class com.google.android.gms.measurement.AppMeasurementService {
-    <init>();
-}
-
--keep class com.google.firebase.messaging.FirebaseMessagingService {
-    <init>();
-}
-
--keep class com.google.android.gms.tagmanager.TagManagerService {
-    <init>();
-}
-
--keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity {
-    <init>();
+    void attachBaseContext(android.content.Context);
 }
 
 -keep public class * extends android.app.backup.BackupAgent {

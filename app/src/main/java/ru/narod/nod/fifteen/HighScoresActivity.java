@@ -1,26 +1,22 @@
 package ru.narod.nod.fifteen;
 
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 public class HighScoresActivity extends AppCompatActivity {
 
     final String TAG = "States";
-    public static final String APP_PREFERENCES = "HighScoreSettings";
-    public static final String APP_PREFERENCES_DATE = "Date";
+    private final String APP_PREFERENCES = "HighScoreSettings";
+    private final String APP_PREFERENCES_DATE = "Date";
     private String highScores;
     ListView lvHS;
     TextView hsText, hsDate;
-    SharedPreferences sharedPreferences;
     AdView adView;
 
     public HighScoresActivity() {
@@ -32,16 +28,12 @@ public class HighScoresActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_high_scores);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//deny to change orientation of a screen
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//deny to change orientation of a screen
 
         // Initialize the Mobile Ads SDK.
-        MobileAds.initialize(this, "ca-app-pub-8956716360419559~4528395824");
         adView = (AdView) findViewById(R.id.adViewHS);
-        AdRequest adRequest = new AdRequest.Builder()
-                // Check the LogCat to get your test device ID
-                //.addTestDevice("C04B1BFFB0774708339BC273F8A43708")
-                .build();
-        adView.loadAd(adRequest);
+        Ads ads = new Ads(this, HighScoresActivity.this);
+        adView.loadAd(ads.getSpecialAdRequest());
 
         hsText = (TextView) findViewById(R.id.hsText);
         hsDate = (TextView) findViewById(R.id.hsDate);
@@ -61,9 +53,9 @@ public class HighScoresActivity extends AppCompatActivity {
 
     public String loadHighScore() {
 
-        sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
-        String savedText = sharedPreferences.getString(APP_PREFERENCES, "");
-        String savedDate = sharedPreferences.getString(APP_PREFERENCES_DATE, "");
+        SharedPreferences prefs = getSharedPreferences("storeField", MODE_PRIVATE);
+        String savedText = prefs.getString(APP_PREFERENCES, "");
+        String savedDate = prefs.getString(APP_PREFERENCES_DATE, "");
         hsText.setText(savedText);
         hsDate.setText(savedDate);
         return savedText;
@@ -79,5 +71,13 @@ public class HighScoresActivity extends AppCompatActivity {
     //Getters and Setters
     public String getHighScores() {
         return highScores;
+    }
+
+    public String getAPP_PREFERENCES() {
+        return APP_PREFERENCES;
+    }
+
+    public String getAPP_PREFERENCES_DATE() {
+        return APP_PREFERENCES_DATE;
     }
 }

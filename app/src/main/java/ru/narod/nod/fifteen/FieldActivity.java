@@ -1,48 +1,56 @@
 package ru.narod.nod.fifteen;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Chronometer;
 import android.widget.ImageView;
-import android.widget.TableLayout;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class FieldActivity extends AppCompatActivity implements View.OnClickListener {
     //View's declaration
-    //Button btn00, btn01, btn02, btn03, btn10, btn11, btn12, btn13, btn20, btn21, btn22, btn23, btn30, btn31, btn32, btn33;
-    TableLayout tableField;
     final String TAG = "FieldActivity";
     Engine engine;
     HighScoresActivity highScoresActivity;
     ImageView arrBut[][];
     Chronometer chronometer;
     AdView adView;
+    Boolean contin, finished, orientationChanged;
+    SharedPreferences prefs;
+    SharedPreferences.Editor edit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_field);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//deny to change orientation of a screen
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//deny to change orientation of a screen
+
+        prefs = getSharedPreferences("storeField", Context.MODE_PRIVATE);
+        edit = prefs.edit();
+
+        finished = false; //for checking if the game is done (finished)
+        //Get the boolean data from Intent about was pressed the "continue" button or not
+        Intent intent = getIntent();
+        contin = intent.getBooleanExtra("contin", false);
+
+        //the var for the saving of the current field when the orientation is changing
+        //if (null == orientationChanged) orientationChanged = false;
 
         // Initialize the Mobile Ads SDK.
-        MobileAds.initialize(this, "ca-app-pub-8956716360419559~4528395824");
-        adView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder()
-                // Check the LogCat to get your test device ID
-                //.addTestDevice("C04B1BFFB0774708339BC273F8A43708")
-                .build();
-        adView.loadAd(adRequest);
+        adView = (AdView) findViewById(R.id.adViewField);
+        Ads ads = new Ads(this, FieldActivity.this);
+        adView.loadAd(ads.getSpecialAdRequest());
 
         chronometer = (Chronometer) findViewById(R.id.chronometer);
         chronometer.setFormat("%s");
@@ -69,8 +77,6 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         arrBut[3][1] = (ImageView) findViewById(R.id.btn14);
         arrBut[3][2] = (ImageView) findViewById(R.id.btn15);
         arrBut[3][3] = (ImageView) findViewById(R.id.btn16);
-
-        tableField = (TableLayout) findViewById(R.id.tableField);
         //endregion
 
         //region Assign setOnClickListener for buttons
@@ -83,7 +89,56 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
 
         engine = new Engine();
         highScoresActivity = new HighScoresActivity();
-        arrayToField();
+
+        //if was pressed "continue" then get the previous Field consistence
+        if (contin) {
+            getPreviousConsistence();
+            arrayToField();
+        } else {
+            arrayToField();
+        }
+    }
+
+    private void putCurrentConsistence() {
+        Log.d(TAG, "FieldActivity: putCurrentConsistence()");
+        if (!finished) {
+            //String array[]
+            //SharedPreferences.Editor edit = prefs.edit();
+            //edit.putInt("array_size_1", arrBut.length);
+            //edit.putInt("array_size_2", arrBut[0].length);
+            for (int i = 0; i < arrBut.length; i++) {
+                for (int j = 0; j < arrBut[0].length; j++) {
+                    edit.putString("array_" + i + j, engine.getGameField()[i][j]);
+                }
+            }
+
+            //store current chronometer time
+            edit.putString("chronometer", String.valueOf(chronometer.getBase()));
+            chronometer.stop();
+            edit.putBoolean("deactivate_contin", false);
+            edit.apply();
+        } else {
+            //SharedPreferences.Editor edit = prefs.edit();
+            edit.putBoolean("deactivate_contin", true);
+            edit.apply();
+        }
+    }
+
+    private void getPreviousConsistence() {
+        Log.d(TAG, "FieldActivity: getPreviousConsistence()");
+        // load tasks from preference
+        for (int i = 0; i < arrBut.length; i++) {
+            for (int j = 0; j < arrBut[0].length; j++) {
+                engine.getGameField()[i][j] = prefs.getString("array_" + i + j, null);
+            }
+        }
+        /*String time = prefs.getString("chronometer", "");
+        int temp = Integer.valueOf(time.substring(0, 1));
+        temp *= 60;
+        temp += Integer.valueOf(time.substring(3));*/
+        Long timeWhenStopped = Long.parseLong(prefs.getString("chronometer", ""));
+        chronometer.setBase(SystemClock.elapsedRealtime()/1000 + timeWhenStopped);
+        chronometer.start();
     }
 
     public void arrayToField() {
@@ -162,7 +217,6 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
                 actionOnTheField(arrBut[3][3], 3, 3);
                 break;
         }
-
         //endregion
     }
 
@@ -171,28 +225,24 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         String tmp = engine.getGameField()[line][column];;
         try {
             if (engine.getGameField()[line][column + 1] == "") {
-
                 engine.setGameField(engine.getGameField()[line][column + 1], line, column);
                 engine.setGameField(tmp, line, column + 1);
             }
         } catch (Throwable e) {}
         try {
             if (engine.getGameField()[line][column - 1] == "") {
-
                 engine.setGameField(engine.getGameField()[line][column - 1], line, column);
                 engine.setGameField(tmp, line, column - 1);
             }
         } catch (Throwable e) {}
         try {
             if (engine.getGameField()[line + 1][column] == "") {
-
                 engine.setGameField(engine.getGameField()[line + 1][column], line, column);
                 engine.setGameField(tmp, line + 1, column);
             }
         } catch (Throwable e) {}
         try {
             if (engine.getGameField()[line - 1][column] == "") {
-
                 engine.setGameField(engine.getGameField()[line - 1][column], line, column);
                 engine.setGameField(tmp, line - 1, column);
             }
@@ -203,8 +253,8 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
 
     private void checkIsFinished() {
         int checker = 0;
-        int tmp = -1; //here we put number ot the current button to check whether it equals to the sequence
-        boolean flag = false;
+        int tmp = -1; //here we put number of the current button to check whether it equals to the sequence
+        finished = false;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 if (engine.getGameField()[i][j].equals("")) tmp = 0; //if button is empty (without a num), put 0
@@ -212,13 +262,13 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
                 //System.out.println(Integer.valueOf(engine.getGameField()[i][j]));
                 if (i == 3 && j == 3) break; //skip the last button #16
                 if (tmp - checker++ != 1) { //if next button minus preview NOT equals 1 then it is NOT the sequence
-                    flag = false;
+                    finished = false;
                     break;
                 }
-                else flag = true;
+                else finished = true;
             }
         }
-        if (flag) {
+        if (finished) {
             String scores = chronometer.getText().toString();
             chronometer.stop();
             Toast.makeText(FieldActivity.this, "Congrats, you won!", Toast.LENGTH_SHORT).show();
@@ -226,16 +276,17 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
             //***High score creating
 
             //Load the saved high scores to compare to current ones
-            SharedPreferences sharedPreferencesLoad = getSharedPreferences("HighScoreSettings", MODE_PRIVATE);
-            String savedText = sharedPreferencesLoad.getString("HighScoreSettings", "");
+            //prefs = getSharedPreferences("storeField", MODE_PRIVATE);
+            String savedText = prefs.getString(highScoresActivity.getAPP_PREFERENCES(), "");
 
             if (savedText.compareTo(scores) > 0) {
                 //If the current high scores better then the saved before ones than save the current scores
                 SimpleDateFormat LocaleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm");
-                SharedPreferences sharedPreferencesSave = getSharedPreferences(highScoresActivity.APP_PREFERENCES, MODE_PRIVATE);
-                SharedPreferences.Editor edit = sharedPreferencesSave.edit();
-                edit.putString(highScoresActivity.APP_PREFERENCES, scores);
-                edit.putString(highScoresActivity.APP_PREFERENCES_DATE, String.valueOf(LocaleDateFormat.format(new Date())));
+                LocaleDateFormat.setTimeZone(TimeZone.getDefault());
+                //prefs = getSharedPreferences(highScoresActivity.getAPP_PREFERENCES(), MODE_PRIVATE);
+                //SharedPreferences.Editor edit = prefs.edit();
+                edit.putString(highScoresActivity.getAPP_PREFERENCES(), scores);
+                edit.putString(highScoresActivity.getAPP_PREFERENCES_DATE(), String.valueOf(LocaleDateFormat.format(new Date())));
                 edit.apply();
             }
             Intent intent = new Intent(this, HighScoresActivity.class);
@@ -248,31 +299,53 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onStart() {
         super.onStart();
-        //Log.d(TAG, "FieldActivity: onStart()");
+        Log.d(TAG, "FieldActivity: onStart()");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        //Log.d(TAG, "FieldActivity: onResume()");
+        Log.d(TAG, "FieldActivity: onResume()");
+        Intent intent = getIntent();
+        contin = intent.getBooleanExtra("contin", false);
+        //if (contin == false) contin = true;
+        /*if (contin) {
+            getPreviousConsistence();
+            arrayToField();
+        }*/
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        //Log.d(TAG, "FieldActivity: onPause()");
+        Log.d(TAG, "FieldActivity: onPause()");
+        putCurrentConsistence();
+        orientationChanged = true;
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        //Log.d(TAG, "FieldActivity: onStop()");
+        Log.d(TAG, "FieldActivity: onStop()");
+        //putCurrentConsistence();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //Log.d(TAG, "FieldActivity: onDestroy()");
+        Log.d(TAG, "FieldActivity: onDestroy()");
     }
 
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.d(TAG, "onRestoreInstanceState");
+        getPreviousConsistence();
+        arrayToField();
+    }
+
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d(TAG, "onSaveInstanceState");
+        putCurrentConsistence();
+    }
 }

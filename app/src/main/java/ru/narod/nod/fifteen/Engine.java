@@ -1,12 +1,8 @@
 package ru.narod.nod.fifteen;
 
-import android.widget.Chronometer;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
-import java.util.Timer;
 
 /**
  * Created by otc on 03.08.2016.
@@ -14,14 +10,16 @@ import java.util.Timer;
 public class Engine {
     //in 2d array: the first [] - lines, the second [] - columns
     private String gameField[][];
+    private static boolean orientationChanged;
     //Chronometer chronometer;
 
     // Initializer (constructor)
     public Engine() {
         gameField = new String[4][4];
         shuffle();
-        //chronometer = (Chronometer) findViewById(R.id.chronometer);
-        //chronometer.start();
+
+        //initialize the orientationChanged variable
+        orientationChanged = false;
     }
     // Shuffles the matrix on the playground
     public void shuffle() {
@@ -47,9 +45,15 @@ public class Engine {
     public String[][] getGameField() {
         return gameField;
     }
-
     public void setGameField(String val, int line, int column) {
         this.gameField[line][column] = val;
+    }
+
+    public boolean getOrientationChanged() {
+        return orientationChanged;
+    }
+    public void setOrientationChanged(boolean data) {
+        this.orientationChanged = data;
     }
     //endregion
 }

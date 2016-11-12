@@ -234,7 +234,7 @@
         <com.google.android.gms.ads.AdView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/adView"
+            android:id="@+id/adViewField"
             android:layout_gravity="center_horizontal|bottom"
             ads:adSize="BANNER"
             ads:adUnitId="@string/banner_home_footer">

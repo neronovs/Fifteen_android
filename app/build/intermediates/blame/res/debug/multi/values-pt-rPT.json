@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\values-pt-rPT\\values-pt-rPT.xml",
+        "outputFile": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 220
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 328
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 451
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 557
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 664
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 753
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 854
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 978
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 1062
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1143
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1230
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1337
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1449
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1551
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1659
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1766
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1873
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1995
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 2094
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -368,17 +368,17 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2099,
-                    "endColumn": 102,
-                    "endOffset": 2197
+                    "endColumn": 72,
+                    "endOffset": 2167
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 348,
-                        "endColumn": 102,
-                        "endOffset": 446
+                        "startColumn": 0,
+                        "startOffset": 241,
+                        "endColumn": 68,
+                        "endOffset": 309
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2202,
-                    "endColumn": 95,
-                    "endOffset": 2293
+                    "startOffset": 2172,
+                    "endColumn": 79,
+                    "endOffset": 2247
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 451,
-                        "endColumn": 95,
-                        "endOffset": 542
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 302,
+                        "endColumn": 75,
+                        "endOffset": 377
                     }
                 }
             },
@@ -405,18 +405,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2298,
-                    "endColumn": 123,
-                    "endOffset": 2417
+                    "startOffset": 2252,
+                    "endColumn": 102,
+                    "endOffset": 2350
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 547,
-                        "endColumn": 123,
-                        "endOffset": 666
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 378,
+                        "endColumn": 98,
+                        "endOffset": 476
                     }
                 }
             },
@@ -424,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2422,
-                    "endColumn": 85,
-                    "endOffset": 2503
+                    "startOffset": 2355,
+                    "endColumn": 95,
+                    "endOffset": 2446
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 671,
-                        "endColumn": 85,
-                        "endOffset": 752
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 477,
+                        "endColumn": 91,
+                        "endOffset": 568
                     }
                 }
             },
@@ -443,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2508,
-                    "endColumn": 115,
-                    "endOffset": 2619
+                    "startOffset": 2451,
+                    "endColumn": 123,
+                    "endOffset": 2570
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 757,
-                        "endColumn": 115,
-                        "endOffset": 868
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 569,
+                        "endColumn": 119,
+                        "endOffset": 688
                     }
                 }
             },
@@ -462,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2624,
-                    "endColumn": 102,
-                    "endOffset": 2722
+                    "startOffset": 2575,
+                    "endColumn": 85,
+                    "endOffset": 2656
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 873,
-                        "endColumn": 102,
-                        "endOffset": 971
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 689,
+                        "endColumn": 81,
+                        "endOffset": 770
                     }
                 }
             },
@@ -481,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2727,
-                    "endColumn": 78,
-                    "endOffset": 2801
+                    "startOffset": 2661,
+                    "endColumn": 115,
+                    "endOffset": 2772
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 976,
-                        "endColumn": 78,
-                        "endOffset": 1050
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 771,
+                        "endColumn": 111,
+                        "endOffset": 882
                     }
                 }
             },
@@ -500,18 +500,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2806,
-                    "endColumn": 94,
-                    "endOffset": 2896
+                    "startOffset": 2777,
+                    "endColumn": 115,
+                    "endOffset": 2888
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1055,
-                        "endColumn": 94,
-                        "endOffset": 1145
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 883,
+                        "endColumn": 111,
+                        "endOffset": 994
                     }
                 }
             },
@@ -519,18 +519,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2901,
-                    "endColumn": 97,
-                    "endOffset": 2994
+                    "startOffset": 2893,
+                    "endColumn": 126,
+                    "endOffset": 3015
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1150,
-                        "endColumn": 97,
-                        "endOffset": 1243
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 995,
+                        "endColumn": 122,
+                        "endOffset": 1117
                     }
                 }
             },
@@ -538,18 +538,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2999,
-                    "endColumn": 107,
-                    "endOffset": 3102
+                    "startOffset": 3020,
+                    "endColumn": 102,
+                    "endOffset": 3118
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1248,
-                        "endColumn": 107,
-                        "endOffset": 1351
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1118,
+                        "endColumn": 98,
+                        "endOffset": 1216
                     }
                 }
             },
@@ -557,18 +557,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 3107,
-                    "endColumn": 81,
-                    "endOffset": 3184
+                    "startOffset": 3123,
+                    "endColumn": 104,
+                    "endOffset": 3223
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1356,
-                        "endColumn": 81,
-                        "endOffset": 1433
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1217,
+                        "endColumn": 100,
+                        "endOffset": 1317
                     }
                 }
             },
@@ -576,18 +576,18 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 3189,
-                    "endColumn": 132,
-                    "endOffset": 3317
+                    "startOffset": 3228,
+                    "endColumn": 78,
+                    "endOffset": 3302
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 337,
-                        "endColumn": 132,
-                        "endOffset": 465
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1318,
+                        "endColumn": 74,
+                        "endOffset": 1392
                     }
                 }
             },
@@ -595,18 +595,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 3322,
-                    "endColumn": 134,
-                    "endOffset": 3452
+                    "startOffset": 3307,
+                    "endColumn": 94,
+                    "endOffset": 3397
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 470,
-                        "endColumn": 134,
-                        "endOffset": 600
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1393,
+                        "endColumn": 90,
+                        "endOffset": 1483
                     }
                 }
             },
@@ -614,18 +614,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 3457,
-                    "endColumn": 95,
-                    "endOffset": 3548
+                    "startOffset": 3402,
+                    "endColumn": 97,
+                    "endOffset": 3495
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 605,
-                        "endColumn": 95,
-                        "endOffset": 696
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 1484,
+                        "endColumn": 93,
+                        "endOffset": 1577
                     }
                 }
             },
@@ -633,18 +633,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 3553,
-                    "endColumn": 85,
-                    "endOffset": 3634
+                    "startOffset": 3500,
+                    "endColumn": 107,
+                    "endOffset": 3603
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1438,
-                        "endColumn": 85,
-                        "endOffset": 1519
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 1578,
+                        "endColumn": 103,
+                        "endOffset": 1681
                     }
                 }
             },
@@ -652,18 +652,18 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 3639,
-                    "endColumn": 78,
-                    "endOffset": 3713
+                    "startOffset": 3608,
+                    "endColumn": 81,
+                    "endOffset": 3685
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1524,
-                        "endColumn": 78,
-                        "endOffset": 1598
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 1682,
+                        "endColumn": 77,
+                        "endOffset": 1759
                     }
                 }
             },
@@ -671,18 +671,18 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 3718,
-                    "endColumn": 76,
-                    "endOffset": 3790
+                    "startOffset": 3690,
+                    "endColumn": 132,
+                    "endOffset": 3818
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1603,
-                        "endColumn": 76,
-                        "endOffset": 1675
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 292,
+                        "endColumn": 132,
+                        "endOffset": 424
                     }
                 }
             },
@@ -690,18 +690,18 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 3795,
-                    "endColumn": 92,
-                    "endOffset": 3883
+                    "startOffset": 3823,
+                    "endColumn": 134,
+                    "endOffset": 3953
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1680,
-                        "endColumn": 92,
-                        "endOffset": 1768
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 425,
+                        "endColumn": 134,
+                        "endOffset": 559
                     }
                 }
             },
@@ -709,18 +709,18 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 3888,
+                    "startOffset": 3958,
                     "endColumn": 95,
-                    "endOffset": 3979
+                    "endOffset": 4049
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1773,
-                        "endColumn": 95,
-                        "endOffset": 1864
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 560,
+                        "endColumn": 91,
+                        "endOffset": 651
                     }
                 }
             },
@@ -728,18 +728,18 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3984,
-                    "endColumn": 105,
-                    "endOffset": 4085
+                    "startOffset": 4054,
+                    "endColumn": 85,
+                    "endOffset": 4135
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1869,
-                        "endColumn": 105,
-                        "endOffset": 1970
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 1760,
+                        "endColumn": 81,
+                        "endOffset": 1841
                     }
                 }
             },
@@ -747,18 +747,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 4090,
-                    "endColumn": 96,
-                    "endOffset": 4182
+                    "startOffset": 4140,
+                    "endColumn": 78,
+                    "endOffset": 4214
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1975,
-                        "endColumn": 96,
-                        "endOffset": 2067
+                        "startLine": 20,
+                        "startColumn": 0,
+                        "startOffset": 1842,
+                        "endColumn": 74,
+                        "endOffset": 1916
                     }
                 }
             },
@@ -766,18 +766,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 4187,
-                    "endColumn": 96,
-                    "endOffset": 4279
+                    "startOffset": 4219,
+                    "endColumn": 76,
+                    "endOffset": 4291
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2072,
-                        "endColumn": 96,
-                        "endOffset": 2164
+                        "startLine": 21,
+                        "startColumn": 0,
+                        "startOffset": 1917,
+                        "endColumn": 72,
+                        "endOffset": 1989
                     }
                 }
             },
@@ -785,18 +785,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 4284,
-                    "endColumn": 73,
-                    "endOffset": 4353
+                    "startOffset": 4296,
+                    "endColumn": 92,
+                    "endOffset": 4384
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 2169,
-                        "endColumn": 73,
-                        "endOffset": 2238
+                        "startLine": 22,
+                        "startColumn": 0,
+                        "startOffset": 1990,
+                        "endColumn": 88,
+                        "endOffset": 2078
                     }
                 }
             },
@@ -804,18 +804,18 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 4358,
-                    "endColumn": 107,
-                    "endOffset": 4461
+                    "startOffset": 4389,
+                    "endColumn": 95,
+                    "endOffset": 4480
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 2243,
-                        "endColumn": 107,
-                        "endOffset": 2346
+                        "startLine": 23,
+                        "startColumn": 0,
+                        "startOffset": 2079,
+                        "endColumn": 91,
+                        "endOffset": 2170
                     }
                 }
             },
@@ -823,18 +823,18 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 4466,
-                    "endColumn": 96,
-                    "endOffset": 4558
+                    "startOffset": 4485,
+                    "endColumn": 105,
+                    "endOffset": 4586
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 2351,
-                        "endColumn": 96,
-                        "endOffset": 2443
+                        "startLine": 24,
+                        "startColumn": 0,
+                        "startOffset": 2171,
+                        "endColumn": 101,
+                        "endOffset": 2272
                     }
                 }
             },
@@ -842,18 +842,18 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 4563,
-                    "endColumn": 100,
-                    "endOffset": 4659
+                    "startOffset": 4591,
+                    "endColumn": 96,
+                    "endOffset": 4683
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 2448,
-                        "endColumn": 100,
-                        "endOffset": 2544
+                        "startLine": 25,
+                        "startColumn": 0,
+                        "startOffset": 2273,
+                        "endColumn": 92,
+                        "endOffset": 2365
                     }
                 }
             },
@@ -861,18 +861,18 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 4664,
-                    "endColumn": 143,
-                    "endOffset": 4803
+                    "startOffset": 4688,
+                    "endColumn": 96,
+                    "endOffset": 4780
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 2549,
-                        "endColumn": 143,
-                        "endOffset": 2688
+                        "startLine": 26,
+                        "startColumn": 0,
+                        "startOffset": 2366,
+                        "endColumn": 92,
+                        "endOffset": 2458
                     }
                 }
             },
@@ -880,18 +880,18 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 4808,
-                    "endColumn": 140,
-                    "endOffset": 4944
+                    "startOffset": 4785,
+                    "endColumn": 73,
+                    "endOffset": 4854
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 2693,
-                        "endColumn": 140,
-                        "endOffset": 2829
+                        "startLine": 27,
+                        "startColumn": 0,
+                        "startOffset": 2459,
+                        "endColumn": 69,
+                        "endOffset": 2528
                     }
                 }
             },
@@ -899,18 +899,18 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 4949,
-                    "endColumn": 139,
-                    "endOffset": 5084
+                    "startOffset": 4859,
+                    "endColumn": 107,
+                    "endOffset": 4962
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 2834,
-                        "endColumn": 139,
-                        "endOffset": 2969
+                        "startLine": 28,
+                        "startColumn": 0,
+                        "startOffset": 2529,
+                        "endColumn": 103,
+                        "endOffset": 2632
                     }
                 }
             },
@@ -918,18 +918,18 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 5089,
-                    "endColumn": 135,
-                    "endOffset": 5220
+                    "startOffset": 4967,
+                    "endColumn": 96,
+                    "endOffset": 5059
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 2974,
-                        "endColumn": 135,
-                        "endOffset": 3105
+                        "startLine": 29,
+                        "startColumn": 0,
+                        "startOffset": 2633,
+                        "endColumn": 92,
+                        "endOffset": 2725
                     }
                 }
             },
@@ -937,18 +937,18 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 5225,
-                    "endColumn": 96,
-                    "endOffset": 5317
+                    "startOffset": 5064,
+                    "endColumn": 100,
+                    "endOffset": 5160
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 3110,
+                        "startLine": 30,
+                        "startColumn": 0,
+                        "startOffset": 2726,
                         "endColumn": 96,
-                        "endOffset": 3202
+                        "endOffset": 2822
                     }
                 }
             },
@@ -956,18 +956,18 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 5322,
-                    "endColumn": 90,
-                    "endOffset": 5408
+                    "startOffset": 5165,
+                    "endColumn": 143,
+                    "endOffset": 5304
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 3207,
-                        "endColumn": 90,
-                        "endOffset": 3293
+                        "startLine": 31,
+                        "startColumn": 0,
+                        "startOffset": 2823,
+                        "endColumn": 143,
+                        "endOffset": 2966
                     }
                 }
             },
@@ -975,18 +975,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 5413,
-                    "endColumn": 103,
-                    "endOffset": 5512
+                    "startOffset": 5309,
+                    "endColumn": 140,
+                    "endOffset": 5445
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 33,
-                        "startColumn": 4,
-                        "startOffset": 3298,
-                        "endColumn": 103,
-                        "endOffset": 3397
+                        "startLine": 32,
+                        "startColumn": 0,
+                        "startOffset": 2967,
+                        "endColumn": 136,
+                        "endOffset": 3103
                     }
                 }
             },
@@ -994,18 +994,18 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 5517,
-                    "endColumn": 84,
-                    "endOffset": 5597
+                    "startOffset": 5450,
+                    "endColumn": 139,
+                    "endOffset": 5585
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 34,
-                        "startColumn": 4,
-                        "startOffset": 3402,
-                        "endColumn": 84,
-                        "endOffset": 3482
+                        "startLine": 33,
+                        "startColumn": 0,
+                        "startOffset": 3104,
+                        "endColumn": 135,
+                        "endOffset": 3239
                     }
                 }
             },
@@ -1013,18 +1013,18 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 5602,
-                    "endColumn": 106,
-                    "endOffset": 5704
+                    "startOffset": 5590,
+                    "endColumn": 96,
+                    "endOffset": 5682
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 333,
-                        "endColumn": 106,
-                        "endOffset": 435
+                        "startLine": 34,
+                        "startColumn": 0,
+                        "startOffset": 3240,
+                        "endColumn": 92,
+                        "endOffset": 3332
                     }
                 }
             },
@@ -1032,18 +1032,18 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 5709,
-                    "endColumn": 194,
-                    "endOffset": 5899
+                    "startOffset": 5687,
+                    "endColumn": 90,
+                    "endOffset": 5773
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 440,
-                        "endColumn": 194,
-                        "endOffset": 630
+                        "startLine": 35,
+                        "startColumn": 0,
+                        "startOffset": 3333,
+                        "endColumn": 86,
+                        "endOffset": 3419
                     }
                 }
             },
@@ -1051,18 +1051,18 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 5904,
-                    "endColumn": 129,
-                    "endOffset": 6029
+                    "startOffset": 5778,
+                    "endColumn": 103,
+                    "endOffset": 5877
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 635,
-                        "endColumn": 129,
-                        "endOffset": 760
+                        "startLine": 36,
+                        "startColumn": 0,
+                        "startOffset": 3420,
+                        "endColumn": 99,
+                        "endOffset": 3519
                     }
                 }
             },
@@ -1070,18 +1070,18 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 6034,
-                    "endColumn": 130,
-                    "endOffset": 6160
+                    "startOffset": 5882,
+                    "endColumn": 84,
+                    "endOffset": 5962
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 765,
-                        "endColumn": 130,
-                        "endOffset": 891
+                        "startLine": 37,
+                        "startColumn": 0,
+                        "startOffset": 3520,
+                        "endColumn": 80,
+                        "endOffset": 3600
                     }
                 }
             },
@@ -1089,18 +1089,18 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 6165,
-                    "endColumn": 230,
-                    "endOffset": 6391
+                    "startOffset": 5967,
+                    "endColumn": 106,
+                    "endOffset": 6069
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 896,
-                        "endColumn": 230,
-                        "endOffset": 1122
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 287,
+                        "endColumn": 102,
+                        "endOffset": 389
                     }
                 }
             },
@@ -1108,18 +1108,18 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 6396,
-                    "endColumn": 228,
-                    "endOffset": 6620
+                    "startOffset": 6074,
+                    "endColumn": 194,
+                    "endOffset": 6264
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 1127,
-                        "endColumn": 228,
-                        "endOffset": 1351
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 390,
+                        "endColumn": 194,
+                        "endOffset": 584
                     }
                 }
             },
@@ -1127,18 +1127,18 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 6625,
+                    "startOffset": 6269,
                     "endColumn": 129,
-                    "endOffset": 6750
+                    "endOffset": 6394
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 1356,
-                        "endColumn": 129,
-                        "endOffset": 1481
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 585,
+                        "endColumn": 125,
+                        "endOffset": 710
                     }
                 }
             },
@@ -1146,18 +1146,18 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 6755,
-                    "endColumn": 137,
-                    "endOffset": 6888
+                    "startOffset": 6399,
+                    "endColumn": 109,
+                    "endOffset": 6504
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1486,
-                        "endColumn": 137,
-                        "endOffset": 1619
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 711,
+                        "endColumn": 105,
+                        "endOffset": 816
                     }
                 }
             },
@@ -1165,18 +1165,18 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 6893,
-                    "endColumn": 260,
-                    "endOffset": 7149
+                    "startOffset": 6509,
+                    "endColumn": 226,
+                    "endOffset": 6731
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 335,
-                        "endColumn": 260,
-                        "endOffset": 591
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 817,
+                        "endColumn": 226,
+                        "endOffset": 1043
                     }
                 }
             },
@@ -1184,18 +1184,18 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 7154,
-                    "endColumn": 273,
-                    "endOffset": 7423
+                    "startOffset": 6736,
+                    "endColumn": 129,
+                    "endOffset": 6861
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1624,
-                        "endColumn": 273,
-                        "endOffset": 1893
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 1044,
+                        "endColumn": 125,
+                        "endOffset": 1169
                     }
                 }
             },
@@ -1203,18 +1203,18 @@
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 7428,
-                    "endColumn": 126,
-                    "endOffset": 7550
+                    "startOffset": 6866,
+                    "endColumn": 137,
+                    "endOffset": 6999
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1898,
-                        "endColumn": 126,
-                        "endOffset": 2020
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 1170,
+                        "endColumn": 133,
+                        "endOffset": 1303
                     }
                 }
             },
@@ -1222,18 +1222,18 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 7555,
-                    "endColumn": 109,
-                    "endOffset": 7660
+                    "startOffset": 7004,
+                    "endColumn": 203,
+                    "endOffset": 7203
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 2025,
-                        "endColumn": 109,
-                        "endOffset": 2130
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 289,
+                        "endColumn": 203,
+                        "endOffset": 492
                     }
                 }
             },
@@ -1241,18 +1241,18 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 7665,
-                    "endColumn": 200,
-                    "endOffset": 7861
+                    "startOffset": 7208,
+                    "endColumn": 246,
+                    "endOffset": 7450
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 2135,
-                        "endColumn": 200,
-                        "endOffset": 2331
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 1304,
+                        "endColumn": 246,
+                        "endOffset": 1550
                     }
                 }
             },
@@ -1260,18 +1260,18 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 7866,
-                    "endColumn": 132,
-                    "endOffset": 7994
+                    "startOffset": 7455,
+                    "endColumn": 109,
+                    "endOffset": 7560
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 2336,
-                        "endColumn": 132,
-                        "endOffset": 2464
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1551,
+                        "endColumn": 105,
+                        "endOffset": 1656
                     }
                 }
             },
@@ -1279,18 +1279,18 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 7999,
-                    "endColumn": 217,
-                    "endOffset": 8212
+                    "startOffset": 7565,
+                    "endColumn": 200,
+                    "endOffset": 7761
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 2469,
-                        "endColumn": 217,
-                        "endOffset": 2682
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1657,
+                        "endColumn": 200,
+                        "endOffset": 1857
                     }
                 }
             },
@@ -1298,18 +1298,18 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 8217,
-                    "endColumn": 139,
-                    "endOffset": 8352
+                    "startOffset": 7766,
+                    "endColumn": 132,
+                    "endOffset": 7894
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 2687,
-                        "endColumn": 139,
-                        "endOffset": 2822
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1858,
+                        "endColumn": 128,
+                        "endOffset": 1986
                     }
                 }
             },
@@ -1317,18 +1317,18 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 8357,
-                    "endColumn": 207,
-                    "endOffset": 8560
+                    "startOffset": 7899,
+                    "endColumn": 217,
+                    "endOffset": 8112
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 2827,
-                        "endColumn": 207,
-                        "endOffset": 3030
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1987,
+                        "endColumn": 217,
+                        "endOffset": 2204
                     }
                 }
             },
@@ -1336,18 +1336,18 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 8565,
-                    "endColumn": 97,
-                    "endOffset": 8658
+                    "startOffset": 8117,
+                    "endColumn": 207,
+                    "endOffset": 8320
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 3035,
-                        "endColumn": 97,
-                        "endOffset": 3128
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 2205,
+                        "endColumn": 203,
+                        "endOffset": 2408
                     }
                 }
             },
@@ -1355,18 +1355,18 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 8663,
-                    "endColumn": 98,
-                    "endOffset": 8757
+                    "startOffset": 8325,
+                    "endColumn": 97,
+                    "endOffset": 8418
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 3133,
-                        "endColumn": 98,
-                        "endOffset": 3227
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 2409,
+                        "endColumn": 93,
+                        "endOffset": 2502
                     }
                 }
             },
@@ -1374,18 +1374,18 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 8762,
-                    "endColumn": 115,
-                    "endOffset": 8873
+                    "startOffset": 8423,
+                    "endColumn": 98,
+                    "endOffset": 8517
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 3232,
-                        "endColumn": 115,
-                        "endOffset": 3343
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 2503,
+                        "endColumn": 94,
+                        "endOffset": 2597
                     }
                 }
             },
@@ -1393,18 +1393,18 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 8878,
-                    "endColumn": 110,
-                    "endOffset": 8984
+                    "startOffset": 8522,
+                    "endColumn": 115,
+                    "endOffset": 8633
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 282,
-                        "endColumn": 110,
-                        "endOffset": 388
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 2598,
+                        "endColumn": 111,
+                        "endOffset": 2709
                     }
                 }
             },
@@ -1412,18 +1412,18 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 8989,
-                    "endColumn": 116,
-                    "endOffset": 9101
+                    "startOffset": 8638,
+                    "endColumn": 141,
+                    "endOffset": 8775
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 393,
-                        "endColumn": 116,
-                        "endOffset": 505
+                        "startColumn": 0,
+                        "startOffset": 310,
+                        "endColumn": 137,
+                        "endOffset": 447
                     }
                 }
             },
@@ -1431,18 +1431,18 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 9106,
-                    "endColumn": 107,
-                    "endOffset": 9209
+                    "startOffset": 8780,
+                    "endColumn": 106,
+                    "endOffset": 8882
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 510,
-                        "endColumn": 107,
-                        "endOffset": 613
+                        "startColumn": 0,
+                        "startOffset": 448,
+                        "endColumn": 102,
+                        "endOffset": 550
                     }
                 }
             },
@@ -1450,18 +1450,18 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 9214,
-                    "endColumn": 105,
-                    "endOffset": 9315
+                    "startOffset": 8887,
+                    "endColumn": 106,
+                    "endOffset": 8989
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 618,
-                        "endColumn": 105,
-                        "endOffset": 719
+                        "startColumn": 0,
+                        "startOffset": 551,
+                        "endColumn": 102,
+                        "endOffset": 653
                     }
                 }
             },
@@ -1469,18 +1469,18 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 9320,
-                    "endColumn": 131,
-                    "endOffset": 9447
+                    "startOffset": 8994,
+                    "endColumn": 114,
+                    "endOffset": 9104
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 724,
-                        "endColumn": 131,
-                        "endOffset": 851
+                        "startColumn": 0,
+                        "startOffset": 654,
+                        "endColumn": 110,
+                        "endOffset": 764
                     }
                 }
             },
@@ -1488,18 +1488,18 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 9452,
+                    "startOffset": 9109,
                     "endColumn": 106,
-                    "endOffset": 9554
+                    "endOffset": 9211
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 856,
-                        "endColumn": 106,
-                        "endOffset": 958
+                        "startColumn": 0,
+                        "startOffset": 765,
+                        "endColumn": 102,
+                        "endOffset": 867
                     }
                 }
             },
@@ -1507,18 +1507,18 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 9559,
-                    "endColumn": 99,
-                    "endOffset": 9654
+                    "startOffset": 9216,
+                    "endColumn": 107,
+                    "endOffset": 9319
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 963,
-                        "endColumn": 99,
-                        "endOffset": 1058
+                        "startColumn": 0,
+                        "startOffset": 868,
+                        "endColumn": 103,
+                        "endOffset": 971
                     }
                 }
             },
@@ -1526,18 +1526,18 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 9659,
-                    "endColumn": 125,
-                    "endOffset": 9780
+                    "startOffset": 9324,
+                    "endColumn": 73,
+                    "endOffset": 9393
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1063,
-                        "endColumn": 125,
-                        "endOffset": 1184
+                        "startColumn": 0,
+                        "startOffset": 972,
+                        "endColumn": 69,
+                        "endOffset": 1041
                     }
                 }
             },
@@ -1545,18 +1545,18 @@
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 9785,
-                    "endColumn": 108,
-                    "endOffset": 9889
+                    "startOffset": 9398,
+                    "endColumn": 104,
+                    "endOffset": 9498
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 1189,
-                        "endColumn": 108,
-                        "endOffset": 1293
+                        "startOffset": 55,
+                        "endColumn": 104,
+                        "endOffset": 155
                     }
                 }
             },
@@ -1564,18 +1564,18 @@
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 9894,
-                    "endColumn": 86,
-                    "endOffset": 9976
+                    "startOffset": 9503,
+                    "endColumn": 103,
+                    "endOffset": 9602
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 1298,
-                        "endColumn": 86,
-                        "endOffset": 1380
+                        "startOffset": 160,
+                        "endColumn": 103,
+                        "endOffset": 259
                     }
                 }
             },
@@ -1583,18 +1583,18 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 9981,
-                    "endColumn": 98,
-                    "endOffset": 10075
+                    "startOffset": 9607,
+                    "endColumn": 89,
+                    "endOffset": 9692
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 1385,
-                        "endColumn": 98,
-                        "endOffset": 1479
+                        "startOffset": 264,
+                        "endColumn": 89,
+                        "endOffset": 349
                     }
                 }
             },
@@ -1602,18 +1602,18 @@
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 10080,
-                    "endColumn": 105,
-                    "endOffset": 10181
+                    "startOffset": 9697,
+                    "endColumn": 97,
+                    "endOffset": 9790
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 285,
-                        "endColumn": 105,
-                        "endOffset": 386
+                        "startOffset": 354,
+                        "endColumn": 97,
+                        "endOffset": 447
                     }
                 }
             },
@@ -1621,18 +1621,18 @@
                 "to": {
                     "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 10186,
-                    "endColumn": 98,
-                    "endOffset": 10280
+                    "startOffset": 9795,
+                    "endColumn": 106,
+                    "endOffset": 9897
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 391,
-                        "endColumn": 98,
-                        "endOffset": 485
+                        "startOffset": 452,
+                        "endColumn": 106,
+                        "endOffset": 554
                     }
                 }
             },
@@ -1640,18 +1640,18 @@
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 10285,
-                    "endColumn": 84,
-                    "endOffset": 10365
+                    "startOffset": 9902,
+                    "endColumn": 96,
+                    "endOffset": 9994
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 2049,
-                        "endColumn": 84,
-                        "endOffset": 2129
+                        "startOffset": 559,
+                        "endColumn": 96,
+                        "endOffset": 651
                     }
                 }
             },
@@ -1659,18 +1659,18 @@
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 10370,
-                    "endColumn": 100,
-                    "endOffset": 10466
+                    "startOffset": 9999,
+                    "endColumn": 94,
+                    "endOffset": 10089
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 2134,
-                        "endColumn": 100,
-                        "endOffset": 2230
+                        "startOffset": 656,
+                        "endColumn": 94,
+                        "endOffset": 746
                     }
                 }
             },
@@ -1678,18 +1678,284 @@
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 10471,
-                    "endColumn": 108,
-                    "endOffset": 10575
+                    "startOffset": 10094,
+                    "endColumn": 94,
+                    "endOffset": 10184
                 },
                 "from": {
-                    "file": "D:\\OneDriveNod\\OneDrive\\Coding\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\9.4.0\\res\\values-pt-rPT\\values.xml",
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 751,
+                        "endColumn": 94,
+                        "endOffset": 841
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 10189,
+                    "endColumn": 93,
+                    "endOffset": 10278
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 846,
+                        "endColumn": 93,
+                        "endOffset": 935
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 10283,
+                    "endColumn": 119,
+                    "endOffset": 10398
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 940,
+                        "endColumn": 119,
+                        "endOffset": 1055
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 10403,
+                    "endColumn": 127,
+                    "endOffset": 10526
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1060,
+                        "endColumn": 127,
+                        "endOffset": 1183
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 10531,
+                    "endColumn": 89,
+                    "endOffset": 10616
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1188,
+                        "endColumn": 89,
+                        "endOffset": 1273
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 10621,
+                    "endColumn": 86,
+                    "endOffset": 10703
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1278,
+                        "endColumn": 86,
+                        "endOffset": 1360
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 10708,
+                    "endColumn": 102,
+                    "endOffset": 10806
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1365,
+                        "endColumn": 102,
+                        "endOffset": 1463
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 10811,
+                    "endColumn": 86,
+                    "endOffset": 10893
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1468,
+                        "endColumn": 86,
+                        "endOffset": 1550
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 10898,
+                    "endColumn": 98,
+                    "endOffset": 10992
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1555,
+                        "endColumn": 98,
+                        "endOffset": 1649
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 10997,
+                    "endColumn": 105,
+                    "endOffset": 11098
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.8.0\\res\\values-pt-rPT\\values.xml",
                     "position": {
                         "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 237,
+                        "endColumn": 101,
+                        "endOffset": 338
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 11103,
+                    "endColumn": 98,
+                    "endOffset": 11197
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.8.0\\res\\values-pt-rPT\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 339,
+                        "endColumn": 94,
+                        "endOffset": 433
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 11202,
+                    "endColumn": 100,
+                    "endOffset": 11298
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 292,
-                        "endColumn": 108,
-                        "endOffset": 396
+                        "startOffset": 2049,
+                        "endColumn": 100,
+                        "endOffset": 2145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 11303,
+                    "endColumn": 152,
+                    "endOffset": 11451
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1042,
+                        "endColumn": 148,
+                        "endOffset": 1190
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 11456,
+                    "endColumn": 92,
+                    "endOffset": 11544
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-pt-rPT\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1191,
+                        "endColumn": 88,
+                        "endOffset": 1279
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 11549,
+                    "endColumn": 108,
+                    "endOffset": 11653
+                },
+                "from": {
+                    "file": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\9.8.0\\res\\values-pt-rPT\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 244,
+                        "endColumn": 104,
+                        "endOffset": 348
                     }
                 }
             }
