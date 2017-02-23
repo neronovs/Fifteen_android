@@ -4,11 +4,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
-import android.widget.Chronometer;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdView;
@@ -23,11 +28,16 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
     Engine engine;
     HighScoresActivity highScoresActivity;
     ImageView arrBut[][];
-    Chronometer chronometer;
+    //Chronometer chronometer;
     AdView adView;
     Boolean contin, finished, orientationChanged;
     SharedPreferences prefs;
     SharedPreferences.Editor edit;
+    ViewGroup.LayoutParams params, paramsRow;
+    TableRow tr0, tr1, tr2, tr3;
+
+    TimeCounter timeCounter;//!!!!!!!!!!!!!!!!!!!!!!
+    boolean orientChanged = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +61,9 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         Ads ads = new Ads(this, FieldActivity.this);
         adView.loadAd(ads.getSpecialAdRequest());
 
-        chronometer = (Chronometer) findViewById(R.id.chronometer);
-        chronometer.setFormat("%s");
-        chronometer.start();
+//        chronometer = (Chronometer) findViewById(R.id.chronometer);
+//        chronometer.setFormat("%s");
+//        chronometer.start();
 
         //region Declaration of views
         arrBut = new ImageView[4][4];
@@ -84,18 +94,52 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
                 arrBut[i][j].setOnClickListener(this);
             }
         }
+
+        try {
+            tr0 = (TableRow) findViewById(R.id.row0);
+            tr1 = (TableRow) findViewById(R.id.row1);
+            tr2 = (TableRow) findViewById(R.id.row2);
+            tr3 = (TableRow) findViewById(R.id.row3);
+        } catch (Exception e) {}
         //endregion
 
         engine = new Engine();
         highScoresActivity = new HighScoresActivity();
 
+        if (null == timeCounter)
+            timeCounter = new TimeCounter(this, FieldActivity.this);
+
         //if was pressed "continue" then get the previous Field consistence
         if (contin) {
             getPreviousConsistence();
-            arrayToField();
-        } else {
-            arrayToField();
         }
+
+        timeCounter.startTime = SystemClock.uptimeMillis() - timeCounter.startTime;
+        if (contin)
+            timeCounter.loadPref();
+        timeCounter.customHandler.postDelayed(timeCounter.updateTimerThread, 0);
+
+        //sets the squared size for cells
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int mainTableLayoutWeight;
+        if (dm.widthPixels < dm.heightPixels) //needs because of the device orientation
+            mainTableLayoutWeight = dm.widthPixels - 24;
+        else mainTableLayoutWeight = dm.heightPixels - 24;
+        params = arrBut[0][0].getLayoutParams();
+        params.height = params.width = mainTableLayoutWeight / 4;
+        arrayToField();
+//        try {
+//            paramsRow = tr0.getLayoutParams();
+//            paramsRow.height = params.height;
+//            tr0.setLayoutParams(paramsRow);
+//            tr1.setLayoutParams(paramsRow);
+//            tr2.setLayoutParams(paramsRow);
+//            tr3.setLayoutParams(paramsRow);
+//        } catch (Exception e) {}
+
+        //translation for the activity due to the system language
+        Translater translater = new Translater(this, FieldActivity.this);
     }
 
     private void putCurrentConsistence() {
@@ -112,10 +156,21 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
             }
 
             //store current chronometer time
-            edit.putString("chronometer", String.valueOf(chronometer.getBase()));
-            chronometer.stop();
+            //edit.putString("chronometer", String.valueOf(chronometer.getBase()));
+            //edit.putLong("chronometer", chronometer.getBase());
+            //edit.putString("timeCounter", timeCounter.timerValue.getText().toString());
+
+
+            //edit.putLong("timeCounter", timeCounter.updatedTime);
+            timeCounter.savePref(); //save current timer in the properties through the timer object's method
+
+            //chronometer.stop();
             edit.putBoolean("deactivate_contin", false);
             edit.apply();
+
+            //timeCounter.timeSwapBuff += timeCounter.timeInMilliseconds;//!!!!!!!!!!!!!
+            //timeCounter.customHandler.removeCallbacks(timeCounter.updateTimerThread);//!!!!!!!!!!!!!
+
         } else {
             //SharedPreferences.Editor edit = prefs.edit();
             edit.putBoolean("deactivate_contin", true);
@@ -135,9 +190,13 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         int temp = Integer.valueOf(time.substring(0, 1));
         temp *= 60;
         temp += Integer.valueOf(time.substring(3));*/
-        Long timeWhenStopped = Long.parseLong(prefs.getString("chronometer", ""));
-        chronometer.setBase(timeWhenStopped);
-        chronometer.start();
+        //Long timeWhenStopped = Long.parseLong(prefs.getString("chronometer", ""));
+//        long timeWhenStopped = prefs.getLong("chronometer", 3592478);
+//        chronometer.setBase(timeWhenStopped);
+//        chronometer.start();
+
+        //timeCounter.startTime = prefs.getLong("timeCounter", 0);
+        timeCounter.loadPref(); //load the saved timer from the properties through the timer object's method
     }
 
     public void arrayToField() {
@@ -159,6 +218,9 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
                 else if (engine.getGameField()[i][j].equals("14")) arrBut[i][j].setBackgroundResource(R.drawable.b14);
                 else if (engine.getGameField()[i][j].equals("15")) arrBut[i][j].setBackgroundResource(R.drawable.b15);
                 else if (engine.getGameField()[i][j].equals("")) arrBut[i][j].setBackgroundResource(R.drawable.empty);
+
+                //sets the squared size for cells
+                arrBut[i][j].setLayoutParams(params);
             }
         }
     }
@@ -268,8 +330,9 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
             }
         }
         if (finished) {
-            String scores = chronometer.getText().toString();
-            chronometer.stop();
+            //String scores = chronometer.getText().toString();
+            String scores = timeCounter.timerValue.getText().toString();//!!!!!!!!!!!!!!!!!!
+            //chronometer.stop();
             Toast.makeText(FieldActivity.this, "Congrats, you won!", Toast.LENGTH_SHORT).show();
 
             //***High score creating
@@ -320,6 +383,8 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         Log.d(TAG, "FieldActivity: onPause()");
         putCurrentConsistence();
         orientationChanged = true;
+
+        timeCounter.pauseCounter();
     }
 
     @Override
@@ -345,6 +410,7 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
+        orientChanged = true;
         putCurrentConsistence();
     }
 }

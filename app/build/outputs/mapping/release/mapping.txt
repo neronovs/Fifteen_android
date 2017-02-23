@@ -38060,7 +38060,7 @@ ru.narod.nod.fifteen.Ads -> ru.narod.nod.fifteen.a:
     android.app.Activity activity -> c
     void <init>(android.content.Context,android.app.Activity) -> <init>
     com.google.android.gms.ads.AdRequest getSpecialAdRequest() -> a
-    com.google.android.gms.ads.AdRequest testAd() -> b
+    com.google.android.gms.ads.AdRequest realAd() -> b
 ru.narod.nod.fifteen.Engine -> ru.narod.nod.fifteen.b:
     java.lang.String[][] gameField -> a
     boolean orientationChanged -> b
@@ -38073,13 +38073,19 @@ ru.narod.nod.fifteen.FieldActivity -> ru.narod.nod.fifteen.FieldActivity:
     ru.narod.nod.fifteen.Engine engine -> n
     ru.narod.nod.fifteen.HighScoresActivity highScoresActivity -> o
     android.widget.ImageView[][] arrBut -> p
-    android.widget.Chronometer chronometer -> q
-    com.google.android.gms.ads.AdView adView -> r
-    java.lang.Boolean contin -> s
-    java.lang.Boolean finished -> t
-    java.lang.Boolean orientationChanged -> u
-    android.content.SharedPreferences prefs -> v
-    android.content.SharedPreferences$Editor edit -> w
+    com.google.android.gms.ads.AdView adView -> q
+    java.lang.Boolean contin -> r
+    java.lang.Boolean finished -> s
+    java.lang.Boolean orientationChanged -> t
+    android.content.SharedPreferences prefs -> u
+    android.content.SharedPreferences$Editor edit -> v
+    android.view.ViewGroup$LayoutParams params -> w
+    android.widget.TableRow tr0 -> x
+    android.widget.TableRow tr1 -> y
+    android.widget.TableRow tr2 -> z
+    android.widget.TableRow tr3 -> A
+    ru.narod.nod.fifteen.TimeCounter timeCounter -> B
+    boolean orientChanged -> C
     void <init>() -> <init>
     void onCreate(android.os.Bundle) -> onCreate
     void putCurrentConsistence() -> m
@@ -38132,3 +38138,31 @@ ru.narod.nod.fifteen.MainActivity -> ru.narod.nod.fifteen.MainActivity:
 ru.narod.nod.fifteen.RulesActivity -> ru.narod.nod.fifteen.RulesActivity:
     void <init>() -> <init>
     void onCreate(android.os.Bundle) -> onCreate
+ru.narod.nod.fifteen.TimeCounter -> ru.narod.nod.fifteen.c:
+    boolean continTheRunnable -> a
+    android.widget.TextView timerValue -> b
+    long startTime -> c
+    android.os.Handler customHandler -> d
+    long timeInMilliseconds -> e
+    long timeSwapBuff -> f
+    long updatedTime -> g
+    android.content.SharedPreferences prefs -> h
+    android.content.SharedPreferences$Editor edit -> i
+    java.lang.Runnable updateTimerThread -> j
+    void <init>(android.content.Context,android.app.Activity) -> <init>
+    void savePref() -> a
+    void loadPref() -> b
+    void pauseCounter() -> c
+ru.narod.nod.fifteen.TimeCounter$1 -> ru.narod.nod.fifteen.c$1:
+    ru.narod.nod.fifteen.TimeCounter this$0 -> a
+    void <init>(ru.narod.nod.fifteen.TimeCounter) -> <init>
+    void run() -> run
+ru.narod.nod.fifteen.Translater -> ru.narod.nod.fifteen.d:
+    android.app.Activity activity -> b
+    android.content.Context context -> c
+    java.lang.String language -> a
+    void <init>(android.content.Context,android.app.Activity) -> <init>
+    void activity_high_scores_translate() -> a
+    void activity_main_translate() -> b
+    void activity_rules_translate() -> c
+    void activity_field_translate() -> d

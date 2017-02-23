@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ru.narod.nod.fifteen.HighScoresActivity"
-    android:background="@drawable/woody_texture4"
+    android:background="@drawable/wooden5land"
     android:orientation="vertical">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="73dp"
+        android:layout_height="wrap_content"
         android:gravity="center">
 
         <TextView
@@ -21,7 +21,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="50sp"
             android:text="@string/high_scores_head"
-            android:id="@+id/textView2"
+            android:id="@+id/tvHS"
             android:textColor="#5a3d00"
             android:gravity="center_vertical|center_horizontal"/>
     </LinearLayout>
@@ -38,20 +38,20 @@
             android:text="@string/best"
             android:id="@+id/tvBest"
             android:textSize="50sp"
-            android:textColor="#be7113"
+            android:textColor="#be1113"
             android:layout_gravity="center_horizontal"
             android:gravity="right"
-            android:layout_weight="0.17"/>
+            android:layout_weight="0.23"/>
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="52dp"
+            android:layout_height="wrap_content"
             android:text="@string/is"
-            android:id="@+id/textView"
+            android:id="@+id/tvIs"
             android:textSize="50sp"
             android:layout_gravity="center_horizontal"
             android:gravity="left|center_vertical|center_horizontal|center"
-            android:layout_weight="0.30"
+            android:layout_weight="0.28"
             android:textColor="#5a3d00"
             android:layout_marginLeft="20dp"/>
 
@@ -70,7 +70,7 @@
             android:text="@string/hstext"
             android:id="@+id/hsText"
             android:textSize="40sp"
-            android:textColor="#be7113"
+            android:textColor="#be1113"
             android:textAlignment="center"
             />
     </LinearLayout>
@@ -81,27 +81,6 @@
         android:layout_height="wrap_content"
         android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/on_the"
-            android:id="@+id/textView4"
-            android:textSize="50sp"
-            android:textColor="#be7113"
-            android:layout_weight="0.13"
-            android:gravity="right"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/hsDate"
-            android:textSize="30sp"
-            android:textColor="#be7113"
-            android:text="@string/hsdate"
-            android:gravity="center_horizontal"
-            android:textAlignment="center"
-            android:layout_weight="1"/>
-
     </LinearLayout>
 
     <LinearLayout
@@ -109,6 +88,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/on_the"
+            android:id="@+id/tvOnThe"
+            android:textSize="45sp"
+            android:textColor="#5a3d00"
+            android:gravity="right"
+            android:layout_weight="0.16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hsDate"
+            android:textSize="40sp"
+            android:textColor="#5a3d00"
+            android:text="@string/hsdate"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
@@ -121,7 +121,6 @@
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:id="@+id/adViewHS"
-            android:layout_marginTop="5dp"
             ads:adSize="BANNER"
             ads:adUnitId="@string/banner_home_footer"
             android:layout_gravity="fill_horizontal">

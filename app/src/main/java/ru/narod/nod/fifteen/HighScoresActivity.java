@@ -21,7 +21,6 @@ public class HighScoresActivity extends AppCompatActivity {
 
     public HighScoresActivity() {
 
-
     }
 
     @Override
@@ -38,6 +37,9 @@ public class HighScoresActivity extends AppCompatActivity {
         hsText = (TextView) findViewById(R.id.hsText);
         hsDate = (TextView) findViewById(R.id.hsDate);
         highScores = loadHighScore();
+
+        //translation for the activity due to the system language
+        Translater translater = new Translater(this, HighScoresActivity.this);
     }
 
     public void saveHighScore(String newScore) {

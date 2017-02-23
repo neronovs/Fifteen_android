@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                .addTestDevice("C04B1BFFB0774708339BC273F8A43708")
 //                .build();
 //        adView.loadAd(adRequest1);
-
         Ads ads = new Ads(this, MainActivity.this);
         adView.loadAd(ads.getSpecialAdRequest());
 
@@ -71,6 +70,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnExit.setOnClickListener(this);
 
         theFirstStart();
+
+        //translation for the activity due to the system language
+        Translater translater = new Translater(this, MainActivity.this);
     }
 
     //Check the app for the first start

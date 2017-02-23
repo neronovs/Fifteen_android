@@ -6,13 +6,14 @@
     android:theme="@android:style/Theme.Black.NoTitleBar"
 
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
     tools:context="ru.narod.nod.fifteen.MainActivity"
     android:orientation="horizontal"
     android:id="@+id/tableField"
-    android:background="@drawable/woody_texture3"
+    android:background="@drawable/wooden4land"
     android:layout_width="match_parent">
 
     <TableLayout
@@ -24,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.6"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:id="@+id/row0"
             android:orientation="horizontal">
 
@@ -83,6 +84,7 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 />
+
             <ImageView
                 android:text="@string/_6"
 
@@ -92,6 +94,7 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 />
+
             <ImageView
                 android:text="@string/_7"
 
@@ -213,11 +216,24 @@
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:text="@string/time"
-            android:id="@+id/textView5"
+            android:id="@+id/tvFieldTime"
             android:textSize="30sp"
             android:textColor="#604d00"
             android:gravity="center_vertical|center_horizontal"
             android:layout_gravity="left|top"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:id="@+id/timerValue"
+            android:layout_gravity="right|top"
+            android:textIsSelectable="false"
+            android:textStyle="normal"
+            android:enabled="true"
+            android:textColor="#604d00"
+            android:textSize="30sp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical|center_horizontal" />
 
         <Chronometer
             android:layout_width="match_parent"
@@ -230,7 +246,8 @@
             android:enabled="true"
             android:textColor="#604d00"
             android:textSize="30sp"
-            android:gravity="center_vertical|center_horizontal"/>
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="invisible" />
 
         <com.google.android.gms.ads.AdView
             android:layout_width="wrap_content"

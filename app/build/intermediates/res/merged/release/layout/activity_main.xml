@@ -13,7 +13,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ru.narod.nod.fifteen.MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/woody_texture"
+    android:background="@drawable/hohl4"
     android:alpha="50"><![CDATA[
     />
 
@@ -38,7 +38,7 @@
         android:textSize="40sp"
         android:id="@+id/btnContinue"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/woody_texture2"
+        android:background="@drawable/btn_hohl2_light"
         android:textColor="#775100"/>
 
     <Button
@@ -49,7 +49,7 @@
         android:textSize="40sp"
         android:id="@+id/btnStart"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/woody_texture2"
+        android:background="@drawable/btn_hohl2_light"
         android:textColor="#775100"/>
 
     <Button
@@ -60,7 +60,7 @@
         android:textSize="40sp"
         android:id="@+id/btnHS"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/woody_texture2"
+        android:background="@drawable/btn_hohl2_light"
         android:textColor="#775100"/>
 
     <Button
@@ -71,7 +71,7 @@
         android:textSize="40sp"
         android:id="@+id/btnRules"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/woody_texture2"
+        android:background="@drawable/btn_hohl2_light"
         android:textColor="#775100"/>
 
     <Button
@@ -82,7 +82,7 @@
         android:textSize="40sp"
         android:id="@+id/btnExit"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/woody_texture2"
+        android:background="@drawable/btn_hohl2_light"
         android:textColor="#775100"/>
 
     <com.google.android.gms.ads.AdView
@@ -92,7 +92,7 @@
         android:layout_gravity="center_horizontal|bottom"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_home_footer"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="1dp">
 
     </com.google.android.gms.ads.AdView>
 

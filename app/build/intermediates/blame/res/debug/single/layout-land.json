@@ -1,18 +1,18 @@
 [
     {
-        "merged": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_rules.xml",
-        "source": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\src\\main\\res\\layout-land\\activity_rules.xml"
+        "merged": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_main.xml",
+        "source": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\src\\main\\res\\layout-land\\activity_main.xml"
     },
     {
-        "merged": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_field.xml",
-        "source": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\src\\main\\res\\layout-land\\activity_field.xml"
+        "merged": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_high_scores.xml",
+        "source": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\src\\main\\res\\layout-land\\activity_high_scores.xml"
     },
     {
-        "merged": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_main.xml",
-        "source": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\src\\main\\res\\layout-land\\activity_main.xml"
+        "merged": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_field.xml",
+        "source": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\src\\main\\res\\layout-land\\activity_field.xml"
     },
     {
-        "merged": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_high_scores.xml",
-        "source": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\src\\main\\res\\layout-land\\activity_high_scores.xml"
+        "merged": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_rules.xml",
+        "source": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\src\\main\\res\\layout-land\\activity_rules.xml"
     }
 ]

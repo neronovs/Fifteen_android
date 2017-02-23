@@ -491,7 +491,7 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f020049;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f02004a;
 		public static final int abc_textfield_search_material = 0x7f02004b;
-		public static final int notification_template_icon_bg = 0x7f020186;
+		public static final int notification_template_icon_bg = 0x7f020193;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0e010b;
@@ -518,7 +518,7 @@ public final class R {
 		public static final int buttonPanel = 0x7f0e007a;
 		public static final int cancel_action = 0x7f0e010c;
 		public static final int checkbox = 0x7f0e0088;
-		public static final int chronometer = 0x7f0e00b6;
+		public static final int chronometer = 0x7f0e00b9;
 		public static final int collapseActionView = 0x7f0e0042;
 		public static final int contentPanel = 0x7f0e0080;
 		public static final int custom = 0x7f0e0086;

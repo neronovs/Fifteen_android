@@ -1,18 +1,18 @@
 [
     {
-        "merged": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\release\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
-        "source": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+        "merged": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\release\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
-        "merged": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\release\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
-        "source": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
+        "merged": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\release\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\release\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
-        "source": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
+        "merged": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\release\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\release\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
-        "source": "D:\\OneDriveNod\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
+        "merged": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\res\\merged\\release\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "D:\\OneDrive\\Dropbox\\Examples\\android\\Fifteen\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
     }
 ]

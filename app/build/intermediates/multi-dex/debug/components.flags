@@ -1,7 +1,7 @@
--injars 'D:\OneDriveNod\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
--outjars 'D:\OneDriveNod\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars 'D:\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'D:\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\multi-dex\debug\componentClasses.jar'
 
--libraryjars 'D:\Android\sdk\build-tools\25.0.0\lib\shrinkedAndroid.jar'
+-libraryjars 'c:\Users\User\AppData\Local\Android\sdk\build-tools\25.0.0\lib\shrinkedAndroid.jar'
 
 -forceprocessing
 -dontoptimize
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **
 -dontwarn **
--printconfiguration 'D:\OneDriveNod\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration 'D:\OneDrive\Dropbox\Examples\android\Fifteen\app\build\intermediates\multi-dex\debug\components.flags'
 
 
 -keep public class * extends android.app.Instrumentation {

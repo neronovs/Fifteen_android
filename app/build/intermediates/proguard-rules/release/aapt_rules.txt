@@ -73,10 +73,10 @@
 # view AndroidManifest.xml #generated:68
 -keep class com.google.android.gms.ads.AdActivity { <init>(...); }
 
-# view land\res/layout-land/activity_field.xml #generated:235
+# view land\res/layout-land/activity_field.xml #generated:252
 # view land\res/layout-land/activity_high_scores.xml #generated:120
 # view land\res/layout-land/activity_main.xml #generated:36
-# view res/layout/activity_field.xml #generated:234
+# view res/layout/activity_field.xml #generated:237
 # view res/layout/activity_high_scores.xml #generated:121
 # view res/layout/activity_main.xml #generated:88
 -keep class com.google.android.gms.ads.AdView { <init>(...); }
@@ -84,58 +84,58 @@
 # view AndroidManifest.xml #generated:77
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:84
+# view AndroidManifest.xml #generated:80
 -keep class com.google.android.gms.appinvite.PreviewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:103
+# view AndroidManifest.xml #generated:99
 -keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(...); }
 
-# view AndroidManifest.xml #generated:94
+# view AndroidManifest.xml #generated:90
 -keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:111
+# view AndroidManifest.xml #generated:107
 -keep class com.google.android.gms.cast.framework.ReconnectionService { <init>(...); }
 
 # view res/layout/cast_help_text.xml #generated:2
 -keep class com.google.android.gms.cast.framework.internal.featurehighlight.HelpTextView { <init>(...); }
 
-# view AndroidManifest.xml #generated:108
+# view AndroidManifest.xml #generated:104
 -keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:110
+# view AndroidManifest.xml #generated:106
 -keep class com.google.android.gms.cast.framework.media.MediaNotificationService { <init>(...); }
 
-# view AndroidManifest.xml #generated:80
+# view AndroidManifest.xml #generated:192
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:154
+# view AndroidManifest.xml #generated:142
 -keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:149
+# view AndroidManifest.xml #generated:137
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:163
+# view AndroidManifest.xml #generated:151
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(...); }
 
-# view AndroidManifest.xml #generated:183
+# view AndroidManifest.xml #generated:124
 -keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:178
+# view AndroidManifest.xml #generated:119
 -keep class com.google.android.gms.tagmanager.TagManagerService { <init>(...); }
 
-# view AndroidManifest.xml #generated:128
+# view AndroidManifest.xml #generated:171
 -keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:113
+# view AndroidManifest.xml #generated:156
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:135
+# view AndroidManifest.xml #generated:178
 -keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(...); }
 
-# view AndroidManifest.xml #generated:171
+# view AndroidManifest.xml #generated:112
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(...); }
 
-# view AndroidManifest.xml #generated:143
+# view AndroidManifest.xml #generated:186
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(...); }
 
 # view AndroidManifest.xml #generated:53

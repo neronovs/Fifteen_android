@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Fifteen</string>
+    <string name="app_name_rus">Пятнашки</string>
+
     <string name="_1">1</string>
     <string name="_2">2</string>
     <string name="_3">3</string>
@@ -16,17 +18,26 @@
     <string name="_14">14</string>
     <string name="_15">15</string>
     <string name="empty"/>
+
     <string name="the_fifteen">The fifteen</string>
+    <string name="the_fifteen_rus">Пятнашки</string>
+
     <string name="new_game">New game</string>
+    <string name="new_game_rus">Новая игра</string>
     <string name="rules">Rules</string>
+    <string name="rules_rus">Правила</string>
     <string name="high_scores">High scores</string>
+    <string name="high_scores_rus">Результаты</string>
     <string name="exit">Exit</string>
-    <string name="high_scores_head">High scores</string>
-    <string name="best">The best time </string>
+    <string name="exit_rus">Выход</string>
+    <string name="cont">Continue</string>
+    <string name="cont_rus">Продолжить</string>
+
     <string name="hstext">hsText</string>
-    <string name="on_the">on the</string>
+
     <string name="hsdate">hsDate</string>
     <string name="rules_">Rules:</string>
+    <string name="rules__rus">Правила:</string>
     <string name="rules_description">The Fifteen (15-puzzle), also called Gem Puzzle, Boss Puzzle, Game of Fifteen,
         Mystic Square and many others - is a sliding puzzle that consists of a frame of numbered square tiles in random
         order with one tile missing. The puzzle, if 4×4 tiles, the puzzle is called the 15-puzzle or 16-puzzle named,
@@ -36,11 +47,27 @@
         for this problem include counting the number of misplaced tiles and finding the sum of the taxicab distances between
         each block and its position in the goal configuration. Note that both are admissible, i.e. they never overestimate
         the number of moves left, which ensures optimality for certain search algorithms.</string>
+        <string name="rules_description_rus">Популярная головоломка \"Пятнашки\" была придумана еще в конце 19 века. Классическое
+            игровое поле представляет собой матрицу 4х4 клеток, на котором по порядку (слева - направо и сверху - вниз) располагаются
+            цифры от 1 до 15. Последняя клетка – пустая. Клетки перемешиваются определенным образом, и задача игрока состоит в том,
+            чтобы восстановить их первоначальное правильное расположение. Делать это можно лишь путем перемещения на пустую клетку
+            другой, соседней с ней клетки (расположенной слева, справа, сверху или снизу от пустой).</string>
     <!-- AdMob ad unit IDs -->
+
+    <string name="is">is</string>
+    <string name="is_rus"></string>
+    <string name="time">Time:</string>
+    <string name="time_rus">Время:</string>
+    <string name="high_scores_head">High scores</string>
+    <string name="high_scores_head_rus">Достижения</string>
+    <string name="on_the">on the</string>
+    <string name="on_the_rus">на</string>
+    <string name="best">The best time </string>
+    <string name="best_rus">Лучшее время</string>
+
+    <string name="version_description"> </string>
+
     <string name="banner_home_footer">ca-app-pub-8956716360419559/9767677420</string>
     <string name="interstitial_full_screen">ca-app-pub-8956716360419559/9767677420</string>
-    <string name="is">is</string>
-    <string name="time">Time:</string>
-    <string name="cont">Continue</string>
 
 </resources>

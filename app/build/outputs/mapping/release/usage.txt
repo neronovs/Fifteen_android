@@ -12291,15 +12291,17 @@ com.google.firebase.storage.zzf
 com.google.firebase.zza:
     public java.lang.Exception zzz(com.google.android.gms.common.api.Status)
 ru.narod.nod.fifteen.Ads:
-    34:37:private com.google.android.gms.ads.AdRequest realAd()
+    42:48:private com.google.android.gms.ads.AdRequest testAd()
 ru.narod.nod.fifteen.BuildConfig
 ru.narod.nod.fifteen.Engine:
     53:53:public boolean getOrientationChanged()
     56:57:public void setOrientationChanged(boolean)
+ru.narod.nod.fifteen.FieldActivity:
+    android.view.ViewGroup$LayoutParams paramsRow
 ru.narod.nod.fifteen.HighScoresActivity:
     android.widget.ListView lvHS
-    52:52:public void saveHighScore(java.lang.String)
-    73:73:public java.lang.String getHighScores()
+    54:54:public void saveHighScore(java.lang.String)
+    75:75:public java.lang.String getHighScores()
 ru.narod.nod.fifteen.Manifest
 ru.narod.nod.fifteen.Manifest$permission
 ru.narod.nod.fifteen.R
@@ -12319,3 +12321,5 @@ ru.narod.nod.fifteen.R$raw
 ru.narod.nod.fifteen.R$string
 ru.narod.nod.fifteen.R$style
 ru.narod.nod.fifteen.R$styleable
+ru.narod.nod.fifteen.TimeCounter:
+    58:64:public void reset(android.app.Activity)

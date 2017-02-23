@@ -6,6 +6,7 @@ Referenced Strings:
   $1.$2.$3
   %%%04x
   %016X
+  %02d
   %032X
   %032x
   %04X:
@@ -299,7 +300,6 @@ Referenced Strings:
   BasePendingResult
   Boolean
   Button
-  C04B1BFFB0774708339BC273F8A43708
   CACHE_BUSTER
   CACHE_BUSTER_VALUE
   CAMPAIGN_CONTENT_KEY
@@ -1703,7 +1703,6 @@ Referenced Strings:
   checkout_option
   child_index
   choices
-  chronometer
   ci
   cid
   circles
@@ -3493,6 +3492,10 @@ Referenced Strings:
   routeId
   routes
   rowid
+  ru.narod.nod.fifteen.FieldActivity
+  ru.narod.nod.fifteen.HighScoresActivity
+  ru.narod.nod.fifteen.MainActivity
+  ru.narod.nod.fifteen.RulesActivity
   rules
   runtime
   runtimeVersion
@@ -3742,6 +3745,7 @@ Referenced Strings:
   tick
   tid
   time
+  timeCounter
   timeInMillis
   time_active
   time_before_start
@@ -3970,9 +3974,11 @@ Referenced Strings:
   yes
   yyyyMMdd
   z
+  русский
 Marking id:cancel_action:2131624204 used because its prefix matches string pool constant cancel
 Marking integer:cancel_button_image_alpha:2131689474 used because its prefix matches string pool constant cancel
 Marking string:app_name:2131230850 used because its prefix matches string pool constant app_name
+Marking string:app_name_rus:2131230851 used because its prefix matches string pool constant app_name
 Marking declare-styleable:AdsAttrs:-1 used because its prefix matches string pool constant Ads
 Marking styleable:AdsAttrs:-1 used because its prefix matches string pool constant Ads
 Marking id:top:2131624021 used because its prefix matches string pool constant top
@@ -3990,7 +3996,7 @@ Marking styleable:Spinner:-1 used because its prefix matches string pool constan
 Marking attr:sourceClass:2130772236 used because its prefix matches string pool constant source
 Marking id:center:2131624167 used because its prefix matches string pool constant center
 Marking id:start_text:2131624153 used because its prefix matches string pool constant start
-Marking string:interstitial_full_screen:2131230862 used because its prefix matches string pool constant interstitial
+Marking string:interstitial_full_screen:2131230868 used because its prefix matches string pool constant interstitial
 Marking attr:logo:2130772036 used because its prefix matches string pool constant log
 Marking attr:logoDescription:2130772328 used because its prefix matches string pool constant log
 Marking id:logo_only:2131624037 used because its prefix matches string pool constant log
@@ -4028,12 +4034,6 @@ Marking id:text1:2131623987 used because its prefix matches string pool constant
 Marking id:textTitle:2131624163 used because its prefix matches string pool constant text
 Marking id:text_empty_message:2131624175 used because its prefix matches string pool constant text
 Marking id:text_list_view:2131624173 used because its prefix matches string pool constant text
-Marking id:textView:2131624123 used because its prefix matches string pool constant text
-Marking id:textView2:2131624121 used because its prefix matches string pool constant text
-Marking id:textView3:2131624139 used because its prefix matches string pool constant text
-Marking id:textView4:2131624125 used because its prefix matches string pool constant text
-Marking id:textView5:2131624119 used because its prefix matches string pool constant text
-Marking id:textView7:2131624135 used because its prefix matches string pool constant text
 Marking id:status_bar_latest_event_content:2131624205 used because its prefix matches string pool constant status
 Marking integer:status_bar_notification_info_maxnum:2131689480 used because its prefix matches string pool constant status
 Marking string:status_bar_notification_info_overflow:2131230819 used because its prefix matches string pool constant status
@@ -4067,27 +4067,27 @@ Marking color:common_google_signin_btn_text_light_default:2131558436 used becaus
 Marking color:common_google_signin_btn_text_light_disabled:2131558437 used because its prefix matches string pool constant common
 Marking color:common_google_signin_btn_text_light_focused:2131558438 used because its prefix matches string pool constant common
 Marking color:common_google_signin_btn_text_light_pressed:2131558439 used because its prefix matches string pool constant common
-Marking drawable:common_full_open_on_phone:2130837651 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_dark:2130837652 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_dark_disabled:2130837653 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_dark_focused:2130837654 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_dark_normal:2130837655 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_dark_pressed:2130837656 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_light:2130837657 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_light_disabled:2130837658 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_light_focused:2130837659 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_light_normal:2130837660 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_icon_light_pressed:2130837661 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_dark:2130837662 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_dark_disabled:2130837663 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_dark_focused:2130837664 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_dark_normal:2130837665 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_dark_pressed:2130837666 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_light:2130837667 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_light_disabled:2130837668 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_light_focused:2130837669 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_light_normal:2130837670 used because its prefix matches string pool constant common
-Marking drawable:common_google_signin_btn_text_light_pressed:2130837671 used because its prefix matches string pool constant common
+Marking drawable:common_full_open_on_phone:2130837652 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_dark:2130837653 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_dark_disabled:2130837654 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_dark_focused:2130837655 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_dark_normal:2130837656 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_dark_pressed:2130837657 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_light:2130837658 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_light_disabled:2130837659 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_light_focused:2130837660 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_light_normal:2130837661 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_icon_light_pressed:2130837662 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_dark:2130837663 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_dark_disabled:2130837664 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_dark_focused:2130837665 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_dark_normal:2130837666 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_dark_pressed:2130837667 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_light:2130837668 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_light_disabled:2130837669 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_light_focused:2130837670 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_light_normal:2130837671 used because its prefix matches string pool constant common
+Marking drawable:common_google_signin_btn_text_light_pressed:2130837672 used because its prefix matches string pool constant common
 Marking string:common_google_play_services_enable_button:2131230777 used because its prefix matches string pool constant common
 Marking string:common_google_play_services_enable_text:2131230778 used because its prefix matches string pool constant common
 Marking string:common_google_play_services_enable_title:2131230779 used because its prefix matches string pool constant common
@@ -4105,8 +4105,8 @@ Marking string:common_google_play_services_wear_update_text:2131230790 used beca
 Marking string:common_open_on_phone:2131230791 used because its prefix matches string pool constant common
 Marking string:common_signin_button_text:2131230792 used because its prefix matches string pool constant common
 Marking string:common_signin_button_text_long:2131230793 used because its prefix matches string pool constant common
-Marking id:chronometer:2131624118 used because its prefix matches string pool constant chronometer
 Marking id:html:2131624006 used because its prefix matches string pool constant html
+Marking string:version_description:2131230888 used because its prefix matches string pool constant version
 Marking id:volume_item_container:2131624195 used because its prefix matches string pool constant volume
 Marking attr:subtitle:2130772032 used because its prefix matches string pool constant subtitle
 Marking attr:subtitleTextAppearance:2130772315 used because its prefix matches string pool constant subtitle
@@ -4114,7 +4114,8 @@ Marking attr:subtitleTextColor:2130772330 used because its prefix matches string
 Marking attr:subtitleTextStyle:2130772034 used because its prefix matches string pool constant subtitle
 Marking id:subtitle_view:2131624170 used because its prefix matches string pool constant subtitle
 Marking attr:settingsDescription:2130772228 used because its prefix matches string pool constant settings
-Marking string:new_game:2131230864 used because its prefix matches string pool constant new
+Marking string:new_game:2131230871 used because its prefix matches string pool constant new
+Marking string:new_game_rus:2131230872 used because its prefix matches string pool constant new
 Marking id:media_actions:2131624206 used because its prefix matches string pool constant media
 Marking attr:mediaRouteAudioTrackDrawable:2130772009 used because its prefix matches string pool constant media
 Marking attr:mediaRouteButtonStyle:2130772010 used because its prefix matches string pool constant media
@@ -4171,7 +4172,7 @@ Marking attr:windowTransitionStyle:2130772214 used because its prefix matches st
 Marking dimen:notification_large_icon_height:2131296369 used because its prefix matches string pool constant notification
 Marking dimen:notification_large_icon_width:2131296370 used because its prefix matches string pool constant notification
 Marking dimen:notification_subtext_size:2131296371 used because its prefix matches string pool constant notification
-Marking drawable:notification_template_icon_bg:2130837894 used because its prefix matches string pool constant notification
+Marking drawable:notification_template_icon_bg:2130837907 used because its prefix matches string pool constant notification
 Marking layout:notification_media_action:2130968618 used because its prefix matches string pool constant notification
 Marking layout:notification_media_cancel_action:2130968619 used because its prefix matches string pool constant notification
 Marking layout:notification_template_big_media:2130968620 used because its prefix matches string pool constant notification
@@ -4252,8 +4253,8 @@ Marking id:ad_label:2131624148 used because its prefix matches string pool const
 Marking id:adjust_height:2131623996 used because its prefix matches string pool constant ad
 Marking id:adjust_width:2131623997 used because its prefix matches string pool constant ad
 Marking id:adViewField:2131624120 used because its prefix matches string pool constant ad
-Marking id:adViewHS:2131624127 used because its prefix matches string pool constant ad
-Marking id:adViewMain:2131624134 used because its prefix matches string pool constant ad
+Marking id:adViewHS:2131624128 used because its prefix matches string pool constant ad
+Marking id:adViewMain:2131624135 used because its prefix matches string pool constant ad
 Marking attr:ambientEnabled:2130772263 used because its prefix matches string pool constant am
 Marking id:android_pay:2131624047 used because its prefix matches string pool constant an
 Marking id:android_pay_dark:2131624038 used because its prefix matches string pool constant an
@@ -4429,61 +4430,61 @@ Marking dimen:cast_mini_controller_icon_width:2131296359 used because its prefix
 Marking dimen:cast_notification_image_size:2131296360 used because its prefix matches string pool constant ca
 Marking dimen:cast_tracks_chooser_dialog_no_message_text_size:2131296361 used because its prefix matches string pool constant ca
 Marking dimen:cast_tracks_chooser_dialog_row_text_size:2131296362 used because its prefix matches string pool constant ca
-Marking drawable:cast_abc_scrubber_control_off_mtrl_alpha:2130837596 used because its prefix matches string pool constant ca
-Marking drawable:cast_abc_scrubber_control_to_pressed_mtrl_000:2130837597 used because its prefix matches string pool constant ca
-Marking drawable:cast_abc_scrubber_control_to_pressed_mtrl_005:2130837598 used because its prefix matches string pool constant ca
-Marking drawable:cast_abc_scrubber_primary_mtrl_alpha:2130837599 used because its prefix matches string pool constant ca
-Marking drawable:cast_album_art_placeholder:2130837600 used because its prefix matches string pool constant ca
-Marking drawable:cast_album_art_placeholder_large:2130837601 used because its prefix matches string pool constant ca
-Marking drawable:cast_expanded_controller_actionbar_bg_gradient_light:2130837602 used because its prefix matches string pool constant ca
-Marking drawable:cast_expanded_controller_bg_gradient_light:2130837603 used because its prefix matches string pool constant ca
-Marking drawable:cast_expanded_controller_seekbar_thumb:2130837604 used because its prefix matches string pool constant ca
-Marking drawable:cast_expanded_controller_seekbar_track:2130837605 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_closed_caption:2130837606 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_forward30:2130837607 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_mute:2130837608 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_pause:2130837609 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_play:2130837610 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_rewind30:2130837611 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_skip_next:2130837612 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_skip_previous:2130837613 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_expanded_controller_stop:2130837614 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_closed_caption:2130837615 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_forward30:2130837616 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_mute:2130837617 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_pause:2130837618 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_pause_large:2130837619 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_play:2130837620 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_play_large:2130837621 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_rewind30:2130837622 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_skip_next:2130837623 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_skip_prev:2130837624 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_stop:2130837625 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_mini_controller_stop_large:2130837626 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_0:2130837627 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_1:2130837628 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_2:2130837629 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_connecting:2130837630 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_disconnect:2130837631 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_forward:2130837632 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_forward10:2130837633 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_forward30:2130837634 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_on:2130837635 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_pause:2130837636 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_play:2130837637 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_rewind:2130837638 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_rewind10:2130837639 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_rewind30:2130837640 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_skip_next:2130837641 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_skip_prev:2130837642 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_small_icon:2130837643 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_notification_stop_live_stream:2130837644 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_stop_circle_filled_grey600:2130837645 used because its prefix matches string pool constant ca
-Marking drawable:cast_ic_stop_circle_filled_white:2130837646 used because its prefix matches string pool constant ca
-Marking drawable:cast_mini_controller_gradient_light:2130837647 used because its prefix matches string pool constant ca
-Marking drawable:cast_mini_controller_img_placeholder:2130837648 used because its prefix matches string pool constant ca
-Marking drawable:cast_mini_controller_progress_drawable:2130837649 used because its prefix matches string pool constant ca
-Marking drawable:cast_skip_ad_label_border:2130837650 used because its prefix matches string pool constant ca
+Marking drawable:cast_abc_scrubber_control_off_mtrl_alpha:2130837597 used because its prefix matches string pool constant ca
+Marking drawable:cast_abc_scrubber_control_to_pressed_mtrl_000:2130837598 used because its prefix matches string pool constant ca
+Marking drawable:cast_abc_scrubber_control_to_pressed_mtrl_005:2130837599 used because its prefix matches string pool constant ca
+Marking drawable:cast_abc_scrubber_primary_mtrl_alpha:2130837600 used because its prefix matches string pool constant ca
+Marking drawable:cast_album_art_placeholder:2130837601 used because its prefix matches string pool constant ca
+Marking drawable:cast_album_art_placeholder_large:2130837602 used because its prefix matches string pool constant ca
+Marking drawable:cast_expanded_controller_actionbar_bg_gradient_light:2130837603 used because its prefix matches string pool constant ca
+Marking drawable:cast_expanded_controller_bg_gradient_light:2130837604 used because its prefix matches string pool constant ca
+Marking drawable:cast_expanded_controller_seekbar_thumb:2130837605 used because its prefix matches string pool constant ca
+Marking drawable:cast_expanded_controller_seekbar_track:2130837606 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_closed_caption:2130837607 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_forward30:2130837608 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_mute:2130837609 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_pause:2130837610 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_play:2130837611 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_rewind30:2130837612 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_skip_next:2130837613 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_skip_previous:2130837614 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_expanded_controller_stop:2130837615 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_closed_caption:2130837616 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_forward30:2130837617 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_mute:2130837618 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_pause:2130837619 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_pause_large:2130837620 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_play:2130837621 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_play_large:2130837622 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_rewind30:2130837623 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_skip_next:2130837624 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_skip_prev:2130837625 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_stop:2130837626 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_mini_controller_stop_large:2130837627 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_0:2130837628 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_1:2130837629 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_2:2130837630 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_connecting:2130837631 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_disconnect:2130837632 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_forward:2130837633 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_forward10:2130837634 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_forward30:2130837635 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_on:2130837636 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_pause:2130837637 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_play:2130837638 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_rewind:2130837639 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_rewind10:2130837640 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_rewind30:2130837641 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_skip_next:2130837642 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_skip_prev:2130837643 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_small_icon:2130837644 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_notification_stop_live_stream:2130837645 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_stop_circle_filled_grey600:2130837646 used because its prefix matches string pool constant ca
+Marking drawable:cast_ic_stop_circle_filled_white:2130837647 used because its prefix matches string pool constant ca
+Marking drawable:cast_mini_controller_gradient_light:2130837648 used because its prefix matches string pool constant ca
+Marking drawable:cast_mini_controller_img_placeholder:2130837649 used because its prefix matches string pool constant ca
+Marking drawable:cast_mini_controller_progress_drawable:2130837650 used because its prefix matches string pool constant ca
+Marking drawable:cast_skip_ad_label_border:2130837651 used because its prefix matches string pool constant ca
 Marking id:cast_button_type_closed_caption:2131623940 used because its prefix matches string pool constant ca
 Marking id:cast_button_type_custom:2131623941 used because its prefix matches string pool constant ca
 Marking id:cast_button_type_empty:2131623942 used because its prefix matches string pool constant ca
@@ -4518,8 +4519,8 @@ Marking string:cast_forward:2131230750 used because its prefix matches string po
 Marking string:cast_forward_10:2131230751 used because its prefix matches string pool constant ca
 Marking string:cast_forward_30:2131230752 used because its prefix matches string pool constant ca
 Marking string:cast_intro_overlay_button_text:2131230753 used because its prefix matches string pool constant ca
-Marking string:cast_invalid_stream_duration_text:2131230853 used because its prefix matches string pool constant ca
-Marking string:cast_invalid_stream_position_text:2131230854 used because its prefix matches string pool constant ca
+Marking string:cast_invalid_stream_duration_text:2131230855 used because its prefix matches string pool constant ca
+Marking string:cast_invalid_stream_position_text:2131230856 used because its prefix matches string pool constant ca
 Marking string:cast_mute:2131230754 used because its prefix matches string pool constant ca
 Marking string:cast_notification_connected_message:2131230755 used because its prefix matches string pool constant ca
 Marking string:cast_notification_connecting_message:2131230756 used because its prefix matches string pool constant ca
@@ -4546,7 +4547,7 @@ Marking string:cast_unmute:2131230776 used because its prefix matches string poo
 Marking attr:checkboxStyle:2130772174 used because its prefix matches string pool constant ch
 Marking attr:checkedTextViewStyle:2130772175 used because its prefix matches string pool constant ch
 Marking id:checkbox:2131624072 used because its prefix matches string pool constant ch
-Marking id:chronometer:2131624118 used because its prefix matches string pool constant ch
+Marking id:chronometer:2131624121 used because its prefix matches string pool constant ch
 Marking attr:circleCrop:2130772246 used because its prefix matches string pool constant ci
 Marking attr:closeIcon:2130772283 used because its prefix matches string pool constant cl
 Marking attr:closeItemLayout:2130772056 used because its prefix matches string pool constant cl
@@ -4572,10 +4573,10 @@ Marking attr:contentInsetStartWithNavigation:2130772052 used because its prefix 
 Marking id:contentPanel:2131624064 used because its prefix matches string pool constant content
 Marking attr:contentProviderUri:2130772205 used because its prefix matches string pool constant content
 Marking id:classic:2131624041 used because its prefix matches string pool constant class
-Marking id:hsDate:2131624126 used because its prefix matches string pool constant hs
-Marking id:hsText:2131624124 used because its prefix matches string pool constant hs
-Marking string:hsdate:2131230860 used because its prefix matches string pool constant hs
-Marking string:hstext:2131230861 used because its prefix matches string pool constant hs
+Marking id:hsDate:2131624127 used because its prefix matches string pool constant hs
+Marking id:hsText:2131624125 used because its prefix matches string pool constant hs
+Marking string:hsdate:2131230866 used because its prefix matches string pool constant hs
+Marking string:hstext:2131230867 used because its prefix matches string pool constant hs
 Marking id:html:2131624006 used because its prefix matches string pool constant ht
 Marking id:ifRoom:2131624003 used because its prefix matches string pool constant if
 Marking attr:itemPadding:2130772046 used because its prefix matches string pool constant it
@@ -4613,7 +4614,7 @@ Marking id:expanded_controller_layout:2131624141 used because its prefix matches
 Marking dimen:notification_large_icon_height:2131296369 used because its prefix matches string pool constant no
 Marking dimen:notification_large_icon_width:2131296370 used because its prefix matches string pool constant no
 Marking dimen:notification_subtext_size:2131296371 used because its prefix matches string pool constant no
-Marking drawable:notification_template_icon_bg:2130837894 used because its prefix matches string pool constant no
+Marking drawable:notification_template_icon_bg:2130837907 used because its prefix matches string pool constant no
 Marking id:none:2131623965 used because its prefix matches string pool constant no
 Marking id:normal:2131623961 used because its prefix matches string pool constant no
 Marking layout:notification_media_action:2130968618 used because its prefix matches string pool constant no
@@ -4627,7 +4628,8 @@ Marking layout:notification_template_part_time:2130968625 used because its prefi
 Marking attr:noIndex:2130772294 used because its prefix matches string pool constant no
 Marking id:omnibox_title_section:2131624014 used because its prefix matches string pool constant om
 Marking id:omnibox_url_section:2131624015 used because its prefix matches string pool constant om
-Marking string:on_the:2131230865 used because its prefix matches string pool constant on
+Marking string:on_the:2131230873 used because its prefix matches string pool constant on
+Marking string:on_the_rus:2131230874 used because its prefix matches string pool constant on
 Marking attr:preserveIconSpacing:2130772275 used because its prefix matches string pool constant pr
 Marking attr:progressBarPadding:2130772045 used because its prefix matches string pool constant pr
 Marking attr:progressBarStyle:2130772043 used because its prefix matches string pool constant pr
@@ -4699,13 +4701,17 @@ Marking color:switch_thumb_material_dark:2131558519 used because its prefix matc
 Marking color:switch_thumb_material_light:2131558520 used because its prefix matches string pool constant sw
 Marking color:switch_thumb_normal_material_dark:2131558484 used because its prefix matches string pool constant sw
 Marking color:switch_thumb_normal_material_light:2131558485 used because its prefix matches string pool constant sw
-Marking string:rules:2131230866 used because its prefix matches string pool constant rules
-Marking string:rules_:2131230867 used because its prefix matches string pool constant rules
-Marking string:rules_description:2131230868 used because its prefix matches string pool constant rules
+Marking id:rulesTV:2131624139 used because its prefix matches string pool constant rules
+Marking string:rules:2131230875 used because its prefix matches string pool constant rules
+Marking string:rules_:2131230876 used because its prefix matches string pool constant rules
+Marking string:rules__rus:2131230877 used because its prefix matches string pool constant rules
+Marking string:rules_description:2131230878 used because its prefix matches string pool constant rules
+Marking string:rules_description_rus:2131230879 used because its prefix matches string pool constant rules
+Marking string:rules_rus:2131230880 used because its prefix matches string pool constant rules
 Marking id:none:2131623965 used because its prefix matches string pool constant none
 Marking id:dark:2131623978 used because its prefix matches string pool constant dark
-Marking drawable:powered_by_google_dark:2130837847 used because its prefix matches string pool constant power
-Marking drawable:powered_by_google_light:2130837848 used because its prefix matches string pool constant power
+Marking drawable:powered_by_google_dark:2130837854 used because its prefix matches string pool constant power
+Marking drawable:powered_by_google_light:2130837855 used because its prefix matches string pool constant power
 Marking id:blurred_background_image_view:2131624143 used because its prefix matches string pool constant blur
 Marking attr:listChoiceBackgroundIndicator:2130772152 used because its prefix matches string pool constant list
 Marking attr:listDividerAlertDialog:2130772115 used because its prefix matches string pool constant list
@@ -4729,13 +4735,15 @@ Marking attr:popupMenuStyle:2130772131 used because its prefix matches string po
 Marking attr:popupTheme:2130772055 used because its prefix matches string pool constant pop
 Marking attr:popupWindowStyle:2130772132 used because its prefix matches string pool constant pop
 Marking id:time:2131624209 used because its prefix matches string pool constant time
-Marking string:time:2131230873 used because its prefix matches string pool constant time
+Marking id:timerValue:2131624118 used because its prefix matches string pool constant time
+Marking string:time:2131230886 used because its prefix matches string pool constant time
+Marking string:time_rus:2131230887 used because its prefix matches string pool constant time
 Marking id:light:2131623979 used because its prefix matches string pool constant light
 Marking string:debug_menu_ad_information:2131230796 used because its prefix matches string pool constant debug
 Marking string:debug_menu_creative_preview:2131230797 used because its prefix matches string pool constant debug
 Marking string:debug_menu_title:2131230798 used because its prefix matches string pool constant debug
 Marking string:debug_menu_troubleshooting:2131230799 used because its prefix matches string pool constant debug
-Marking string:banner_home_footer:2131230851 used because its prefix matches string pool constant banner
+Marking string:banner_home_footer:2131230852 used because its prefix matches string pool constant banner
 Marking attr:trimmable:2130772206 used because its prefix matches string pool constant trim
 Marking declare-styleable:ListPopupWindow:-1 used because its prefix matches string pool constant ListPopupWindow
 Marking styleable:ListPopupWindow:-1 used because its prefix matches string pool constant ListPopupWindow
@@ -4795,7 +4803,7 @@ Marking id:intent_activity:2131623982 used because its prefix matches string poo
 Marking id:intent_data:2131623983 used because its prefix matches string pool constant int
 Marking id:intent_data_id:2131623984 used because its prefix matches string pool constant int
 Marking id:intent_extra_data:2131623985 used because its prefix matches string pool constant int
-Marking string:interstitial_full_screen:2131230862 used because its prefix matches string pool constant int
+Marking string:interstitial_full_screen:2131230868 used because its prefix matches string pool constant int
 Marking attr:closeIcon:2130772283 used because its prefix matches string pool constant close
 Marking attr:closeItemLayout:2130772056 used because its prefix matches string pool constant close
 Marking id:add:2131623970 used because its prefix matches string pool constant add
@@ -4805,6 +4813,7 @@ Marking attr:ratingBarStyleIndicator:2130772179 used because its prefix matches 
 Marking attr:ratingBarStyleSmall:2130772180 used because its prefix matches string pool constant rating
 Marking attr:appTheme:2130772336 used because its prefix matches string pool constant app
 Marking string:app_name:2131230850 used because its prefix matches string pool constant app
+Marking string:app_name_rus:2131230851 used because its prefix matches string pool constant app
 Marking id:android_pay:2131624047 used because its prefix matches string pool constant android
 Marking id:android_pay_dark:2131624038 used because its prefix matches string pool constant android
 Marking id:android_pay_light:2131624039 used because its prefix matches string pool constant android
@@ -5350,35 +5359,35 @@ style:Widget_AppCompat_Spinner_Underlined:2131362139 => [style:Base_Widget_AppCo
 style:Widget_AppCompat_TextView_SpinnerItem:2131362140 => [style:Base_Widget_AppCompat_TextView_SpinnerItem:2131361917]
 style:Widget_AppCompat_Toolbar:2131362141 => [style:Base_Widget_AppCompat_Toolbar:2131361983]
 style:Widget_AppCompat_Toolbar_Button_Navigation:2131362142 => [style:Base_Widget_AppCompat_Toolbar_Button_Navigation:2131361918]
-drawable:ic_collapse:2130837683 => [drawable:ic_collapse_00000:2130837684, drawable:ic_collapse_00001:2130837685, drawable:ic_collapse_00002:2130837686, drawable:ic_collapse_00003:2130837687, drawable:ic_collapse_00004:2130837688, drawable:ic_collapse_00005:2130837689, drawable:ic_collapse_00006:2130837690, drawable:ic_collapse_00007:2130837691, drawable:ic_collapse_00008:2130837692, drawable:ic_collapse_00009:2130837693, drawable:ic_collapse_00010:2130837694, drawable:ic_collapse_00011:2130837695, drawable:ic_collapse_00012:2130837696, drawable:ic_collapse_00013:2130837697, drawable:ic_collapse_00014:2130837698, drawable:ic_collapse_00015:2130837699]
-drawable:ic_expand:2130837700 => [drawable:ic_expand_00000:2130837701, drawable:ic_expand_00001:2130837702, drawable:ic_expand_00002:2130837703, drawable:ic_expand_00003:2130837704, drawable:ic_expand_00004:2130837705, drawable:ic_expand_00005:2130837706, drawable:ic_expand_00006:2130837707, drawable:ic_expand_00007:2130837708, drawable:ic_expand_00008:2130837709, drawable:ic_expand_00009:2130837710, drawable:ic_expand_00010:2130837711, drawable:ic_expand_00011:2130837712, drawable:ic_expand_00012:2130837713, drawable:ic_expand_00013:2130837714, drawable:ic_expand_00014:2130837715, drawable:ic_expand_00015:2130837716]
-drawable:mr_dialog_material_background_dark:2130837828 => [color:background_floating_material_dark:2131558406]
-drawable:mr_dialog_material_background_light:2130837829 => [color:background_floating_material_light:2131558407]
-drawable:mr_ic_audiotrack_light:2130837830 => [drawable:ic_audiotrack_light:2130837674]
-drawable:mr_ic_cast_dark:2130837831 => [drawable:ic_cast_dark:2130837675]
-drawable:mr_ic_cast_light:2130837832 => [drawable:ic_cast_light:2130837678]
-drawable:mr_ic_close_dark:2130837833 => [drawable:ic_close_dark:2130837681]
-drawable:mr_ic_close_light:2130837834 => [drawable:ic_close_light:2130837682]
-drawable:mr_ic_media_route_connecting_dark:2130837835 => [drawable:ic_media_route_connecting_00_dark:2130837719, drawable:ic_media_route_connecting_01_dark:2130837721, drawable:ic_media_route_connecting_02_dark:2130837723, drawable:ic_media_route_connecting_03_dark:2130837725, drawable:ic_media_route_connecting_04_dark:2130837727, drawable:ic_media_route_connecting_05_dark:2130837729, drawable:ic_media_route_connecting_06_dark:2130837731, drawable:ic_media_route_connecting_07_dark:2130837733, drawable:ic_media_route_connecting_08_dark:2130837735, drawable:ic_media_route_connecting_09_dark:2130837737, drawable:ic_media_route_connecting_10_dark:2130837739, drawable:ic_media_route_connecting_11_dark:2130837741, drawable:ic_media_route_connecting_12_dark:2130837743, drawable:ic_media_route_connecting_13_dark:2130837745, drawable:ic_media_route_connecting_14_dark:2130837747, drawable:ic_media_route_connecting_15_dark:2130837749, drawable:ic_media_route_connecting_16_dark:2130837751, drawable:ic_media_route_connecting_17_dark:2130837753, drawable:ic_media_route_connecting_18_dark:2130837755, drawable:ic_media_route_connecting_19_dark:2130837757, drawable:ic_media_route_connecting_20_dark:2130837759, drawable:ic_media_route_connecting_21_dark:2130837761, drawable:ic_media_route_connecting_22_dark:2130837763]
-drawable:mr_ic_media_route_connecting_light:2130837836 => [drawable:ic_media_route_connecting_00_light:2130837720, drawable:ic_media_route_connecting_01_light:2130837722, drawable:ic_media_route_connecting_02_light:2130837724, drawable:ic_media_route_connecting_03_light:2130837726, drawable:ic_media_route_connecting_04_light:2130837728, drawable:ic_media_route_connecting_05_light:2130837730, drawable:ic_media_route_connecting_06_light:2130837732, drawable:ic_media_route_connecting_07_light:2130837734, drawable:ic_media_route_connecting_08_light:2130837736, drawable:ic_media_route_connecting_09_light:2130837738, drawable:ic_media_route_connecting_10_light:2130837740, drawable:ic_media_route_connecting_11_light:2130837742, drawable:ic_media_route_connecting_12_light:2130837744, drawable:ic_media_route_connecting_13_light:2130837746, drawable:ic_media_route_connecting_14_light:2130837748, drawable:ic_media_route_connecting_15_light:2130837750, drawable:ic_media_route_connecting_16_light:2130837752, drawable:ic_media_route_connecting_17_light:2130837754, drawable:ic_media_route_connecting_18_light:2130837756, drawable:ic_media_route_connecting_19_light:2130837758, drawable:ic_media_route_connecting_20_light:2130837760, drawable:ic_media_route_connecting_21_light:2130837762, drawable:ic_media_route_connecting_22_light:2130837764]
-drawable:mr_ic_media_route_mono_dark:2130837837 => [drawable:mr_ic_media_route_on_dark:2130837839, drawable:mr_ic_media_route_connecting_dark:2130837835, drawable:ic_media_route_off_mono_dark:2130837766, drawable:ic_media_route_disabled_mono_dark:2130837765]
-drawable:mr_ic_media_route_mono_light:2130837838 => [drawable:mr_ic_media_route_on_light:2130837840, drawable:mr_ic_media_route_connecting_light:2130837836, drawable:ic_cast_off_light:2130837679, drawable:ic_cast_disabled_light:2130837676]
-drawable:mr_ic_media_route_on_dark:2130837839 => [drawable:ic_media_route_on_00_dark:2130837767, drawable:ic_media_route_on_01_dark:2130837769, drawable:ic_media_route_on_02_dark:2130837771, drawable:ic_media_route_on_03_dark:2130837773, drawable:ic_media_route_on_04_dark:2130837775, drawable:ic_media_route_on_05_dark:2130837777, drawable:ic_media_route_on_06_dark:2130837779, drawable:ic_media_route_on_07_dark:2130837781, drawable:ic_media_route_on_08_dark:2130837783, drawable:ic_media_route_on_09_dark:2130837785, drawable:ic_media_route_on_10_dark:2130837787, drawable:ic_media_route_on_11_dark:2130837789, drawable:ic_media_route_on_12_dark:2130837791, drawable:ic_media_route_on_13_dark:2130837793, drawable:ic_media_route_on_14_dark:2130837795, drawable:ic_media_route_on_15_dark:2130837797, drawable:ic_media_route_on_16_dark:2130837799, drawable:ic_media_route_on_17_dark:2130837801, drawable:ic_media_route_on_18_dark:2130837803, drawable:ic_media_route_on_19_dark:2130837805, drawable:ic_media_route_on_20_dark:2130837807, drawable:ic_media_route_on_21_dark:2130837809, drawable:ic_media_route_on_22_dark:2130837811]
-drawable:mr_ic_media_route_on_light:2130837840 => [drawable:ic_media_route_on_00_light:2130837768, drawable:ic_media_route_on_01_light:2130837770, drawable:ic_media_route_on_02_light:2130837772, drawable:ic_media_route_on_03_light:2130837774, drawable:ic_media_route_on_04_light:2130837776, drawable:ic_media_route_on_05_light:2130837778, drawable:ic_media_route_on_06_light:2130837780, drawable:ic_media_route_on_07_light:2130837782, drawable:ic_media_route_on_08_light:2130837784, drawable:ic_media_route_on_09_light:2130837786, drawable:ic_media_route_on_10_light:2130837788, drawable:ic_media_route_on_11_light:2130837790, drawable:ic_media_route_on_12_light:2130837792, drawable:ic_media_route_on_13_light:2130837794, drawable:ic_media_route_on_14_light:2130837796, drawable:ic_media_route_on_15_light:2130837798, drawable:ic_media_route_on_16_light:2130837800, drawable:ic_media_route_on_17_light:2130837802, drawable:ic_media_route_on_18_light:2130837804, drawable:ic_media_route_on_19_light:2130837806, drawable:ic_media_route_on_20_light:2130837808, drawable:ic_media_route_on_21_light:2130837810, drawable:ic_media_route_on_22_light:2130837812]
-drawable:mr_ic_pause_dark:2130837841 => [drawable:ic_pause_dark:2130837814]
-drawable:mr_ic_pause_light:2130837842 => [drawable:ic_pause_light:2130837815]
-drawable:mr_ic_play_dark:2130837843 => [drawable:ic_play_dark:2130837816]
-drawable:mr_ic_play_light:2130837844 => [drawable:ic_play_light:2130837817]
+drawable:ic_collapse:2130837690 => [drawable:ic_collapse_00000:2130837691, drawable:ic_collapse_00001:2130837692, drawable:ic_collapse_00002:2130837693, drawable:ic_collapse_00003:2130837694, drawable:ic_collapse_00004:2130837695, drawable:ic_collapse_00005:2130837696, drawable:ic_collapse_00006:2130837697, drawable:ic_collapse_00007:2130837698, drawable:ic_collapse_00008:2130837699, drawable:ic_collapse_00009:2130837700, drawable:ic_collapse_00010:2130837701, drawable:ic_collapse_00011:2130837702, drawable:ic_collapse_00012:2130837703, drawable:ic_collapse_00013:2130837704, drawable:ic_collapse_00014:2130837705, drawable:ic_collapse_00015:2130837706]
+drawable:ic_expand:2130837707 => [drawable:ic_expand_00000:2130837708, drawable:ic_expand_00001:2130837709, drawable:ic_expand_00002:2130837710, drawable:ic_expand_00003:2130837711, drawable:ic_expand_00004:2130837712, drawable:ic_expand_00005:2130837713, drawable:ic_expand_00006:2130837714, drawable:ic_expand_00007:2130837715, drawable:ic_expand_00008:2130837716, drawable:ic_expand_00009:2130837717, drawable:ic_expand_00010:2130837718, drawable:ic_expand_00011:2130837719, drawable:ic_expand_00012:2130837720, drawable:ic_expand_00013:2130837721, drawable:ic_expand_00014:2130837722, drawable:ic_expand_00015:2130837723]
+drawable:mr_dialog_material_background_dark:2130837835 => [color:background_floating_material_dark:2131558406]
+drawable:mr_dialog_material_background_light:2130837836 => [color:background_floating_material_light:2131558407]
+drawable:mr_ic_audiotrack_light:2130837837 => [drawable:ic_audiotrack_light:2130837681]
+drawable:mr_ic_cast_dark:2130837838 => [drawable:ic_cast_dark:2130837682]
+drawable:mr_ic_cast_light:2130837839 => [drawable:ic_cast_light:2130837685]
+drawable:mr_ic_close_dark:2130837840 => [drawable:ic_close_dark:2130837688]
+drawable:mr_ic_close_light:2130837841 => [drawable:ic_close_light:2130837689]
+drawable:mr_ic_media_route_connecting_dark:2130837842 => [drawable:ic_media_route_connecting_00_dark:2130837726, drawable:ic_media_route_connecting_01_dark:2130837728, drawable:ic_media_route_connecting_02_dark:2130837730, drawable:ic_media_route_connecting_03_dark:2130837732, drawable:ic_media_route_connecting_04_dark:2130837734, drawable:ic_media_route_connecting_05_dark:2130837736, drawable:ic_media_route_connecting_06_dark:2130837738, drawable:ic_media_route_connecting_07_dark:2130837740, drawable:ic_media_route_connecting_08_dark:2130837742, drawable:ic_media_route_connecting_09_dark:2130837744, drawable:ic_media_route_connecting_10_dark:2130837746, drawable:ic_media_route_connecting_11_dark:2130837748, drawable:ic_media_route_connecting_12_dark:2130837750, drawable:ic_media_route_connecting_13_dark:2130837752, drawable:ic_media_route_connecting_14_dark:2130837754, drawable:ic_media_route_connecting_15_dark:2130837756, drawable:ic_media_route_connecting_16_dark:2130837758, drawable:ic_media_route_connecting_17_dark:2130837760, drawable:ic_media_route_connecting_18_dark:2130837762, drawable:ic_media_route_connecting_19_dark:2130837764, drawable:ic_media_route_connecting_20_dark:2130837766, drawable:ic_media_route_connecting_21_dark:2130837768, drawable:ic_media_route_connecting_22_dark:2130837770]
+drawable:mr_ic_media_route_connecting_light:2130837843 => [drawable:ic_media_route_connecting_00_light:2130837727, drawable:ic_media_route_connecting_01_light:2130837729, drawable:ic_media_route_connecting_02_light:2130837731, drawable:ic_media_route_connecting_03_light:2130837733, drawable:ic_media_route_connecting_04_light:2130837735, drawable:ic_media_route_connecting_05_light:2130837737, drawable:ic_media_route_connecting_06_light:2130837739, drawable:ic_media_route_connecting_07_light:2130837741, drawable:ic_media_route_connecting_08_light:2130837743, drawable:ic_media_route_connecting_09_light:2130837745, drawable:ic_media_route_connecting_10_light:2130837747, drawable:ic_media_route_connecting_11_light:2130837749, drawable:ic_media_route_connecting_12_light:2130837751, drawable:ic_media_route_connecting_13_light:2130837753, drawable:ic_media_route_connecting_14_light:2130837755, drawable:ic_media_route_connecting_15_light:2130837757, drawable:ic_media_route_connecting_16_light:2130837759, drawable:ic_media_route_connecting_17_light:2130837761, drawable:ic_media_route_connecting_18_light:2130837763, drawable:ic_media_route_connecting_19_light:2130837765, drawable:ic_media_route_connecting_20_light:2130837767, drawable:ic_media_route_connecting_21_light:2130837769, drawable:ic_media_route_connecting_22_light:2130837771]
+drawable:mr_ic_media_route_mono_dark:2130837844 => [drawable:mr_ic_media_route_on_dark:2130837846, drawable:mr_ic_media_route_connecting_dark:2130837842, drawable:ic_media_route_off_mono_dark:2130837773, drawable:ic_media_route_disabled_mono_dark:2130837772]
+drawable:mr_ic_media_route_mono_light:2130837845 => [drawable:mr_ic_media_route_on_light:2130837847, drawable:mr_ic_media_route_connecting_light:2130837843, drawable:ic_cast_off_light:2130837686, drawable:ic_cast_disabled_light:2130837683]
+drawable:mr_ic_media_route_on_dark:2130837846 => [drawable:ic_media_route_on_00_dark:2130837774, drawable:ic_media_route_on_01_dark:2130837776, drawable:ic_media_route_on_02_dark:2130837778, drawable:ic_media_route_on_03_dark:2130837780, drawable:ic_media_route_on_04_dark:2130837782, drawable:ic_media_route_on_05_dark:2130837784, drawable:ic_media_route_on_06_dark:2130837786, drawable:ic_media_route_on_07_dark:2130837788, drawable:ic_media_route_on_08_dark:2130837790, drawable:ic_media_route_on_09_dark:2130837792, drawable:ic_media_route_on_10_dark:2130837794, drawable:ic_media_route_on_11_dark:2130837796, drawable:ic_media_route_on_12_dark:2130837798, drawable:ic_media_route_on_13_dark:2130837800, drawable:ic_media_route_on_14_dark:2130837802, drawable:ic_media_route_on_15_dark:2130837804, drawable:ic_media_route_on_16_dark:2130837806, drawable:ic_media_route_on_17_dark:2130837808, drawable:ic_media_route_on_18_dark:2130837810, drawable:ic_media_route_on_19_dark:2130837812, drawable:ic_media_route_on_20_dark:2130837814, drawable:ic_media_route_on_21_dark:2130837816, drawable:ic_media_route_on_22_dark:2130837818]
+drawable:mr_ic_media_route_on_light:2130837847 => [drawable:ic_media_route_on_00_light:2130837775, drawable:ic_media_route_on_01_light:2130837777, drawable:ic_media_route_on_02_light:2130837779, drawable:ic_media_route_on_03_light:2130837781, drawable:ic_media_route_on_04_light:2130837783, drawable:ic_media_route_on_05_light:2130837785, drawable:ic_media_route_on_06_light:2130837787, drawable:ic_media_route_on_07_light:2130837789, drawable:ic_media_route_on_08_light:2130837791, drawable:ic_media_route_on_09_light:2130837793, drawable:ic_media_route_on_10_light:2130837795, drawable:ic_media_route_on_11_light:2130837797, drawable:ic_media_route_on_12_light:2130837799, drawable:ic_media_route_on_13_light:2130837801, drawable:ic_media_route_on_14_light:2130837803, drawable:ic_media_route_on_15_light:2130837805, drawable:ic_media_route_on_16_light:2130837807, drawable:ic_media_route_on_17_light:2130837809, drawable:ic_media_route_on_18_light:2130837811, drawable:ic_media_route_on_19_light:2130837813, drawable:ic_media_route_on_20_light:2130837815, drawable:ic_media_route_on_21_light:2130837817, drawable:ic_media_route_on_22_light:2130837819]
+drawable:mr_ic_pause_dark:2130837848 => [drawable:ic_pause_dark:2130837821]
+drawable:mr_ic_pause_light:2130837849 => [drawable:ic_pause_light:2130837822]
+drawable:mr_ic_play_dark:2130837850 => [drawable:ic_play_dark:2130837823]
+drawable:mr_ic_play_light:2130837851 => [drawable:ic_play_light:2130837824]
 layout:mr_chooser_dialog:2130968612 => [string:mr_chooser_searching:2131230802]
 layout:mr_chooser_list_item:2130968613 => [attr:mediaRouteChooserPrimaryTextStyle:2130772012, attr:mediaRouteChooserSecondaryTextStyle:2130772013]
 layout:mr_controller_material_dialog_b:2130968614 => [attr:MediaRouteControllerWindowBackground:2130771968, attr:mediaRouteControllerTitleTextStyle:2130772019, attr:selectableItemBackgroundBorderless:2130772124, string:mr_controller_close_description:2131230806, attr:mediaRouteCloseDrawable:2130772014, attr:colorPrimary:2130772153, string:mr_controller_album_art:2131230804, layout:mr_playback_control:2130968616, layout:mr_volume_control:2130968617, dimen:mr_controller_volume_group_list_padding_top:2131296368, layout:abc_alert_dialog_button_bar_material:2130968585]
 layout:mr_controller_volume_item:2130968615 => [dimen:mr_controller_volume_group_list_item_height:2131296265, attr:mediaRouteControllerSecondaryTextStyle:2130772018, dimen:mr_controller_volume_group_list_item_icon_size:2131296266, attr:mediaRouteAudioTrackDrawable:2130772009]
 layout:mr_playback_control:2130968616 => [attr:selectableItemBackgroundBorderless:2130772124, string:mr_controller_play:2131230813, id:mr_control_play_pause:2131624198, attr:mediaRouteControllerPrimaryTextStyle:2130772017, attr:mediaRouteControllerSecondaryTextStyle:2130772018]
 layout:mr_volume_control:2130968617 => [attr:mediaRouteAudioTrackDrawable:2130772009, attr:selectableItemBackgroundBorderless:2130772124]
-style:Theme_MediaRouter:2131362056 => [style:Widget_MediaRouter_MediaRouteButton:2131362161, drawable:mr_dialog_material_background_dark:2130837828, drawable:ic_media_route_off_mono_dark:2130837766, drawable:mr_ic_media_route_connecting_dark:2130837835, drawable:mr_ic_media_route_on_dark:2130837839, drawable:mr_ic_close_dark:2130837833, drawable:mr_ic_play_dark:2130837843, drawable:mr_ic_pause_dark:2130837841, drawable:mr_ic_cast_dark:2130837831, drawable:ic_audiotrack:2130837673, drawable:ic_cast_white:2130837680, drawable:ic_tv_dark:2130837826, drawable:ic_speaker_dark:2130837822, drawable:ic_speaker_group_dark:2130837823, style:Widget_MediaRouter_ChooserText_Primary_Dark:2131362145, style:Widget_MediaRouter_ChooserText_Secondary_Dark:2131362148, style:Widget_MediaRouter_ControllerText_Title_Dark:2131362158, style:Widget_MediaRouter_ControllerText_Primary_Dark:2131362152, style:Widget_MediaRouter_ControllerText_Secondary_Dark:2131362155, style:Theme_MediaRouter_Light:2131362057, style:Theme_MediaRouter_Light_DarkControlPanel:2131362058, style:Theme_MediaRouter_LightControlPanel:2131362059]
-style:Theme_MediaRouter_Light:2131362057 => [style:Theme_MediaRouter:2131362056, style:Theme:-1, style:Widget_MediaRouter_Light_MediaRouteButton:2131362160, drawable:mr_dialog_material_background_light:2130837829, drawable:ic_cast_off_light:2130837679, drawable:mr_ic_media_route_connecting_light:2130837836, drawable:mr_ic_media_route_on_light:2130837840, drawable:mr_ic_close_light:2130837834, drawable:mr_ic_play_light:2130837844, drawable:mr_ic_pause_light:2130837842, drawable:mr_ic_cast_light:2130837832, drawable:mr_ic_audiotrack_light:2130837830, drawable:ic_cast_grey:2130837677, drawable:ic_tv_light:2130837827, drawable:ic_speaker_light:2130837825, drawable:ic_speaker_group_light:2130837824, style:Widget_MediaRouter_ChooserText_Primary_Light:2131362146, style:Widget_MediaRouter_ChooserText_Secondary_Light:2131362149, style:Widget_MediaRouter_ControllerText_Title_Light:2131362159, style:Widget_MediaRouter_ControllerText_Primary_Light:2131362153, style:Widget_MediaRouter_ControllerText_Secondary_Light:2131362156, style:Theme_MediaRouter_Light_DarkControlPanel:2131362058]
-style:Theme_MediaRouter_LightControlPanel:2131362059 => [style:Theme_MediaRouter:2131362056, style:Theme:-1, drawable:mr_ic_play_light:2130837844, drawable:mr_ic_pause_light:2130837842, drawable:mr_ic_cast_light:2130837832, drawable:mr_ic_audiotrack_light:2130837830, style:Widget_MediaRouter_ControllerText_Primary_Light:2131362153, style:Widget_MediaRouter_ControllerText_Secondary_Light:2131362156]
-style:Theme_MediaRouter_Light_DarkControlPanel:2131362058 => [style:Theme_MediaRouter_Light:2131362057, style:Theme_MediaRouter:2131362056, style:Theme:-1, drawable:mr_ic_play_dark:2130837843, drawable:mr_ic_pause_dark:2130837841, drawable:mr_ic_cast_dark:2130837831, drawable:ic_audiotrack:2130837673, style:Widget_MediaRouter_ControllerText_Primary_Dark:2131362152, style:Widget_MediaRouter_ControllerText_Secondary_Dark:2131362155]
+style:Theme_MediaRouter:2131362056 => [style:Widget_MediaRouter_MediaRouteButton:2131362161, drawable:mr_dialog_material_background_dark:2130837835, drawable:ic_media_route_off_mono_dark:2130837773, drawable:mr_ic_media_route_connecting_dark:2130837842, drawable:mr_ic_media_route_on_dark:2130837846, drawable:mr_ic_close_dark:2130837840, drawable:mr_ic_play_dark:2130837850, drawable:mr_ic_pause_dark:2130837848, drawable:mr_ic_cast_dark:2130837838, drawable:ic_audiotrack:2130837680, drawable:ic_cast_white:2130837687, drawable:ic_tv_dark:2130837833, drawable:ic_speaker_dark:2130837829, drawable:ic_speaker_group_dark:2130837830, style:Widget_MediaRouter_ChooserText_Primary_Dark:2131362145, style:Widget_MediaRouter_ChooserText_Secondary_Dark:2131362148, style:Widget_MediaRouter_ControllerText_Title_Dark:2131362158, style:Widget_MediaRouter_ControllerText_Primary_Dark:2131362152, style:Widget_MediaRouter_ControllerText_Secondary_Dark:2131362155, style:Theme_MediaRouter_Light:2131362057, style:Theme_MediaRouter_Light_DarkControlPanel:2131362058, style:Theme_MediaRouter_LightControlPanel:2131362059]
+style:Theme_MediaRouter_Light:2131362057 => [style:Theme_MediaRouter:2131362056, style:Theme:-1, style:Widget_MediaRouter_Light_MediaRouteButton:2131362160, drawable:mr_dialog_material_background_light:2130837836, drawable:ic_cast_off_light:2130837686, drawable:mr_ic_media_route_connecting_light:2130837843, drawable:mr_ic_media_route_on_light:2130837847, drawable:mr_ic_close_light:2130837841, drawable:mr_ic_play_light:2130837851, drawable:mr_ic_pause_light:2130837849, drawable:mr_ic_cast_light:2130837839, drawable:mr_ic_audiotrack_light:2130837837, drawable:ic_cast_grey:2130837684, drawable:ic_tv_light:2130837834, drawable:ic_speaker_light:2130837832, drawable:ic_speaker_group_light:2130837831, style:Widget_MediaRouter_ChooserText_Primary_Light:2131362146, style:Widget_MediaRouter_ChooserText_Secondary_Light:2131362149, style:Widget_MediaRouter_ControllerText_Title_Light:2131362159, style:Widget_MediaRouter_ControllerText_Primary_Light:2131362153, style:Widget_MediaRouter_ControllerText_Secondary_Light:2131362156, style:Theme_MediaRouter_Light_DarkControlPanel:2131362058]
+style:Theme_MediaRouter_LightControlPanel:2131362059 => [style:Theme_MediaRouter:2131362056, style:Theme:-1, drawable:mr_ic_play_light:2130837851, drawable:mr_ic_pause_light:2130837849, drawable:mr_ic_cast_light:2130837839, drawable:mr_ic_audiotrack_light:2130837837, style:Widget_MediaRouter_ControllerText_Primary_Light:2131362153, style:Widget_MediaRouter_ControllerText_Secondary_Light:2131362156]
+style:Theme_MediaRouter_Light_DarkControlPanel:2131362058 => [style:Theme_MediaRouter_Light:2131362057, style:Theme_MediaRouter:2131362056, style:Theme:-1, drawable:mr_ic_play_dark:2130837850, drawable:mr_ic_pause_dark:2130837848, drawable:mr_ic_cast_dark:2130837838, drawable:ic_audiotrack:2130837680, style:Widget_MediaRouter_ControllerText_Primary_Dark:2131362152, style:Widget_MediaRouter_ControllerText_Secondary_Dark:2131362155]
 style:Widget_MediaRouter_ChooserText:2131362143 => [style:Widget_MediaRouter_ChooserText_Primary:2131362144, style:Widget_MediaRouter_ChooserText_Primary_Dark:2131362145, style:Widget_MediaRouter_ChooserText_Primary_Light:2131362146, style:Widget_MediaRouter_ChooserText_Secondary:2131362147, style:Widget_MediaRouter_ChooserText_Secondary_Dark:2131362148, style:Widget_MediaRouter_ChooserText_Secondary_Light:2131362149, style:Widget_MediaRouter_ControllerText:2131362150]
 style:Widget_MediaRouter_ChooserText_Primary:2131362144 => [style:Widget_MediaRouter_ChooserText:2131362143, style:Widget_MediaRouter:-1, style:Widget:-1, style:Widget_MediaRouter_ChooserText_Primary_Dark:2131362145, style:Widget_MediaRouter_ChooserText_Primary_Light:2131362146]
 style:Widget_MediaRouter_ChooserText_Primary_Dark:2131362145 => [style:Widget_MediaRouter_ChooserText_Primary:2131362144, style:Widget_MediaRouter_ChooserText:2131362143, style:Widget_MediaRouter:-1, style:Widget:-1]
@@ -5396,69 +5405,69 @@ style:Widget_MediaRouter_ControllerText_Secondary_Light:2131362156 => [style:Wid
 style:Widget_MediaRouter_ControllerText_Title:2131362157 => [style:Widget_MediaRouter_ControllerText:2131362150, style:Widget_MediaRouter:-1, style:Widget:-1, style:Widget_MediaRouter_ControllerText_Title_Dark:2131362158, style:Widget_MediaRouter_ControllerText_Title_Light:2131362159]
 style:Widget_MediaRouter_ControllerText_Title_Dark:2131362158 => [style:Widget_MediaRouter_ControllerText_Title:2131362157, style:Widget_MediaRouter_ControllerText:2131362150, style:Widget_MediaRouter:-1, style:Widget:-1]
 style:Widget_MediaRouter_ControllerText_Title_Light:2131362159 => [style:Widget_MediaRouter_ControllerText_Title:2131362157, style:Widget_MediaRouter_ControllerText:2131362150, style:Widget_MediaRouter:-1, style:Widget:-1]
-style:Widget_MediaRouter_Light_MediaRouteButton:2131362160 => [style:Widget_AppCompat_Light_ActionButton:2131362106, string:mr_button_content_description:2131230801, drawable:mr_ic_media_route_mono_light:2130837838]
-style:Widget_MediaRouter_MediaRouteButton:2131362161 => [style:Widget_AppCompat_ActionButton:2131362076, string:mr_button_content_description:2131230801, drawable:mr_ic_media_route_mono_dark:2130837837]
+style:Widget_MediaRouter_Light_MediaRouteButton:2131362160 => [style:Widget_AppCompat_Light_ActionButton:2131362106, string:mr_button_content_description:2131230801, drawable:mr_ic_media_route_mono_light:2130837845]
+style:Widget_MediaRouter_MediaRouteButton:2131362161 => [style:Widget_AppCompat_ActionButton:2131362076, string:mr_button_content_description:2131230801, drawable:mr_ic_media_route_mono_dark:2130837844]
 array:cast_expanded_controller_default_control_buttons:2131492864 => [id:cast_button_type_closed_caption:2131623940, id:cast_button_type_skip_previous:2131623948, id:cast_button_type_skip_next:2131623947, id:cast_button_type_mute_toggle:2131623944]
 array:cast_mini_controller_default_control_buttons:2131492865 => [id:cast_button_type_empty:2131623942, id:cast_button_type_play_pause_toggle:2131623945]
 color:common_google_signin_btn_text_dark:2131558517 => [color:common_google_signin_btn_text_dark_disabled:2131558433, color:common_google_signin_btn_text_dark_pressed:2131558435, color:common_google_signin_btn_text_dark_focused:2131558434, color:common_google_signin_btn_text_dark_default:2131558432]
 color:common_google_signin_btn_text_light:2131558518 => [color:common_google_signin_btn_text_light_disabled:2131558437, color:common_google_signin_btn_text_light_pressed:2131558439, color:common_google_signin_btn_text_light_focused:2131558438, color:common_google_signin_btn_text_light_default:2131558436]
 color:wallet_primary_text_holo_light:2131558521 => [color:wallet_bright_foreground_disabled_holo_light:2131558486, color:wallet_bright_foreground_holo_light:2131558488]
 color:wallet_secondary_text_holo_dark:2131558522 => [color:wallet_dim_foreground_disabled_holo_dark:2131558489, color:wallet_dim_foreground_holo_dark:2131558490]
-drawable:cast_expanded_controller_seekbar_thumb:2130837604 => [drawable:cast_abc_scrubber_control_to_pressed_mtrl_005:2130837598, drawable:cast_abc_scrubber_control_to_pressed_mtrl_000:2130837597]
-drawable:cast_expanded_controller_seekbar_track:2130837605 => [drawable:cast_abc_scrubber_primary_mtrl_alpha:2130837599]
-drawable:cast_ic_expanded_controller_closed_caption:2130837606 => [drawable:quantum_ic_closed_caption_white_36:2130837855, drawable:quantum_ic_closed_caption_grey600_36:2130837854]
-drawable:cast_ic_expanded_controller_forward30:2130837607 => [drawable:quantum_ic_forward_30_white_36:2130837859, drawable:quantum_ic_forward_30_grey600_36:2130837857]
-drawable:cast_ic_expanded_controller_mute:2130837608 => [drawable:quantum_ic_volume_up_white_36:2130837889, drawable:quantum_ic_volume_off_white_36:2130837887, drawable:quantum_ic_volume_up_grey600_36:2130837888, drawable:quantum_ic_volume_off_grey600_36:2130837886]
-drawable:cast_ic_expanded_controller_pause:2130837609 => [drawable:quantum_ic_pause_circle_filled_white_36:2130837862, drawable:quantum_ic_pause_circle_filled_grey600_36:2130837861]
-drawable:cast_ic_expanded_controller_play:2130837610 => [drawable:quantum_ic_play_circle_filled_white_36:2130837870, drawable:quantum_ic_play_circle_filled_grey600_36:2130837869]
-drawable:cast_ic_expanded_controller_rewind30:2130837611 => [drawable:quantum_ic_replay_30_white_36:2130837875, drawable:quantum_ic_replay_30_grey600_36:2130837873]
-drawable:cast_ic_expanded_controller_skip_next:2130837612 => [drawable:quantum_ic_skip_next_white_36:2130837879, drawable:quantum_ic_skip_next_grey600_36:2130837877]
-drawable:cast_ic_expanded_controller_skip_previous:2130837613 => [drawable:quantum_ic_skip_previous_white_36:2130837882, drawable:quantum_ic_skip_previous_grey600_36:2130837880]
-drawable:cast_ic_expanded_controller_stop:2130837614 => [drawable:cast_ic_stop_circle_filled_white:2130837646, drawable:cast_ic_stop_circle_filled_grey600:2130837645]
-drawable:cast_ic_mini_controller_closed_caption:2130837615 => [drawable:quantum_ic_closed_caption_grey600_36:2130837854]
-drawable:cast_ic_mini_controller_forward30:2130837616 => [drawable:quantum_ic_forward_30_grey600_36:2130837857]
-drawable:cast_ic_mini_controller_mute:2130837617 => [drawable:quantum_ic_volume_up_grey600_36:2130837888, drawable:quantum_ic_volume_off_grey600_36:2130837886]
-drawable:cast_ic_mini_controller_pause:2130837618 => [drawable:quantum_ic_pause_grey600_36:2130837863]
-drawable:cast_ic_mini_controller_pause_large:2130837619 => [drawable:quantum_ic_pause_grey600_48:2130837864]
-drawable:cast_ic_mini_controller_play:2130837620 => [drawable:quantum_ic_play_arrow_grey600_36:2130837866]
-drawable:cast_ic_mini_controller_play_large:2130837621 => [drawable:quantum_ic_play_arrow_grey600_48:2130837867]
-drawable:cast_ic_mini_controller_rewind30:2130837622 => [drawable:quantum_ic_replay_30_grey600_36:2130837873]
-drawable:cast_ic_mini_controller_skip_next:2130837623 => [drawable:quantum_ic_skip_next_grey600_36:2130837877]
-drawable:cast_ic_mini_controller_skip_prev:2130837624 => [drawable:quantum_ic_skip_previous_grey600_36:2130837880]
-drawable:cast_ic_mini_controller_stop:2130837625 => [drawable:quantum_ic_stop_grey600_36:2130837883]
-drawable:cast_ic_mini_controller_stop_large:2130837626 => [drawable:quantum_ic_stop_grey600_48:2130837884]
-drawable:cast_ic_notification_connecting:2130837630 => [drawable:cast_ic_notification_0:2130837627, drawable:cast_ic_notification_1:2130837628, drawable:cast_ic_notification_2:2130837629]
-drawable:cast_ic_notification_disconnect:2130837631 => [drawable:quantum_ic_clear_white_24:2130837853]
-drawable:cast_ic_notification_forward:2130837632 => [drawable:quantum_ic_refresh_white_24:2130837871]
-drawable:cast_ic_notification_forward10:2130837633 => [drawable:quantum_ic_forward_10_white_24:2130837856]
-drawable:cast_ic_notification_forward30:2130837634 => [drawable:quantum_ic_forward_30_white_24:2130837858]
-drawable:cast_ic_notification_pause:2130837636 => [drawable:quantum_ic_pause_white_24:2130837865]
-drawable:cast_ic_notification_play:2130837637 => [drawable:quantum_ic_play_arrow_white_24:2130837868]
-drawable:cast_ic_notification_rewind:2130837638 => [drawable:quantum_ic_replay_white_24:2130837876]
-drawable:cast_ic_notification_rewind10:2130837639 => [drawable:quantum_ic_replay_10_white_24:2130837872]
-drawable:cast_ic_notification_rewind30:2130837640 => [drawable:quantum_ic_replay_30_white_24:2130837874]
-drawable:cast_ic_notification_skip_next:2130837641 => [drawable:quantum_ic_skip_next_white_24:2130837878]
-drawable:cast_ic_notification_skip_prev:2130837642 => [drawable:quantum_ic_skip_previous_white_24:2130837881]
-drawable:cast_ic_notification_small_icon:2130837643 => [drawable:quantum_ic_cast_connected_white_24:2130837851]
-drawable:cast_ic_notification_stop_live_stream:2130837644 => [drawable:quantum_ic_stop_white_24:2130837885]
-drawable:common_google_signin_btn_icon_dark:2130837652 => [drawable:common_google_signin_btn_icon_dark_disabled:2130837653, drawable:common_google_signin_btn_icon_dark_pressed:2130837656, drawable:common_google_signin_btn_icon_dark_focused:2130837654, drawable:common_google_signin_btn_icon_dark_normal:2130837655]
-drawable:common_google_signin_btn_icon_dark_focused:2130837654 => [drawable:common_google_signin_btn_icon_dark_normal:2130837655]
-drawable:common_google_signin_btn_icon_light:2130837657 => [drawable:common_google_signin_btn_icon_light_disabled:2130837658, drawable:common_google_signin_btn_icon_light_pressed:2130837661, drawable:common_google_signin_btn_icon_light_focused:2130837659, drawable:common_google_signin_btn_icon_light_normal:2130837660]
-drawable:common_google_signin_btn_icon_light_focused:2130837659 => [drawable:common_google_signin_btn_icon_light_normal:2130837660]
-drawable:common_google_signin_btn_text_dark:2130837662 => [drawable:common_google_signin_btn_text_dark_disabled:2130837663, drawable:common_google_signin_btn_text_dark_pressed:2130837666, drawable:common_google_signin_btn_text_dark_focused:2130837664, drawable:common_google_signin_btn_text_dark_normal:2130837665]
-drawable:common_google_signin_btn_text_dark_focused:2130837664 => [drawable:common_google_signin_btn_text_dark_normal:2130837665]
-drawable:common_google_signin_btn_text_light:2130837667 => [drawable:common_google_signin_btn_text_light_disabled:2130837668, drawable:common_google_signin_btn_text_light_pressed:2130837671, drawable:common_google_signin_btn_text_light_focused:2130837669, drawable:common_google_signin_btn_text_light_normal:2130837670]
-drawable:common_google_signin_btn_text_light_focused:2130837669 => [drawable:common_google_signin_btn_text_light_normal:2130837670]
-layout:cast_expanded_controller_activity:2130968606 => [color:cast_expanded_controller_background_color:2131558420, string:cast_expanded_controller_background_image:2131230746, drawable:cast_expanded_controller_bg_gradient_light:2130837603, drawable:cast_expanded_controller_actionbar_bg_gradient_light:2130837602, dimen:cast_expanded_controller_control_toolbar_min_height:2131296339, attr:castExpandedControllerToolbarStyle:2130771969, id:controllers:2131624145, id:toolbar:2131624144, drawable:quantum_ic_art_track_grey600_48:2130837849, color:cast_expanded_controller_ad_label_background_color:2131558419, string:cast_ad_label:2131230740, color:cast_expanded_controller_text_color:2131558423, color:cast_expanded_controller_ad_container_white_stripe_color:2131558418, id:ad_label:2131624148, dimen:cast_expanded_controller_ad_in_progress_label_layout_height:2131296261, dimen:cast_expanded_controller_ad_in_progress_label_layout_width:2131296262, string:cast_expanded_controller_ad_in_progress:2131230745, drawable:cast_skip_ad_label_border:2130837650, id:ad_in_progress_label:2131624149, string:cast_expanded_controller_skip_ad_label:2131230749, dimen:cast_expanded_controller_margin_between_status_text_and_seek_bar:2131296264, id:status_text:2131624151, string:cast_invalid_stream_position_text:2131230854, color:cast_expanded_controller_progress_text_color:2131558421, string:cast_invalid_stream_duration_text:2131230853, string:cast_expanded_controller_live_stream_indicator:2131230747, id:end_text:2131624154, drawable:quantum_ic_bigtop_updates_white_24:2130837850, string:cast_seek_bar:2131230763, id:start_text:2131624153, id:seek_bar:2131624156, id:seek_bar_controls:2131624152, dimen:cast_expanded_controller_margin_between_seek_bar_and_control_buttons:2131296263, dimen:cast_expanded_controller_control_button_margin:2131296338, id:button_1:2131624159, id:button_play_pause_toggle:2131624160, id:button_2:2131624161]
+drawable:cast_expanded_controller_seekbar_thumb:2130837605 => [drawable:cast_abc_scrubber_control_to_pressed_mtrl_005:2130837599, drawable:cast_abc_scrubber_control_to_pressed_mtrl_000:2130837598]
+drawable:cast_expanded_controller_seekbar_track:2130837606 => [drawable:cast_abc_scrubber_primary_mtrl_alpha:2130837600]
+drawable:cast_ic_expanded_controller_closed_caption:2130837607 => [drawable:quantum_ic_closed_caption_white_36:2130837862, drawable:quantum_ic_closed_caption_grey600_36:2130837861]
+drawable:cast_ic_expanded_controller_forward30:2130837608 => [drawable:quantum_ic_forward_30_white_36:2130837866, drawable:quantum_ic_forward_30_grey600_36:2130837864]
+drawable:cast_ic_expanded_controller_mute:2130837609 => [drawable:quantum_ic_volume_up_white_36:2130837896, drawable:quantum_ic_volume_off_white_36:2130837894, drawable:quantum_ic_volume_up_grey600_36:2130837895, drawable:quantum_ic_volume_off_grey600_36:2130837893]
+drawable:cast_ic_expanded_controller_pause:2130837610 => [drawable:quantum_ic_pause_circle_filled_white_36:2130837869, drawable:quantum_ic_pause_circle_filled_grey600_36:2130837868]
+drawable:cast_ic_expanded_controller_play:2130837611 => [drawable:quantum_ic_play_circle_filled_white_36:2130837877, drawable:quantum_ic_play_circle_filled_grey600_36:2130837876]
+drawable:cast_ic_expanded_controller_rewind30:2130837612 => [drawable:quantum_ic_replay_30_white_36:2130837882, drawable:quantum_ic_replay_30_grey600_36:2130837880]
+drawable:cast_ic_expanded_controller_skip_next:2130837613 => [drawable:quantum_ic_skip_next_white_36:2130837886, drawable:quantum_ic_skip_next_grey600_36:2130837884]
+drawable:cast_ic_expanded_controller_skip_previous:2130837614 => [drawable:quantum_ic_skip_previous_white_36:2130837889, drawable:quantum_ic_skip_previous_grey600_36:2130837887]
+drawable:cast_ic_expanded_controller_stop:2130837615 => [drawable:cast_ic_stop_circle_filled_white:2130837647, drawable:cast_ic_stop_circle_filled_grey600:2130837646]
+drawable:cast_ic_mini_controller_closed_caption:2130837616 => [drawable:quantum_ic_closed_caption_grey600_36:2130837861]
+drawable:cast_ic_mini_controller_forward30:2130837617 => [drawable:quantum_ic_forward_30_grey600_36:2130837864]
+drawable:cast_ic_mini_controller_mute:2130837618 => [drawable:quantum_ic_volume_up_grey600_36:2130837895, drawable:quantum_ic_volume_off_grey600_36:2130837893]
+drawable:cast_ic_mini_controller_pause:2130837619 => [drawable:quantum_ic_pause_grey600_36:2130837870]
+drawable:cast_ic_mini_controller_pause_large:2130837620 => [drawable:quantum_ic_pause_grey600_48:2130837871]
+drawable:cast_ic_mini_controller_play:2130837621 => [drawable:quantum_ic_play_arrow_grey600_36:2130837873]
+drawable:cast_ic_mini_controller_play_large:2130837622 => [drawable:quantum_ic_play_arrow_grey600_48:2130837874]
+drawable:cast_ic_mini_controller_rewind30:2130837623 => [drawable:quantum_ic_replay_30_grey600_36:2130837880]
+drawable:cast_ic_mini_controller_skip_next:2130837624 => [drawable:quantum_ic_skip_next_grey600_36:2130837884]
+drawable:cast_ic_mini_controller_skip_prev:2130837625 => [drawable:quantum_ic_skip_previous_grey600_36:2130837887]
+drawable:cast_ic_mini_controller_stop:2130837626 => [drawable:quantum_ic_stop_grey600_36:2130837890]
+drawable:cast_ic_mini_controller_stop_large:2130837627 => [drawable:quantum_ic_stop_grey600_48:2130837891]
+drawable:cast_ic_notification_connecting:2130837631 => [drawable:cast_ic_notification_0:2130837628, drawable:cast_ic_notification_1:2130837629, drawable:cast_ic_notification_2:2130837630]
+drawable:cast_ic_notification_disconnect:2130837632 => [drawable:quantum_ic_clear_white_24:2130837860]
+drawable:cast_ic_notification_forward:2130837633 => [drawable:quantum_ic_refresh_white_24:2130837878]
+drawable:cast_ic_notification_forward10:2130837634 => [drawable:quantum_ic_forward_10_white_24:2130837863]
+drawable:cast_ic_notification_forward30:2130837635 => [drawable:quantum_ic_forward_30_white_24:2130837865]
+drawable:cast_ic_notification_pause:2130837637 => [drawable:quantum_ic_pause_white_24:2130837872]
+drawable:cast_ic_notification_play:2130837638 => [drawable:quantum_ic_play_arrow_white_24:2130837875]
+drawable:cast_ic_notification_rewind:2130837639 => [drawable:quantum_ic_replay_white_24:2130837883]
+drawable:cast_ic_notification_rewind10:2130837640 => [drawable:quantum_ic_replay_10_white_24:2130837879]
+drawable:cast_ic_notification_rewind30:2130837641 => [drawable:quantum_ic_replay_30_white_24:2130837881]
+drawable:cast_ic_notification_skip_next:2130837642 => [drawable:quantum_ic_skip_next_white_24:2130837885]
+drawable:cast_ic_notification_skip_prev:2130837643 => [drawable:quantum_ic_skip_previous_white_24:2130837888]
+drawable:cast_ic_notification_small_icon:2130837644 => [drawable:quantum_ic_cast_connected_white_24:2130837858]
+drawable:cast_ic_notification_stop_live_stream:2130837645 => [drawable:quantum_ic_stop_white_24:2130837892]
+drawable:common_google_signin_btn_icon_dark:2130837653 => [drawable:common_google_signin_btn_icon_dark_disabled:2130837654, drawable:common_google_signin_btn_icon_dark_pressed:2130837657, drawable:common_google_signin_btn_icon_dark_focused:2130837655, drawable:common_google_signin_btn_icon_dark_normal:2130837656]
+drawable:common_google_signin_btn_icon_dark_focused:2130837655 => [drawable:common_google_signin_btn_icon_dark_normal:2130837656]
+drawable:common_google_signin_btn_icon_light:2130837658 => [drawable:common_google_signin_btn_icon_light_disabled:2130837659, drawable:common_google_signin_btn_icon_light_pressed:2130837662, drawable:common_google_signin_btn_icon_light_focused:2130837660, drawable:common_google_signin_btn_icon_light_normal:2130837661]
+drawable:common_google_signin_btn_icon_light_focused:2130837660 => [drawable:common_google_signin_btn_icon_light_normal:2130837661]
+drawable:common_google_signin_btn_text_dark:2130837663 => [drawable:common_google_signin_btn_text_dark_disabled:2130837664, drawable:common_google_signin_btn_text_dark_pressed:2130837667, drawable:common_google_signin_btn_text_dark_focused:2130837665, drawable:common_google_signin_btn_text_dark_normal:2130837666]
+drawable:common_google_signin_btn_text_dark_focused:2130837665 => [drawable:common_google_signin_btn_text_dark_normal:2130837666]
+drawable:common_google_signin_btn_text_light:2130837668 => [drawable:common_google_signin_btn_text_light_disabled:2130837669, drawable:common_google_signin_btn_text_light_pressed:2130837672, drawable:common_google_signin_btn_text_light_focused:2130837670, drawable:common_google_signin_btn_text_light_normal:2130837671]
+drawable:common_google_signin_btn_text_light_focused:2130837670 => [drawable:common_google_signin_btn_text_light_normal:2130837671]
+layout:cast_expanded_controller_activity:2130968606 => [color:cast_expanded_controller_background_color:2131558420, string:cast_expanded_controller_background_image:2131230746, drawable:cast_expanded_controller_bg_gradient_light:2130837604, drawable:cast_expanded_controller_actionbar_bg_gradient_light:2130837603, dimen:cast_expanded_controller_control_toolbar_min_height:2131296339, attr:castExpandedControllerToolbarStyle:2130771969, id:controllers:2131624145, id:toolbar:2131624144, drawable:quantum_ic_art_track_grey600_48:2130837856, color:cast_expanded_controller_ad_label_background_color:2131558419, string:cast_ad_label:2131230740, color:cast_expanded_controller_text_color:2131558423, color:cast_expanded_controller_ad_container_white_stripe_color:2131558418, id:ad_label:2131624148, dimen:cast_expanded_controller_ad_in_progress_label_layout_height:2131296261, dimen:cast_expanded_controller_ad_in_progress_label_layout_width:2131296262, string:cast_expanded_controller_ad_in_progress:2131230745, drawable:cast_skip_ad_label_border:2130837651, id:ad_in_progress_label:2131624149, string:cast_expanded_controller_skip_ad_label:2131230749, dimen:cast_expanded_controller_margin_between_status_text_and_seek_bar:2131296264, id:status_text:2131624151, string:cast_invalid_stream_position_text:2131230856, color:cast_expanded_controller_progress_text_color:2131558421, string:cast_invalid_stream_duration_text:2131230855, string:cast_expanded_controller_live_stream_indicator:2131230747, id:end_text:2131624154, drawable:quantum_ic_bigtop_updates_white_24:2130837857, string:cast_seek_bar:2131230763, id:start_text:2131624153, id:seek_bar:2131624156, id:seek_bar_controls:2131624152, dimen:cast_expanded_controller_margin_between_seek_bar_and_control_buttons:2131296263, dimen:cast_expanded_controller_control_button_margin:2131296338, id:button_1:2131624159, id:button_play_pause_toggle:2131624160, id:button_2:2131624161]
 layout:cast_help_text:2130968607 => [dimen:cast_libraries_material_featurehighlight_text_horizontal_margin:2131296351, id:cast_featurehighlight_help_text_header_view:2131623950, color:cast_libraries_material_featurehighlight_text_header_color:2131558428, dimen:cast_libraries_material_featurehighlight_text_header_size:2131296350, id:cast_featurehighlight_help_text_body_view:2131623949, dimen:cast_libraries_material_featurehighlight_text_vertical_space:2131296354, color:cast_libraries_material_featurehighlight_text_body_color:2131558427, dimen:cast_libraries_material_featurehighlight_text_body_size:2131296349]
 layout:cast_intro_overlay:2130968608 => [dimen:cast_intro_overlay_title_margin_top:2131296343, attr:castTitleTextAppearance:2130772192, dimen:cast_intro_overlay_button_margin_bottom:2131296341, attr:castButtonTextAppearance:2130772190]
-layout:cast_mini_controller:2130968609 => [drawable:cast_mini_controller_gradient_light:2130837647, dimen:cast_mini_controller_icon_height:2131296358, dimen:cast_mini_controller_icon_width:2131296359, drawable:cast_mini_controller_img_placeholder:2130837648, dimen:cast_mini_controller_control_button_margin:2131296355, id:button_1:2131624159, id:button_2:2131624161, id:center:2131624167, id:button_0:2131624158, id:icon_view:2131624168, attr:castTitleTextAppearance:2130772192, id:title_view:2131624169, attr:castSubtitleTextAppearance:2130772195, drawable:cast_mini_controller_progress_drawable:2130837649]
+layout:cast_mini_controller:2130968609 => [drawable:cast_mini_controller_gradient_light:2130837648, dimen:cast_mini_controller_icon_height:2131296358, dimen:cast_mini_controller_icon_width:2131296359, drawable:cast_mini_controller_img_placeholder:2130837649, dimen:cast_mini_controller_control_button_margin:2131296355, id:button_1:2131624159, id:button_2:2131624161, id:center:2131624167, id:button_0:2131624158, id:icon_view:2131624168, attr:castTitleTextAppearance:2130772192, id:title_view:2131624169, attr:castSubtitleTextAppearance:2130772195, drawable:cast_mini_controller_progress_drawable:2130837650]
 layout:cast_tracks_chooser_dialog_layout:2130968610 => [string:cast_tracks_chooser_dialog_no_text_tracks:2131230772, dimen:cast_tracks_chooser_dialog_no_message_text_size:2131296361, string:cast_tracks_chooser_dialog_no_audio_tracks:2131230771]
 layout:cast_tracks_chooser_dialog_row_layout:2130968611 => [id:radio:2131624074, dimen:cast_tracks_chooser_dialog_row_text_size:2131296362]
-layout:place_autocomplete_fragment:2130968626 => [string:place_autocomplete_search_hint:2131230818, dimen:place_autocomplete_button_padding:2131296372, drawable:places_ic_search:2130837846, color:place_autocomplete_search_text:2131558466, color:place_autocomplete_search_hint:2131558465, string:place_autocomplete_clear_button:2131230817, drawable:places_ic_clear:2130837845]
-layout:place_autocomplete_item_powered_by_google:2130968627 => [color:place_autocomplete_separator:2131558467, dimen:place_autocomplete_separator_start:2131296381, id:place_autocomplete_separator:2131624216, dimen:place_autocomplete_progress_size:2131296380, dimen:place_autocomplete_progress_horizontal_margin:2131296379, layout:place_autocomplete_progress:2130968629, dimen:place_autocomplete_powered_by_google_height:2131296373, dimen:place_autocomplete_powered_by_google_start:2131296374, id:place_autocomplete_progress:2131624218, drawable:powered_by_google_light:2130837848]
+layout:place_autocomplete_fragment:2130968626 => [string:place_autocomplete_search_hint:2131230818, dimen:place_autocomplete_button_padding:2131296372, drawable:places_ic_search:2130837853, color:place_autocomplete_search_text:2131558466, color:place_autocomplete_search_hint:2131558465, string:place_autocomplete_clear_button:2131230817, drawable:places_ic_clear:2130837852]
+layout:place_autocomplete_item_powered_by_google:2130968627 => [color:place_autocomplete_separator:2131558467, dimen:place_autocomplete_separator_start:2131296381, id:place_autocomplete_separator:2131624216, dimen:place_autocomplete_progress_size:2131296380, dimen:place_autocomplete_progress_horizontal_margin:2131296379, layout:place_autocomplete_progress:2130968629, dimen:place_autocomplete_powered_by_google_height:2131296373, dimen:place_autocomplete_powered_by_google_start:2131296374, id:place_autocomplete_progress:2131624218, drawable:powered_by_google_light:2130837855]
 layout:place_autocomplete_item_prediction:2130968628 => [dimen:place_autocomplete_prediction_height:2131296375, dimen:place_autocomplete_progress_size:2131296380, dimen:place_autocomplete_progress_horizontal_margin:2131296379, layout:place_autocomplete_progress:2130968629, id:place_autocomplete_separator:2131624216, dimen:place_autocomplete_prediction_horizontal_margin:2131296376, id:place_autocomplete_progress:2131624218, color:place_autocomplete_prediction_primary_text:2131558462, dimen:place_autocomplete_prediction_primary_text:2131296377, color:place_autocomplete_prediction_secondary_text:2131558464, dimen:place_autocomplete_prediction_secondary_text:2131296378]
-style:CastExpandedController:2131361984 => [array:cast_expanded_controller_default_control_buttons:2131492864, drawable:cast_expanded_controller_seekbar_track:2130837605, drawable:cast_expanded_controller_seekbar_thumb:2130837604]
+style:CastExpandedController:2131361984 => [array:cast_expanded_controller_default_control_buttons:2131492864, drawable:cast_expanded_controller_seekbar_track:2130837606, drawable:cast_expanded_controller_seekbar_thumb:2130837605]
 style:CastIntroOverlay:2131361985 => [style:TextAppearance_CastIntroOverlay_Button:2131362033, dimen:cast_intro_overlay_focus_radius:2131296342, style:TextAppearance_CastIntroOverlay_Title:2131362034, string:cast_intro_overlay_button_text:2131230753, color:cast_intro_overlay_background_color:2131558424, color:cast_intro_overlay_button_background_color:2131558425]
 style:CastMiniController:2131361986 => [style:TextAppearance_CastMiniController_Title:2131362036, array:cast_mini_controller_default_control_buttons:2131492865, style:TextAppearance_CastMiniController_Subtitle:2131362035]
 style:CustomCastTheme:2131361987 => [style:CastExpandedController:2131361984, style:CastIntroOverlay:2131361985, style:CastMiniController:2131361986]
@@ -5468,10 +5477,10 @@ style:WalletFragmentDefaultButtonTextAppearance:2131362067 => [color:wallet_link
 style:WalletFragmentDefaultDetailsHeaderTextAppearance:2131362068 => [style:WalletFragmentDefaultDetailsTextAppearance:2131362069]
 style:WalletFragmentDefaultDetailsTextAppearance:2131362069 => [style:WalletFragmentDefaultDetailsHeaderTextAppearance:2131362068, color:wallet_holo_blue_light:2131558497, color:wallet_hint_foreground_holo_dark:2131558495, color:wallet_highlighted_text_holo_dark:2131558493, color:wallet_secondary_text_holo_dark:2131558522]
 style:WalletFragmentDefaultStyle:2131362070 => [color:wallet_bright_foreground_holo_dark:2131558487, style:WalletFragmentDefaultDetailsTextAppearance:2131362069, style:WalletFragmentDefaultButtonTextAppearance:2131362067, style:WalletFragmentDefaultDetailsHeaderTextAppearance:2131362068, color:wallet_bright_foreground_holo_light:2131558488]
-layout:activity_field:2130968602 => [drawable:woody_texture3:2130837892, dimen:activity_vertical_margin:2131296337, dimen:activity_horizontal_margin:2131296282, string:_1:2131230823, string:_2:2131230830, string:_3:2131230831, string:_4:2131230832, string:_5:2131230833, string:_6:2131230834, string:_7:2131230835, string:_8:2131230836, string:_9:2131230837, string:_10:2131230824, string:_11:2131230825, string:_12:2131230826, string:_13:2131230827, string:_14:2131230828, string:_15:2131230829, string:empty:2131230856, string:time:2131230873, string:banner_home_footer:2131230851]
-layout:activity_high_scores:2130968603 => [drawable:woody_texture4:2130837893, string:high_scores_head:2131230859, string:best:2131230852, string:is:2131230863, string:hstext:2131230861, string:on_the:2131230865, string:hsdate:2131230860, string:banner_home_footer:2131230851]
-layout:activity_main:2130968604 => [drawable:woody_texture:2130837890, dimen:activity_vertical_margin:2131296337, dimen:activity_horizontal_margin:2131296282, string:the_fifteen:2131230872, drawable:woody_texture2:2130837891, string:cont:2131230855, string:new_game:2131230864, string:high_scores:2131230858, string:rules:2131230866, string:exit:2131230857, string:banner_home_footer:2131230851, id:button12:2131624136, id:textView7:2131624135, id:button15:2131624137, id:button13:2131624138]
-layout:activity_rules:2130968605 => [drawable:woody_texture2:2130837891, string:rules_:2131230867, string:rules_description:2131230868]
+layout:activity_field:2130968602 => [drawable:wooden6:2130837901, string:_1:2131230823, string:_2:2131230830, string:_3:2131230831, string:_4:2131230832, string:_5:2131230833, string:_6:2131230834, string:_7:2131230835, string:_8:2131230836, string:_9:2131230837, string:_10:2131230824, string:_11:2131230825, string:_12:2131230826, string:_13:2131230827, string:_14:2131230828, string:_15:2131230829, string:empty:2131230859, string:time:2131230886, string:banner_home_footer:2131230852, drawable:wooden4land:2130837898]
+layout:activity_high_scores:2130968603 => [drawable:wooden5:2130837899, string:high_scores_head:2131230863, string:best:2131230853, string:is:2131230869, string:hstext:2131230867, string:on_the:2131230873, string:hsdate:2131230866, string:banner_home_footer:2131230852, drawable:wooden5land:2130837900]
+layout:activity_main:2130968604 => [drawable:hohl4:2130837678, dimen:activity_vertical_margin:2131296337, dimen:activity_horizontal_margin:2131296282, string:the_fifteen:2131230884, drawable:btn_hohl2_light:2130837596, string:cont:2131230857, string:new_game:2131230871, string:high_scores:2131230862, string:rules:2131230875, string:exit:2131230860, string:banner_home_footer:2131230852, drawable:hohl4land:2130837679, id:button12:2131624136, id:tvHeader:2131624129, id:button15:2131624137, id:button13:2131624138]
+layout:activity_rules:2130968605 => [drawable:wooden4:2130837897, string:rules_:2131230876, string:rules_description:2131230878, drawable:wooden4land:2130837898]
 style:AppTheme:2131361935 => [style:Theme_AppCompat_Light_NoActionBar:2131362052, color:colorPrimary:2131558430, color:colorPrimaryDark:2131558431, color:colorAccent:2131558429]
 style:Base_TextAppearance:-1 => [style:Base_TextAppearance_AppCompat_Body1:2131361850, style:Base_TextAppearance_AppCompat_Body2:2131361851, style:Base_TextAppearance_AppCompat_Button:2131361827, style:Base_TextAppearance_AppCompat_Caption:2131361852, style:Base_TextAppearance_AppCompat_Display1:2131361853, style:Base_TextAppearance_AppCompat_Display2:2131361854, style:Base_TextAppearance_AppCompat_Display3:2131361855, style:Base_TextAppearance_AppCompat_Display4:2131361856, style:Base_TextAppearance_AppCompat_Headline:2131361857, style:Base_TextAppearance_AppCompat_Inverse:2131361803, style:Base_TextAppearance_AppCompat_Large:2131361858, style:Base_TextAppearance_AppCompat_Large_Inverse:2131361804, style:Base_TextAppearance_AppCompat_Medium:2131361861, style:Base_TextAppearance_AppCompat_Medium_Inverse:2131361805, style:Base_TextAppearance_AppCompat_Menu:2131361862, style:Base_TextAppearance_AppCompat_SearchResult_Subtitle:2131361863, style:Base_TextAppearance_AppCompat_SearchResult_Title:2131361864, style:Base_TextAppearance_AppCompat_Small:2131361865, style:Base_TextAppearance_AppCompat_Small_Inverse:2131361806, style:Base_TextAppearance_AppCompat_Subhead:2131361866, style:Base_TextAppearance_AppCompat_Subhead_Inverse:2131361807, style:Base_TextAppearance_AppCompat_Title:2131361867, style:Base_TextAppearance_AppCompat_Title_Inverse:2131361808]
 style:Base:-1 => [style:Base_TextAppearance_AppCompat_Body1:2131361850, style:Base_TextAppearance_AppCompat_Body2:2131361851, style:Base_TextAppearance_AppCompat_Button:2131361827, style:Base_TextAppearance_AppCompat_Caption:2131361852, style:Base_TextAppearance_AppCompat_Display1:2131361853, style:Base_TextAppearance_AppCompat_Display2:2131361854, style:Base_TextAppearance_AppCompat_Display3:2131361855, style:Base_TextAppearance_AppCompat_Display4:2131361856, style:Base_TextAppearance_AppCompat_Headline:2131361857, style:Base_TextAppearance_AppCompat_Inverse:2131361803, style:Base_TextAppearance_AppCompat_Large:2131361858, style:Base_TextAppearance_AppCompat_Large_Inverse:2131361804, style:Base_TextAppearance_AppCompat_Medium:2131361861, style:Base_TextAppearance_AppCompat_Medium_Inverse:2131361805, style:Base_TextAppearance_AppCompat_Menu:2131361862, style:Base_TextAppearance_AppCompat_SearchResult_Subtitle:2131361863, style:Base_TextAppearance_AppCompat_SearchResult_Title:2131361864, style:Base_TextAppearance_AppCompat_Small:2131361865, style:Base_TextAppearance_AppCompat_Small_Inverse:2131361806, style:Base_TextAppearance_AppCompat_Subhead:2131361866, style:Base_TextAppearance_AppCompat_Subhead_Inverse:2131361807, style:Base_TextAppearance_AppCompat_Title:2131361867, style:Base_TextAppearance_AppCompat_Title_Inverse:2131361808, style:Base_Theme_AppCompat_Dialog_Alert:2131361946, style:Base_Theme_AppCompat_Dialog_FixedSize:2131361947, style:Base_Theme_AppCompat_Dialog_MinWidth:2131361948, style:Base_Theme_AppCompat_Light_Dialog_Alert:2131361950, style:Base_Theme_AppCompat_Light_Dialog_FixedSize:2131361951, style:Base_Theme_AppCompat_Light_Dialog_MinWidth:2131361952, style:Base_ThemeOverlay_AppCompat_ActionBar:2131361954, style:Base_ThemeOverlay_AppCompat_Dark_ActionBar:2131361956, style:Base_ThemeOverlay_AppCompat_Dialog_Alert:2131361957, style:Base_Widget_AppCompat_ActionBar_Solid:2131361967, style:Base_Widget_AppCompat_ActionButton_CloseMode:2131361892, style:Base_Widget_AppCompat_Button_Borderless:2131361895, style:Base_Widget_AppCompat_Button_Borderless_Colored:2131361896, style:Base_Widget_AppCompat_Button_Colored:2131361928, style:Base_Widget_AppCompat_Button_Small:2131361897, style:Base_Widget_AppCompat_ButtonBar_AlertDialog:2131361972, style:Base_Widget_AppCompat_Light_ActionBar_Solid:2131361976, style:Base_Widget_AppCompat_Light_PopupMenu_Overflow:2131361907, style:Base_Widget_AppCompat_ListView_DropDown:2131361910, style:Base_Widget_AppCompat_PopupMenu_Overflow:2131361913, style:Base_Widget_AppCompat_SearchView_ActionBar:2131361981, style:Base_Widget_AppCompat_SeekBar_Discrete:2131361982, style:Base_Widget_AppCompat_Spinner_Underlined:2131361795, style:Base_Widget_AppCompat_ListView_Menu:2131361911]
@@ -5755,7 +5764,7 @@ attr:actionBarDivider:2130772093,
    drawable:abc_textfield_search_activated_mtrl_alpha:2130837577,
    drawable:abc_textfield_search_default_mtrl_alpha:2130837578,
    drawable:abc_textfield_search_material:2130837579,
-   drawable:notification_template_icon_bg:2130837894,
+   drawable:notification_template_icon_bg:2130837907,
    id:action0:2131624203,
    id:action_bar:2131624081,
    id:action_bar_activity_content:2131623936,
@@ -5778,7 +5787,7 @@ attr:actionBarDivider:2130772093,
    id:buttonPanel:2131624058,
    id:cancel_action:2131624204,
    id:checkbox:2131624072,
-   id:chronometer:2131624118,
+   id:chronometer:2131624121,
    id:contentPanel:2131624064,
    id:custom:2131624070,
    id:customPanel:2131624069,
@@ -6030,8 +6039,8 @@ attr:actionBarDivider:2130772093,
    attr:mediaRouteSpeakerGroupIconDrawable:2130772026,
    attr:mediaRouteSpeakerIconDrawable:2130772027,
    attr:mediaRouteTvIconDrawable:2130772028,
-   drawable:ic_collapse:2130837683,
-   drawable:ic_expand:2130837700,
+   drawable:ic_collapse:2130837690,
+   drawable:ic_expand:2130837707,
    id:volume_item_container:2131624195,
    string:mr_controller_collapse_group:2131230807,
    string:mr_controller_expand_group:2131230809,
@@ -6159,84 +6168,84 @@ attr:actionBarDivider:2130772093,
    dimen:cast_notification_image_size:2131296360,
    dimen:cast_tracks_chooser_dialog_no_message_text_size:2131296361,
    dimen:cast_tracks_chooser_dialog_row_text_size:2131296362,
-   drawable:cast_abc_scrubber_control_off_mtrl_alpha:2130837596,
-   drawable:cast_abc_scrubber_control_to_pressed_mtrl_000:2130837597,
-   drawable:cast_abc_scrubber_control_to_pressed_mtrl_005:2130837598,
-   drawable:cast_abc_scrubber_primary_mtrl_alpha:2130837599,
-   drawable:cast_album_art_placeholder:2130837600,
-   drawable:cast_album_art_placeholder_large:2130837601,
-   drawable:cast_expanded_controller_actionbar_bg_gradient_light:2130837602,
-   drawable:cast_expanded_controller_bg_gradient_light:2130837603,
-   drawable:cast_expanded_controller_seekbar_thumb:2130837604,
-   drawable:cast_expanded_controller_seekbar_track:2130837605,
-   drawable:cast_ic_expanded_controller_closed_caption:2130837606,
-   drawable:cast_ic_expanded_controller_forward30:2130837607,
-   drawable:cast_ic_expanded_controller_mute:2130837608,
-   drawable:cast_ic_expanded_controller_pause:2130837609,
-   drawable:cast_ic_expanded_controller_play:2130837610,
-   drawable:cast_ic_expanded_controller_rewind30:2130837611,
-   drawable:cast_ic_expanded_controller_skip_next:2130837612,
-   drawable:cast_ic_expanded_controller_skip_previous:2130837613,
-   drawable:cast_ic_expanded_controller_stop:2130837614,
-   drawable:cast_ic_mini_controller_closed_caption:2130837615,
-   drawable:cast_ic_mini_controller_forward30:2130837616,
-   drawable:cast_ic_mini_controller_mute:2130837617,
-   drawable:cast_ic_mini_controller_pause:2130837618,
-   drawable:cast_ic_mini_controller_pause_large:2130837619,
-   drawable:cast_ic_mini_controller_play:2130837620,
-   drawable:cast_ic_mini_controller_play_large:2130837621,
-   drawable:cast_ic_mini_controller_rewind30:2130837622,
-   drawable:cast_ic_mini_controller_skip_next:2130837623,
-   drawable:cast_ic_mini_controller_skip_prev:2130837624,
-   drawable:cast_ic_mini_controller_stop:2130837625,
-   drawable:cast_ic_mini_controller_stop_large:2130837626,
-   drawable:cast_ic_notification_0:2130837627,
-   drawable:cast_ic_notification_1:2130837628,
-   drawable:cast_ic_notification_2:2130837629,
-   drawable:cast_ic_notification_connecting:2130837630,
-   drawable:cast_ic_notification_disconnect:2130837631,
-   drawable:cast_ic_notification_forward:2130837632,
-   drawable:cast_ic_notification_forward10:2130837633,
-   drawable:cast_ic_notification_forward30:2130837634,
-   drawable:cast_ic_notification_on:2130837635,
-   drawable:cast_ic_notification_pause:2130837636,
-   drawable:cast_ic_notification_play:2130837637,
-   drawable:cast_ic_notification_rewind:2130837638,
-   drawable:cast_ic_notification_rewind10:2130837639,
-   drawable:cast_ic_notification_rewind30:2130837640,
-   drawable:cast_ic_notification_skip_next:2130837641,
-   drawable:cast_ic_notification_skip_prev:2130837642,
-   drawable:cast_ic_notification_small_icon:2130837643,
-   drawable:cast_ic_notification_stop_live_stream:2130837644,
-   drawable:cast_ic_stop_circle_filled_grey600:2130837645,
-   drawable:cast_ic_stop_circle_filled_white:2130837646,
-   drawable:cast_mini_controller_gradient_light:2130837647,
-   drawable:cast_mini_controller_img_placeholder:2130837648,
-   drawable:cast_mini_controller_progress_drawable:2130837649,
-   drawable:cast_skip_ad_label_border:2130837650,
-   drawable:common_full_open_on_phone:2130837651,
-   drawable:common_google_signin_btn_icon_dark:2130837652,
-   drawable:common_google_signin_btn_icon_dark_disabled:2130837653,
-   drawable:common_google_signin_btn_icon_dark_focused:2130837654,
-   drawable:common_google_signin_btn_icon_dark_normal:2130837655,
-   drawable:common_google_signin_btn_icon_dark_pressed:2130837656,
-   drawable:common_google_signin_btn_icon_light:2130837657,
-   drawable:common_google_signin_btn_icon_light_disabled:2130837658,
-   drawable:common_google_signin_btn_icon_light_focused:2130837659,
-   drawable:common_google_signin_btn_icon_light_normal:2130837660,
-   drawable:common_google_signin_btn_icon_light_pressed:2130837661,
-   drawable:common_google_signin_btn_text_dark:2130837662,
-   drawable:common_google_signin_btn_text_dark_disabled:2130837663,
-   drawable:common_google_signin_btn_text_dark_focused:2130837664,
-   drawable:common_google_signin_btn_text_dark_normal:2130837665,
-   drawable:common_google_signin_btn_text_dark_pressed:2130837666,
-   drawable:common_google_signin_btn_text_light:2130837667,
-   drawable:common_google_signin_btn_text_light_disabled:2130837668,
-   drawable:common_google_signin_btn_text_light_focused:2130837669,
-   drawable:common_google_signin_btn_text_light_normal:2130837670,
-   drawable:common_google_signin_btn_text_light_pressed:2130837671,
-   drawable:powered_by_google_dark:2130837847,
-   drawable:powered_by_google_light:2130837848,
+   drawable:cast_abc_scrubber_control_off_mtrl_alpha:2130837597,
+   drawable:cast_abc_scrubber_control_to_pressed_mtrl_000:2130837598,
+   drawable:cast_abc_scrubber_control_to_pressed_mtrl_005:2130837599,
+   drawable:cast_abc_scrubber_primary_mtrl_alpha:2130837600,
+   drawable:cast_album_art_placeholder:2130837601,
+   drawable:cast_album_art_placeholder_large:2130837602,
+   drawable:cast_expanded_controller_actionbar_bg_gradient_light:2130837603,
+   drawable:cast_expanded_controller_bg_gradient_light:2130837604,
+   drawable:cast_expanded_controller_seekbar_thumb:2130837605,
+   drawable:cast_expanded_controller_seekbar_track:2130837606,
+   drawable:cast_ic_expanded_controller_closed_caption:2130837607,
+   drawable:cast_ic_expanded_controller_forward30:2130837608,
+   drawable:cast_ic_expanded_controller_mute:2130837609,
+   drawable:cast_ic_expanded_controller_pause:2130837610,
+   drawable:cast_ic_expanded_controller_play:2130837611,
+   drawable:cast_ic_expanded_controller_rewind30:2130837612,
+   drawable:cast_ic_expanded_controller_skip_next:2130837613,
+   drawable:cast_ic_expanded_controller_skip_previous:2130837614,
+   drawable:cast_ic_expanded_controller_stop:2130837615,
+   drawable:cast_ic_mini_controller_closed_caption:2130837616,
+   drawable:cast_ic_mini_controller_forward30:2130837617,
+   drawable:cast_ic_mini_controller_mute:2130837618,
+   drawable:cast_ic_mini_controller_pause:2130837619,
+   drawable:cast_ic_mini_controller_pause_large:2130837620,
+   drawable:cast_ic_mini_controller_play:2130837621,
+   drawable:cast_ic_mini_controller_play_large:2130837622,
+   drawable:cast_ic_mini_controller_rewind30:2130837623,
+   drawable:cast_ic_mini_controller_skip_next:2130837624,
+   drawable:cast_ic_mini_controller_skip_prev:2130837625,
+   drawable:cast_ic_mini_controller_stop:2130837626,
+   drawable:cast_ic_mini_controller_stop_large:2130837627,
+   drawable:cast_ic_notification_0:2130837628,
+   drawable:cast_ic_notification_1:2130837629,
+   drawable:cast_ic_notification_2:2130837630,
+   drawable:cast_ic_notification_connecting:2130837631,
+   drawable:cast_ic_notification_disconnect:2130837632,
+   drawable:cast_ic_notification_forward:2130837633,
+   drawable:cast_ic_notification_forward10:2130837634,
+   drawable:cast_ic_notification_forward30:2130837635,
+   drawable:cast_ic_notification_on:2130837636,
+   drawable:cast_ic_notification_pause:2130837637,
+   drawable:cast_ic_notification_play:2130837638,
+   drawable:cast_ic_notification_rewind:2130837639,
+   drawable:cast_ic_notification_rewind10:2130837640,
+   drawable:cast_ic_notification_rewind30:2130837641,
+   drawable:cast_ic_notification_skip_next:2130837642,
+   drawable:cast_ic_notification_skip_prev:2130837643,
+   drawable:cast_ic_notification_small_icon:2130837644,
+   drawable:cast_ic_notification_stop_live_stream:2130837645,
+   drawable:cast_ic_stop_circle_filled_grey600:2130837646,
+   drawable:cast_ic_stop_circle_filled_white:2130837647,
+   drawable:cast_mini_controller_gradient_light:2130837648,
+   drawable:cast_mini_controller_img_placeholder:2130837649,
+   drawable:cast_mini_controller_progress_drawable:2130837650,
+   drawable:cast_skip_ad_label_border:2130837651,
+   drawable:common_full_open_on_phone:2130837652,
+   drawable:common_google_signin_btn_icon_dark:2130837653,
+   drawable:common_google_signin_btn_icon_dark_disabled:2130837654,
+   drawable:common_google_signin_btn_icon_dark_focused:2130837655,
+   drawable:common_google_signin_btn_icon_dark_normal:2130837656,
+   drawable:common_google_signin_btn_icon_dark_pressed:2130837657,
+   drawable:common_google_signin_btn_icon_light:2130837658,
+   drawable:common_google_signin_btn_icon_light_disabled:2130837659,
+   drawable:common_google_signin_btn_icon_light_focused:2130837660,
+   drawable:common_google_signin_btn_icon_light_normal:2130837661,
+   drawable:common_google_signin_btn_icon_light_pressed:2130837662,
+   drawable:common_google_signin_btn_text_dark:2130837663,
+   drawable:common_google_signin_btn_text_dark_disabled:2130837664,
+   drawable:common_google_signin_btn_text_dark_focused:2130837665,
+   drawable:common_google_signin_btn_text_dark_normal:2130837666,
+   drawable:common_google_signin_btn_text_dark_pressed:2130837667,
+   drawable:common_google_signin_btn_text_light:2130837668,
+   drawable:common_google_signin_btn_text_light_disabled:2130837669,
+   drawable:common_google_signin_btn_text_light_focused:2130837670,
+   drawable:common_google_signin_btn_text_light_normal:2130837671,
+   drawable:common_google_signin_btn_text_light_pressed:2130837672,
+   drawable:powered_by_google_dark:2130837854,
+   drawable:powered_by_google_light:2130837855,
    id:ad_container:2131624147,
    id:ad_in_progress_label:2131624149,
    id:ad_label:2131624148,
@@ -6327,8 +6336,8 @@ attr:actionBarDivider:2130772093,
    string:cast_forward_10:2131230751,
    string:cast_forward_30:2131230752,
    string:cast_intro_overlay_button_text:2131230753,
-   string:cast_invalid_stream_duration_text:2131230853,
-   string:cast_invalid_stream_position_text:2131230854,
+   string:cast_invalid_stream_duration_text:2131230855,
+   string:cast_invalid_stream_position_text:2131230856,
    string:cast_mute:2131230754,
    string:cast_notification_connected_message:2131230755,
    string:cast_notification_connecting_message:2131230756,
@@ -6378,9 +6387,9 @@ attr:actionBarDivider:2130772093,
    string:decline:2131230800,
    string:store_picture_message:2131230820,
    string:store_picture_title:2131230821,
-   string:tagmanager_preview_dialog_button:2131230869,
-   string:tagmanager_preview_dialog_message:2131230870,
-   string:tagmanager_preview_dialog_title:2131230871,
+   string:tagmanager_preview_dialog_button:2131230881,
+   string:tagmanager_preview_dialog_message:2131230882,
+   string:tagmanager_preview_dialog_title:2131230883,
    style:TextAppearance_CastIntroOverlay_Button:2131362033,
    style:TextAppearance_CastIntroOverlay_Title:2131362034,
    style:TextAppearance_CastMiniController_Subtitle:2131362035,
@@ -6410,10 +6419,10 @@ attr:actionBarDivider:2130772093,
    drawable:b13:2130837592,
    drawable:b14:2130837593,
    drawable:b15:2130837594,
-   drawable:empty:2130837672,
+   drawable:empty:2130837673,
    id:adViewField:2131624120,
-   id:adViewHS:2131624127,
-   id:adViewMain:2131624134,
+   id:adViewHS:2131624128,
+   id:adViewMain:2131624135,
    id:bottomField:2131624117,
    id:btn1:2131624098,
    id:btn10:2131624109,
@@ -6431,35 +6440,57 @@ attr:actionBarDivider:2130772093,
    id:btn7:2131624105,
    id:btn8:2131624106,
    id:btn9:2131624108,
-   id:btnContinue:2131624129,
-   id:btnExit:2131624133,
-   id:btnHS:2131624131,
-   id:btnRules:2131624132,
-   id:btnStart:2131624130,
-   id:hsDate:2131624126,
-   id:hsText:2131624124,
-   id:textView:2131624123,
-   id:textView2:2131624121,
-   id:textView3:2131624139,
-   id:textView4:2131624125,
-   id:textView5:2131624119,
-   id:textView7:2131624135,
+   id:btnContinue:2131624130,
+   id:btnExit:2131624134,
+   id:btnHS:2131624132,
+   id:btnRules:2131624133,
+   id:btnStart:2131624131,
+   id:hsDate:2131624127,
+   id:hsText:2131624125,
+   id:multiAutoCompleteTextView:2131624140,
+   id:row0:2131624097,
+   id:row1:2131624102,
+   id:row2:2131624107,
+   id:row3:2131624112,
+   id:rulesTV:2131624139,
+   id:timerValue:2131624118,
+   id:tvBest:2131624123,
+   id:tvFieldTime:2131624119,
+   id:tvHS:2131624122,
+   id:tvHeader:2131624129,
+   id:tvIs:2131624124,
+   id:tvOnThe:2131624126,
    layout:activity_field:2130968602,
    layout:activity_high_scores:2130968603,
    layout:activity_main:2130968604,
    layout:activity_rules:2130968605,
    mipmap:ic_launcher:2130903040,
    string:app_name:2131230850,
-   string:banner_home_footer:2131230851,
-   string:hsdate:2131230860,
-   string:hstext:2131230861,
-   string:interstitial_full_screen:2131230862,
-   string:new_game:2131230864,
-   string:on_the:2131230865,
-   string:rules:2131230866,
-   string:rules_:2131230867,
-   string:rules_description:2131230868,
-   string:time:2131230873,
+   string:app_name_rus:2131230851,
+   string:banner_home_footer:2131230852,
+   string:best_rus:2131230854,
+   string:cont_rus:2131230858,
+   string:exit_rus:2131230861,
+   string:high_scores_head_rus:2131230864,
+   string:high_scores_rus:2131230865,
+   string:hsdate:2131230866,
+   string:hstext:2131230867,
+   string:interstitial_full_screen:2131230868,
+   string:is_rus:2131230870,
+   string:new_game:2131230871,
+   string:new_game_rus:2131230872,
+   string:on_the:2131230873,
+   string:on_the_rus:2131230874,
+   string:rules:2131230875,
+   string:rules_:2131230876,
+   string:rules__rus:2131230877,
+   string:rules_description:2131230878,
+   string:rules_description_rus:2131230879,
+   string:rules_rus:2131230880,
+   string:the_fifteen_rus:2131230885,
+   string:time:2131230886,
+   string:time_rus:2131230887,
+   string:version_description:2131230888,
    style:AppTheme:2131361935,
    attr:android:windowTitleStyle:-1,
    id:android:icon2:-1,
@@ -6550,33 +6581,33 @@ Skipped unused resource res/anim/abc_slide_out_bottom.xml: 400 bytes (replaced w
 Skipped unused resource res/anim/abc_slide_out_top.xml: 400 bytes (replaced with small dummy file of size 104 bytes)
 Skipped unused resource res/color/wallet_primary_text_holo_light.xml: 848 bytes (replaced with small dummy file of size 104 bytes)
 Skipped unused resource res/color/wallet_secondary_text_holo_dark.xml: 1208 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-hdpi-v4/ic_media_pause.png: 354 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_media_pause.png: 289 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/ic_media_play.png: 606 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/ic_plusone_medium_off_client.png: 395 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/ic_plusone_small_off_client.png: 513 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/ic_plusone_standard_off_client.png: 403 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-hdpi-v4/ic_plusone_tall_off_client.png: 420 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_plusone_tall_off_client.png: 403 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/places_ic_clear.png: 212 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/places_ic_search.png: 402 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/quantum_ic_cast_white_36.png: 568 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png: 211 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/ic_media_pause.png: 244 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-mdpi-v4/ic_media_play.png: 757 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_media_play.png: 446 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/ic_plusone_medium_off_client.png: 307 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-mdpi-v4/ic_plusone_small_off_client.png: 283 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_plusone_small_off_client.png: 277 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/ic_plusone_standard_off_client.png: 343 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/ic_plusone_tall_off_client.png: 320 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-mdpi-v4/places_ic_clear.png: 235 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-mdpi-v4/places_ic_search.png: 389 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-mdpi-v4/quantum_ic_cast_white_36.png: 690 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/places_ic_clear.png: 168 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/places_ic_search.png: 257 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/quantum_ic_cast_white_36.png: 394 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png: 168 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png: 385 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png: 372 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-tvdpi-v4/ic_plusone_small_off_client.png: 399 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-tvdpi-v4/ic_plusone_standard_off_client.png: 386 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png: 402 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/ic_media_pause.png: 316 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/ic_media_play.png: 876 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xhdpi-v4/ic_media_route_on_light.png: 762 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_media_route_on_light.png: 562 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/ic_plusone_medium_off_client.png: 628 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/ic_plusone_small_off_client.png: 667 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/ic_plusone_standard_off_client.png: 667 bytes (replaced with small dummy file of size 67 bytes)
@@ -6584,23 +6615,32 @@ Skipped unused resource res/drawable-xhdpi-v4/ic_plusone_tall_off_client.png: 63
 Skipped unused resource res/drawable-xhdpi-v4/places_ic_clear.png: 239 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/places_ic_search.png: 483 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/quantum_ic_cast_white_36.png: 666 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png: 356 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxhdpi-v4/ic_media_pause.png: 221 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png: 268 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_media_pause.png: 201 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_media_play.png: 434 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxhdpi-v4/ic_media_route_on_light.png: 1080 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxhdpi-v4/ic_plusone_medium_off_client.png: 854 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_media_route_on_light.png: 798 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_plusone_medium_off_client.png: 837 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_plusone_small_off_client.png: 530 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_plusone_standard_off_client.png: 827 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_plusone_tall_off_client.png: 720 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxhdpi-v4/places_ic_clear.png: 393 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxhdpi-v4/places_ic_search.png: 1030 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxhdpi-v4/quantum_ic_cast_white_36.png: 1571 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png: 378 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/places_ic_clear.png: 313 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/places_ic_search.png: 709 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/quantum_ic_cast_white_36.png: 1017 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png: 329 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxxhdpi-v4/places_ic_clear.png: 386 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxxhdpi-v4/places_ic_search.png: 1327 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxxhdpi-v4/quantum_ic_cast_white_36.png: 1899 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-xxxhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png: 436 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable/b16.png: 58881 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/places_ic_search.png: 915 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/quantum_ic_cast_white_36.png: 1286 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png: 394 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable/b16.png: 14503 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable/fire.jpg: 151347 bytes (replaced with small dummy file of size 0 bytes)
+Skipped unused resource res/drawable/hohl1.jpg: 191479 bytes (replaced with small dummy file of size 0 bytes)
+Skipped unused resource res/drawable/hohl2.jpg: 228937 bytes (replaced with small dummy file of size 0 bytes)
+Skipped unused resource res/drawable/hohl3.jpg: 168497 bytes (replaced with small dummy file of size 0 bytes)
+Skipped unused resource res/drawable/wooden6land.jpg: 37750 bytes (replaced with small dummy file of size 0 bytes)
+Skipped unused resource res/drawable/woody_texture.jpg: 56597 bytes (replaced with small dummy file of size 0 bytes)
+Skipped unused resource res/drawable/woody_texture2.jpg: 36505 bytes (replaced with small dummy file of size 0 bytes)
+Skipped unused resource res/drawable/woody_texture3.jpg: 37487 bytes (replaced with small dummy file of size 0 bytes)
+Skipped unused resource res/drawable/woody_texture4.jpg: 50049 bytes (replaced with small dummy file of size 0 bytes)
 Skipped unused resource res/interpolator-v21/mr_fast_out_slow_in.xml: 408 bytes (replaced with small dummy file of size 104 bytes)
 Skipped unused resource res/interpolator-v21/mr_linear_out_slow_in.xml: 408 bytes (replaced with small dummy file of size 104 bytes)
 Skipped unused resource res/interpolator/mr_fast_out_slow_in.xml: 240 bytes (replaced with small dummy file of size 104 bytes)
