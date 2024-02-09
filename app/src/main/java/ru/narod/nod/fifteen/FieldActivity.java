@@ -12,7 +12,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TableRow;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdView;
@@ -25,20 +24,16 @@ import java.util.TimeZone;
 
 public class FieldActivity extends Activity implements View.OnClickListener {
     //View's declaration
-    final String TAG = "FieldActivity";
-    Engine engine;
-    HighScoresActivity highScoresActivity;
-    ImageView[][] arrBut;
-    //Chronometer chronometer;
-    AdView adView;
-    Boolean contin, finished, orientationChanged;
-    SharedPreferences prefs;
-    SharedPreferences.Editor edit;
-    ViewGroup.LayoutParams params;
-    TableRow tr0, tr1, tr2, tr3;
+    private final String TAG = "FieldActivity";
+    private Engine engine;
+    private HighScoresActivity highScoresActivity;
+    private ImageView[][] arrBut;
+    private Boolean contin, finished;
+    private SharedPreferences prefs;
+    private SharedPreferences.Editor edit;
+    private ViewGroup.LayoutParams params;
 
-    TimeCounter timeCounter;//!!!!!!!!!!!!!!!!!!!!!!
-    boolean orientChanged = false;
+    private TimeCounter timeCounter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +49,8 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         contin = intent.getBooleanExtra("contin", false);
 
         // Initialize the Mobile Ads SDK.
-        adView = findViewById(R.id.adViewField);
+        //Chronometer chronometer;
+        AdView adView = findViewById(R.id.adViewField);
         Ads ads = new Ads(this);
         adView.loadAd(ads.getSpecialAdRequest());
 
@@ -84,15 +80,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
             for (int j = 0; j < 4; j++) {
                 arrBut[i][j].setOnClickListener(this);
             }
-        }
-
-        try {
-            tr0 = findViewById(R.id.row0);
-            tr1 = findViewById(R.id.row1);
-            tr2 = findViewById(R.id.row2);
-            tr3 = findViewById(R.id.row3);
-        } catch (final Exception e) {
-            Log.e(this.getClass().getSimpleName(), "ERROR: " + e);
         }
         //endregion
 
@@ -318,7 +305,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         super.onPause();
         Log.d(TAG, "FieldActivity: onPause()");
         putCurrentConsistence();
-        orientationChanged = true;
 
         timeCounter.pauseCounter();
     }
@@ -345,7 +331,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
-        orientChanged = true;
         putCurrentConsistence();
     }
 }

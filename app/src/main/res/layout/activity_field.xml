@@ -1,249 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:theme="@android:style/Theme.Black.NoTitleBar"
-
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:paddingTop="8dp"
-    android:paddingBottom="8dp"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp"
-    tools:context="ru.narod.nod.fifteen.MainActivity"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tableField"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/wooden6"
-    ><![CDATA[
+    android:padding="8dp"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context="ru.narod.nod.fifteen.MainActivity">
 
-
-    />
-
-    ]]>
-
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.6"
-        android:layout_marginTop="40dp"
-        android:id="@+id/row0"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:text="@string/_1"
-
-            android:id="@+id/btn1"
-            android:layout_column="0"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-
-            />
-
-        <ImageView
-            android:text="@string/_2"
-
-            android:id="@+id/btn2"
-            android:layout_column="1"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_3"
-
-            android:id="@+id/btn3"
-            android:layout_column="2"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_4"
-
-            android:id="@+id/btn4"
-            android:layout_column="3"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.6"
-        android:id="@+id/row1"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:text="@string/_5"
-
-            android:id="@+id/btn5"
-            android:layout_column="0"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_6"
-
-            android:id="@+id/btn6"
-            android:layout_column="1"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_7"
-
-            android:id="@+id/btn7"
-            android:layout_column="2"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_8"
-
-            android:id="@+id/btn8"
-            android:layout_column="3"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.6"
-        android:id="@+id/row2"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:text="@string/_9"
-
-            android:id="@+id/btn9"
-            android:layout_column="0"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_10"
-
-            android:id="@+id/btn10"
-            android:layout_column="1"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_11"
-
-            android:id="@+id/btn11"
-            android:layout_column="2"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_12"
-
-            android:id="@+id/btn12"
-            android:layout_column="3"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.6"
-        android:id="@+id/row3"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:text="@string/_13"
-
-            android:id="@+id/btn13"
-            android:layout_column="0"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_14"
-
-            android:id="@+id/btn14"
-            android:layout_column="1"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/_15"
-
-            android:id="@+id/btn15"
-            android:layout_column="2"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-        <ImageView
-            android:text="@string/empty"
-
-            android:id="@+id/btn16"
-            android:layout_column="3"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            />
-    </TableRow>
-
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_weight="0"
-        android:id="@+id/bottomField">
+        android:layout_height="wrap_content"
+        ads:layout_constraintBottom_toTopOf="@+id/bottomField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="249dp"
-            android:layout_height="51dp"
-            android:id="@+id/timerValue"
-            android:layout_gravity="right|top"
-            android:textIsSelectable="false"
-            android:textStyle="normal"
-            android:enabled="true"
-            android:textColor="#604d00"
-            android:textSize="30sp"
-            android:layout_marginLeft="30dp"
-            android:gravity="center_horizontal|center_vertical"/>
-
-        <TextView
-            android:layout_width="110dp"
-            android:layout_height="51dp"
-            android:text="@string/time"
-            android:id="@+id/tvFieldTime"
-            android:textSize="30sp"
-            android:textColor="#604d00"
-            android:gravity="center_vertical|left"
-            android:layout_gravity="left|top"/>
-
-        <com.google.android.gms.ads.AdView
+        <TableRow
+            android:id="@+id/row0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_weight="0.6">
+
+            <ImageView
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_1" />
+
+            <ImageView
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_2" />
+
+            <ImageView
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_3" />
+
+            <ImageView
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_4" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row0"
+            tools:layout_weight="0.6">
+
+            <ImageView
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_5" />
+
+            <ImageView
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_6" />
+
+            <ImageView
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_7" />
+
+            <ImageView
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_8" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row1"
+            tools:layout_weight="0.6">
+
+            <ImageView
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_9" />
+
+            <ImageView
+                android:id="@+id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_10" />
+
+            <ImageView
+                android:id="@+id/btn11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_11" />
+
+            <ImageView
+                android:id="@+id/btn12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_12" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row2"
+            tools:layout_weight="0.6">
+
+            <ImageView
+                android:id="@+id/btn13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_13" />
+
+            <ImageView
+                android:id="@+id/btn14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_14" />
+
+            <ImageView
+                android:id="@+id/btn15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/_15" />
+
+            <ImageView
+                android:id="@+id/btn16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:text="@string/empty" />
+        </TableRow>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomField"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="0"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/timerValue"
+            android:layout_width="249dp"
+            android:layout_height="51dp"
+            android:layout_gravity="end|top"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="@dimen/activity_bottom_margin"
+            android:enabled="true"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:textAlignment="viewEnd"
+            android:textColor="#604d00"
+            android:textIsSelectable="false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFieldTime"
+            android:layout_width="110dp"
+            android:layout_height="51dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="@dimen/activity_bottom_margin"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:text="@string/time"
+            android:textColor="#604d00"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.gms.ads.AdView
             android:id="@+id/adViewField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|bottom"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/banner_home_footer">
+            ads:adUnitId="@string/banner_home_footer"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent">
 
         </com.google.android.gms.ads.AdView>
 
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
