@@ -4,39 +4,38 @@ import android.content.Context;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.RequestConfiguration;
+
+import java.util.List;
 
 
 class Ads {
 
     //vars
     private final Context context;
-    private final String adBlock;
 
     //constructor
-    public Ads (Context context) {
-        adBlock = "ca-app-pub-8956716360419559~4528395824";
+    public Ads(Context context) {
         this.context = context;
     }
 
     //methods
     public AdRequest getSpecialAdRequest() {
-        return BuildConfig.DEBUG ? testAd() : realAd();
-    }
+        MobileAds.initialize(context);
 
-    private AdRequest realAd () {
-        // Initialize the Mobile Ads SDK.
-        MobileAds.initialize(context, adBlock);
+        if (BuildConfig.DEBUG) {
+            addTestDevices();
+        }
+
         return new AdRequest.Builder()
                 .build();
     }
 
-    private AdRequest testAd () {
-        // Initialize the Mobile Ads SDK.
-        MobileAds.initialize(context.getApplicationContext(), adBlock);
-        return new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                // Check the LogCat to get the test device ID
-                .addTestDevice("C04B1BFFB0774708339BC273F8A43708")
-                .build();
+    private void addTestDevices() {
+        // Check the LogCat to get the test device ID
+        List<String> testDeviceIds = List.of("33BE2250B43518CCDA7DE426D04EE231");
+        RequestConfiguration configuration =
+                new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();
+        MobileAds.setRequestConfiguration(configuration);
     }
 }
