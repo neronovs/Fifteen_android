@@ -287,12 +287,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d(TAG, "FieldActivity: onStart()");
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
         Log.d(TAG, "FieldActivity: onResume()");
@@ -307,18 +301,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         putCurrentConsistence();
 
         timeCounter.pauseCounter();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d(TAG, "FieldActivity: onStop()");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(TAG, "FieldActivity: onDestroy()");
     }
 
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
