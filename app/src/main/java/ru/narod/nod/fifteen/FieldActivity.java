@@ -1,18 +1,17 @@
 package ru.narod.nod.fifteen;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.Toast;
 
@@ -22,12 +21,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class FieldActivity extends AppCompatActivity implements View.OnClickListener {
+public class FieldActivity extends Activity implements View.OnClickListener {
     //View's declaration
     final String TAG = "FieldActivity";
     Engine engine;
     HighScoresActivity highScoresActivity;
-    ImageView arrBut[][];
+    ImageView[][] arrBut;
     //Chronometer chronometer;
     AdView adView;
     Boolean contin, finished, orientationChanged;
@@ -53,39 +52,30 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         Intent intent = getIntent();
         contin = intent.getBooleanExtra("contin", false);
 
-        //the var for the saving of the current field when the orientation is changing
-        //if (null == orientationChanged) orientationChanged = false;
-
         // Initialize the Mobile Ads SDK.
         adView = (AdView) findViewById(R.id.adViewField);
-        Ads ads = new Ads(this, FieldActivity.this);
+        Ads ads = new Ads(this);
         adView.loadAd(ads.getSpecialAdRequest());
-
-//        chronometer = (Chronometer) findViewById(R.id.chronometer);
-//        chronometer.setFormat("%s");
-//        chronometer.start();
 
         //region Declaration of views
         arrBut = new ImageView[4][4];
 
-        //Log.d(TAG, "FieldActivity: onCreate()");
-
-        arrBut[0][0] = (ImageView) findViewById(R.id.btn1);
-        arrBut[0][1] = (ImageView) findViewById(R.id.btn2);
-        arrBut[0][2] = (ImageView) findViewById(R.id.btn3);
-        arrBut[0][3] = (ImageView) findViewById(R.id.btn4);
-        arrBut[1][0] = (ImageView) findViewById(R.id.btn5);
-        arrBut[1][1] = (ImageView) findViewById(R.id.btn6);
-        arrBut[1][2] = (ImageView) findViewById(R.id.btn7);
-        arrBut[1][3] = (ImageView) findViewById(R.id.btn8);
-        arrBut[2][0] = (ImageView) findViewById(R.id.btn9);
-        arrBut[2][1] = (ImageView) findViewById(R.id.btn10);
-        arrBut[2][2] = (ImageView) findViewById(R.id.btn11);
-        arrBut[2][3] = (ImageView) findViewById(R.id.btn12);
-        arrBut[3][0] = (ImageView) findViewById(R.id.btn13);
-        arrBut[3][1] = (ImageView) findViewById(R.id.btn14);
-        arrBut[3][2] = (ImageView) findViewById(R.id.btn15);
-        arrBut[3][3] = (ImageView) findViewById(R.id.btn16);
+        arrBut[0][0] = findViewById(R.id.btn1);
+        arrBut[0][1] = findViewById(R.id.btn2);
+        arrBut[0][2] = findViewById(R.id.btn3);
+        arrBut[0][3] = findViewById(R.id.btn4);
+        arrBut[1][0] = findViewById(R.id.btn5);
+        arrBut[1][1] = findViewById(R.id.btn6);
+        arrBut[1][2] = findViewById(R.id.btn7);
+        arrBut[1][3] = findViewById(R.id.btn8);
+        arrBut[2][0] = findViewById(R.id.btn9);
+        arrBut[2][1] = findViewById(R.id.btn10);
+        arrBut[2][2] = findViewById(R.id.btn11);
+        arrBut[2][3] = findViewById(R.id.btn12);
+        arrBut[3][0] = findViewById(R.id.btn13);
+        arrBut[3][1] = findViewById(R.id.btn14);
+        arrBut[3][2] = findViewById(R.id.btn15);
+        arrBut[3][3] = findViewById(R.id.btn16);
         //endregion
 
         //region Assign setOnClickListener for buttons
@@ -96,18 +86,20 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         }
 
         try {
-            tr0 = (TableRow) findViewById(R.id.row0);
-            tr1 = (TableRow) findViewById(R.id.row1);
-            tr2 = (TableRow) findViewById(R.id.row2);
-            tr3 = (TableRow) findViewById(R.id.row3);
-        } catch (Exception e) {}
+            tr0 = findViewById(R.id.row0);
+            tr1 = findViewById(R.id.row1);
+            tr2 = findViewById(R.id.row2);
+            tr3 = findViewById(R.id.row3);
+        } catch (final Exception e) {
+            Log.e(this.getClass().getSimpleName(), "ERROR: " + e);
+        }
         //endregion
 
         engine = new Engine();
         highScoresActivity = new HighScoresActivity();
 
         if (null == timeCounter)
-            timeCounter = new TimeCounter(this, FieldActivity.this);
+            timeCounter = new TimeCounter(FieldActivity.this);
 
         //if was pressed "continue" then get the previous Field consistence
         if (contin) {
@@ -129,14 +121,6 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         params = arrBut[0][0].getLayoutParams();
         params.height = params.width = mainTableLayoutWeight / 4;
         arrayToField();
-//        try {
-//            paramsRow = tr0.getLayoutParams();
-//            paramsRow.height = params.height;
-//            tr0.setLayoutParams(paramsRow);
-//            tr1.setLayoutParams(paramsRow);
-//            tr2.setLayoutParams(paramsRow);
-//            tr3.setLayoutParams(paramsRow);
-//        } catch (Exception e) {}
 
         //translation for the activity due to the system language
         Translater translater = new Translater(this, FieldActivity.this);
@@ -145,32 +129,16 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
     private void putCurrentConsistence() {
         Log.d(TAG, "FieldActivity: putCurrentConsistence()");
         if (!finished) {
-            //String array[]
-            //SharedPreferences.Editor edit = prefs.edit();
-            //edit.putInt("array_size_1", arrBut.length);
-            //edit.putInt("array_size_2", arrBut[0].length);
             for (int i = 0; i < arrBut.length; i++) {
                 for (int j = 0; j < arrBut[0].length; j++) {
                     edit.putString("array_" + i + j, engine.getGameField()[i][j]);
                 }
             }
 
-            //store current chronometer time
-            //edit.putString("chronometer", String.valueOf(chronometer.getBase()));
-            //edit.putLong("chronometer", chronometer.getBase());
-            //edit.putString("timeCounter", timeCounter.timerValue.getText().toString());
-
-
-            //edit.putLong("timeCounter", timeCounter.updatedTime);
             timeCounter.savePref(); //save current timer in the properties through the timer object's method
 
-            //chronometer.stop();
             edit.putBoolean("deactivate_contin", false);
             edit.apply();
-
-            //timeCounter.timeSwapBuff += timeCounter.timeInMilliseconds;//!!!!!!!!!!!!!
-            //timeCounter.customHandler.removeCallbacks(timeCounter.updateTimerThread);//!!!!!!!!!!!!!
-
         } else {
             //SharedPreferences.Editor edit = prefs.edit();
             edit.putBoolean("deactivate_contin", true);
@@ -186,38 +154,44 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
                 engine.getGameField()[i][j] = prefs.getString("array_" + i + j, null);
             }
         }
-        /*String time = prefs.getString("chronometer", "");
-        int temp = Integer.valueOf(time.substring(0, 1));
-        temp *= 60;
-        temp += Integer.valueOf(time.substring(3));*/
-        //Long timeWhenStopped = Long.parseLong(prefs.getString("chronometer", ""));
-//        long timeWhenStopped = prefs.getLong("chronometer", 3592478);
-//        chronometer.setBase(timeWhenStopped);
-//        chronometer.start();
-
-        //timeCounter.startTime = prefs.getLong("timeCounter", 0);
         timeCounter.loadPref(); //load the saved timer from the properties through the timer object's method
     }
 
     public void arrayToField() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                if (engine.getGameField()[i][j].equals("1")) arrBut[i][j].setBackgroundResource(R.drawable.b01);
-                else if (engine.getGameField()[i][j].equals("2")) arrBut[i][j].setBackgroundResource(R.drawable.b02);
-                else if (engine.getGameField()[i][j].equals("3")) arrBut[i][j].setBackgroundResource(R.drawable.b03);
-                else if (engine.getGameField()[i][j].equals("4")) arrBut[i][j].setBackgroundResource(R.drawable.b04);
-                else if (engine.getGameField()[i][j].equals("5")) arrBut[i][j].setBackgroundResource(R.drawable.b05);
-                else if (engine.getGameField()[i][j].equals("6")) arrBut[i][j].setBackgroundResource(R.drawable.b06);
-                else if (engine.getGameField()[i][j].equals("7")) arrBut[i][j].setBackgroundResource(R.drawable.b07);
-                else if (engine.getGameField()[i][j].equals("8")) arrBut[i][j].setBackgroundResource(R.drawable.b08);
-                else if (engine.getGameField()[i][j].equals("9")) arrBut[i][j].setBackgroundResource(R.drawable.b09);
-                else if (engine.getGameField()[i][j].equals("10")) arrBut[i][j].setBackgroundResource(R.drawable.b10);
-                else if (engine.getGameField()[i][j].equals("11")) arrBut[i][j].setBackgroundResource(R.drawable.b11);
-                else if (engine.getGameField()[i][j].equals("12")) arrBut[i][j].setBackgroundResource(R.drawable.b12);
-                else if (engine.getGameField()[i][j].equals("13")) arrBut[i][j].setBackgroundResource(R.drawable.b13);
-                else if (engine.getGameField()[i][j].equals("14")) arrBut[i][j].setBackgroundResource(R.drawable.b14);
-                else if (engine.getGameField()[i][j].equals("15")) arrBut[i][j].setBackgroundResource(R.drawable.b15);
-                else if (engine.getGameField()[i][j].equals("")) arrBut[i][j].setBackgroundResource(R.drawable.empty);
+                if (engine.getGameField()[i][j].equals("1"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b01);
+                else if (engine.getGameField()[i][j].equals("2"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b02);
+                else if (engine.getGameField()[i][j].equals("3"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b03);
+                else if (engine.getGameField()[i][j].equals("4"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b04);
+                else if (engine.getGameField()[i][j].equals("5"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b05);
+                else if (engine.getGameField()[i][j].equals("6"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b06);
+                else if (engine.getGameField()[i][j].equals("7"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b07);
+                else if (engine.getGameField()[i][j].equals("8"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b08);
+                else if (engine.getGameField()[i][j].equals("9"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b09);
+                else if (engine.getGameField()[i][j].equals("10"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b10);
+                else if (engine.getGameField()[i][j].equals("11"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b11);
+                else if (engine.getGameField()[i][j].equals("12"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b12);
+                else if (engine.getGameField()[i][j].equals("13"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b13);
+                else if (engine.getGameField()[i][j].equals("14"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b14);
+                else if (engine.getGameField()[i][j].equals("15"))
+                    arrBut[i][j].setBackgroundResource(R.drawable.b15);
+                else if (engine.getGameField()[i][j].equals(""))
+                    arrBut[i][j].setBackgroundResource(R.drawable.empty);
 
                 //sets the squared size for cells
                 arrBut[i][j].setLayoutParams(params);
@@ -225,89 +199,63 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         //region Switch button's construction
         switch (v.getId()) {
-            case R.id.btn1:
-                actionOnTheField(arrBut[0][0], 0, 0);
-                break;
-            case R.id.btn2:
-                actionOnTheField(arrBut[0][1], 0, 1);
-                break;
-            case R.id.btn3:
-                actionOnTheField(arrBut[0][2], 0, 2);
-                break;
-            case R.id.btn4:
-                actionOnTheField(arrBut[0][3], 0, 3);
-                break;
-            case R.id.btn5:
-                actionOnTheField(arrBut[1][0], 1, 0);
-                break;
-            case R.id.btn6:
-                actionOnTheField(arrBut[1][1], 1, 1);
-                break;
-            case R.id.btn7:
-                actionOnTheField(arrBut[1][2], 1, 2);
-                break;
-            case R.id.btn8:
-                actionOnTheField(arrBut[1][3], 1, 3);
-                break;
-            case R.id.btn9:
-                actionOnTheField(arrBut[2][0], 2, 0);
-                break;
-            case R.id.btn10:
-                actionOnTheField(arrBut[2][1], 2, 1);
-                break;
-            case R.id.btn11:
-                actionOnTheField(arrBut[2][2], 2, 2);
-                break;
-            case R.id.btn12:
-                actionOnTheField(arrBut[2][3], 2, 3);
-                break;
-            case R.id.btn13:
-                actionOnTheField(arrBut[3][0], 3, 0);
-                break;
-            case R.id.btn14:
-                actionOnTheField(arrBut[3][1], 3, 1);
-                break;
-            case R.id.btn15:
-                actionOnTheField(arrBut[3][2], 3, 2);
-                break;
-            case R.id.btn16:
-                actionOnTheField(arrBut[3][3], 3, 3);
-                break;
+            case R.id.btn1 -> actionOnTheField(arrBut[0][0], 0, 0);
+            case R.id.btn2 -> actionOnTheField(arrBut[0][1], 0, 1);
+            case R.id.btn3 -> actionOnTheField(arrBut[0][2], 0, 2);
+            case R.id.btn4 -> actionOnTheField(arrBut[0][3], 0, 3);
+            case R.id.btn5 -> actionOnTheField(arrBut[1][0], 1, 0);
+            case R.id.btn6 -> actionOnTheField(arrBut[1][1], 1, 1);
+            case R.id.btn7 -> actionOnTheField(arrBut[1][2], 1, 2);
+            case R.id.btn8 -> actionOnTheField(arrBut[1][3], 1, 3);
+            case R.id.btn9 -> actionOnTheField(arrBut[2][0], 2, 0);
+            case R.id.btn10 -> actionOnTheField(arrBut[2][1], 2, 1);
+            case R.id.btn11 -> actionOnTheField(arrBut[2][2], 2, 2);
+            case R.id.btn12 -> actionOnTheField(arrBut[2][3], 2, 3);
+            case R.id.btn13 -> actionOnTheField(arrBut[3][0], 3, 0);
+            case R.id.btn14 -> actionOnTheField(arrBut[3][1], 3, 1);
+            case R.id.btn15 -> actionOnTheField(arrBut[3][2], 3, 2);
+            case R.id.btn16 -> actionOnTheField(arrBut[3][3], 3, 3);
         }
         //endregion
     }
 
     public void actionOnTheField(ImageView btn, int line, int column) {
         //Log.d(TAG, "btn " + btn + " was pressed");
-        String tmp = engine.getGameField()[line][column];;
+        String tmp = engine.getGameField()[line][column];
+        ;
         try {
             if (engine.getGameField()[line][column + 1] == "") {
                 engine.setGameField(engine.getGameField()[line][column + 1], line, column);
                 engine.setGameField(tmp, line, column + 1);
             }
-        } catch (Throwable e) {}
+        } catch (Throwable e) {
+        }
         try {
             if (engine.getGameField()[line][column - 1] == "") {
                 engine.setGameField(engine.getGameField()[line][column - 1], line, column);
                 engine.setGameField(tmp, line, column - 1);
             }
-        } catch (Throwable e) {}
+        } catch (Throwable e) {
+        }
         try {
             if (engine.getGameField()[line + 1][column] == "") {
                 engine.setGameField(engine.getGameField()[line + 1][column], line, column);
                 engine.setGameField(tmp, line + 1, column);
             }
-        } catch (Throwable e) {}
+        } catch (Throwable e) {
+        }
         try {
             if (engine.getGameField()[line - 1][column] == "") {
                 engine.setGameField(engine.getGameField()[line - 1][column], line, column);
                 engine.setGameField(tmp, line - 1, column);
             }
-        } catch (Throwable e) {}
+        } catch (Throwable e) {
+        }
         arrayToField();
         checkIsFinished();
     }
@@ -318,15 +266,15 @@ public class FieldActivity extends AppCompatActivity implements View.OnClickList
         finished = false;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                if (engine.getGameField()[i][j].equals("")) tmp = 0; //if button is empty (without a num), put 0
+                if (engine.getGameField()[i][j].equals(""))
+                    tmp = 0; //if button is empty (without a num), put 0
                 else tmp = Integer.valueOf(engine.getGameField()[i][j]);
                 //System.out.println(Integer.valueOf(engine.getGameField()[i][j]));
                 if (i == 3 && j == 3) break; //skip the last button #16
                 if (tmp - checker++ != 1) { //if next button minus preview NOT equals 1 then it is NOT the sequence
                     finished = false;
                     break;
-                }
-                else finished = true;
+                } else finished = true;
             }
         }
         if (finished) {
