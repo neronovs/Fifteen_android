@@ -1,99 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:theme="@android:style/Theme.Holo.Light.NoActionBar"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ru.narod.nod.fifteen.MainActivity"
-    android:orientation="vertical"
     android:background="@drawable/hohl4"
-    android:alpha="50"><![CDATA[
-    />
+    android:theme="@android:style/Theme.Holo.Light.NoActionBar">
 
-    ]]>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/the_fifteen"
-        android:id="@+id/tvHeader"
-        android:textSize="50sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:textColor="#462f00"/>
+        android:alpha="50"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toTopOf="@+id/adViewMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="ru.narod.nod.fifteen.MainActivity">
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="60sp"
-        android:layout_marginTop="20dp"
-        android:text="@string/cont"
-        android:textSize="40sp"
-        android:id="@+id/btnContinue"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_hohl2_light"
-        android:textColor="#775100"/>
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"
+            android:text="@string/the_fifteen"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/lime"
+            android:textSize="50sp" />
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="60sp"
-        android:layout_marginTop="10dp"
-        android:text="@string/new_game"
-        android:textSize="40sp"
-        android:id="@+id/btnStart"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_hohl2_light"
-        android:textColor="#775100"/>
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="250dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_hohl2_light"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"
+            android:text="@string/cont"
+            android:textColor="@color/yellow"
+            android:textSize="40sp" />
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="60sp"
-        android:layout_marginTop="10dp"
-        android:text="@string/high_scores"
-        android:textSize="40sp"
-        android:id="@+id/btnHS"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_hohl2_light"
-        android:textColor="#775100"/>
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="250dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_hohl2_light"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"
+            android:text="@string/new_game"
+            android:textColor="@color/fuchsia"
+            android:textSize="40sp" />
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="60sp"
-        android:layout_marginTop="10dp"
-        android:text="@string/rules"
-        android:textSize="40sp"
-        android:id="@+id/btnRules"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_hohl2_light"
-        android:textColor="#775100"/>
+        <Button
+            android:id="@+id/btnHS"
+            android:layout_width="250dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_hohl2_light"
+            android:text="@string/high_scores"
+            android:textColor="@color/maroon"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:textSize="40sp" />
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="60sp"
-        android:layout_marginTop="10dp"
-        android:text="@string/exit"
-        android:textSize="40sp"
-        android:id="@+id/btnExit"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_hohl2_light"
-        android:textColor="#775100"/>
+        <Button
+            android:id="@+id/btnRules"
+            android:layout_width="250dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_hohl2_light"
+            android:text="@string/rules"
+            android:textColor="@color/red"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="250dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_hohl2_light"
+            android:text="@string/exit"
+            android:textColor="@color/blue"
+            android:shadowColor="@color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:textSize="40sp" />
+
+    </LinearLayout>
 
     <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/adViewMain"
-        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="1dp"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_home_footer"
-        android:layout_marginTop="1dp">
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
 
     </com.google.android.gms.ads.AdView>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

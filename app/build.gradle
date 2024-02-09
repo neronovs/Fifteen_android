@@ -6,7 +6,7 @@ android {
     compileSdk 34
 
     dexOptions {
-        incremental = true;
+        incremental = true
         preDexLibraries = false
         javaMaxHeapSize "5g" // 2g should be also OK
     }
@@ -30,6 +30,9 @@ android {
     }
     buildFeatures {
         buildConfig = true
+    }
+    viewBinding {
+        enabled = true
     }
 }
 

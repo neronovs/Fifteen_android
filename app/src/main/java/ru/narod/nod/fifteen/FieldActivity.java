@@ -19,6 +19,8 @@ import com.google.android.gms.ads.AdView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
+import java.util.Objects;
 import java.util.TimeZone;
 
 public class FieldActivity extends Activity implements View.OnClickListener {
@@ -32,7 +34,7 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     Boolean contin, finished, orientationChanged;
     SharedPreferences prefs;
     SharedPreferences.Editor edit;
-    ViewGroup.LayoutParams params, paramsRow;
+    ViewGroup.LayoutParams params;
     TableRow tr0, tr1, tr2, tr3;
 
     TimeCounter timeCounter;//!!!!!!!!!!!!!!!!!!!!!!
@@ -42,7 +44,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_field);
-        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//deny to change orientation of a screen
 
         prefs = getSharedPreferences("storeField", Context.MODE_PRIVATE);
         edit = prefs.edit();
@@ -53,7 +54,7 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         contin = intent.getBooleanExtra("contin", false);
 
         // Initialize the Mobile Ads SDK.
-        adView = (AdView) findViewById(R.id.adViewField);
+        adView = findViewById(R.id.adViewField);
         Ads ads = new Ads(this);
         adView.loadAd(ads.getSpecialAdRequest());
 
@@ -121,9 +122,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         params = arrBut[0][0].getLayoutParams();
         params.height = params.width = mainTableLayoutWeight / 4;
         arrayToField();
-
-        //translation for the activity due to the system language
-        Translater translater = new Translater(this, FieldActivity.this);
     }
 
     private void putCurrentConsistence() {
@@ -140,7 +138,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
             edit.putBoolean("deactivate_contin", false);
             edit.apply();
         } else {
-            //SharedPreferences.Editor edit = prefs.edit();
             edit.putBoolean("deactivate_contin", true);
             edit.apply();
         }
@@ -204,57 +201,59 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         //region Switch button's construction
         switch (v.getId()) {
-            case R.id.btn1 -> actionOnTheField(arrBut[0][0], 0, 0);
-            case R.id.btn2 -> actionOnTheField(arrBut[0][1], 0, 1);
-            case R.id.btn3 -> actionOnTheField(arrBut[0][2], 0, 2);
-            case R.id.btn4 -> actionOnTheField(arrBut[0][3], 0, 3);
-            case R.id.btn5 -> actionOnTheField(arrBut[1][0], 1, 0);
-            case R.id.btn6 -> actionOnTheField(arrBut[1][1], 1, 1);
-            case R.id.btn7 -> actionOnTheField(arrBut[1][2], 1, 2);
-            case R.id.btn8 -> actionOnTheField(arrBut[1][3], 1, 3);
-            case R.id.btn9 -> actionOnTheField(arrBut[2][0], 2, 0);
-            case R.id.btn10 -> actionOnTheField(arrBut[2][1], 2, 1);
-            case R.id.btn11 -> actionOnTheField(arrBut[2][2], 2, 2);
-            case R.id.btn12 -> actionOnTheField(arrBut[2][3], 2, 3);
-            case R.id.btn13 -> actionOnTheField(arrBut[3][0], 3, 0);
-            case R.id.btn14 -> actionOnTheField(arrBut[3][1], 3, 1);
-            case R.id.btn15 -> actionOnTheField(arrBut[3][2], 3, 2);
-            case R.id.btn16 -> actionOnTheField(arrBut[3][3], 3, 3);
+            case R.id.btn1 -> actionOnTheField(0, 0);
+            case R.id.btn2 -> actionOnTheField(0, 1);
+            case R.id.btn3 -> actionOnTheField(0, 2);
+            case R.id.btn4 -> actionOnTheField(0, 3);
+            case R.id.btn5 -> actionOnTheField(1, 0);
+            case R.id.btn6 -> actionOnTheField(1, 1);
+            case R.id.btn7 -> actionOnTheField(1, 2);
+            case R.id.btn8 -> actionOnTheField(1, 3);
+            case R.id.btn9 -> actionOnTheField(2, 0);
+            case R.id.btn10 -> actionOnTheField(2, 1);
+            case R.id.btn11 -> actionOnTheField(2, 2);
+            case R.id.btn12 -> actionOnTheField(2, 3);
+            case R.id.btn13 -> actionOnTheField(3, 0);
+            case R.id.btn14 -> actionOnTheField(3, 1);
+            case R.id.btn15 -> actionOnTheField(3, 2);
+            case R.id.btn16 -> actionOnTheField(3, 3);
         }
         //endregion
     }
 
-    public void actionOnTheField(ImageView btn, int line, int column) {
-        //Log.d(TAG, "btn " + btn + " was pressed");
+    public void actionOnTheField(int line, int column) {
         String tmp = engine.getGameField()[line][column];
-        ;
         try {
-            if (engine.getGameField()[line][column + 1] == "") {
+            if (Objects.equals(engine.getGameField()[line][column + 1], "")) {
                 engine.setGameField(engine.getGameField()[line][column + 1], line, column);
                 engine.setGameField(tmp, line, column + 1);
             }
         } catch (Throwable e) {
+            Log.e(TAG, "ERROR: " + e);
         }
         try {
-            if (engine.getGameField()[line][column - 1] == "") {
+            if (Objects.equals(engine.getGameField()[line][column - 1], "")) {
                 engine.setGameField(engine.getGameField()[line][column - 1], line, column);
                 engine.setGameField(tmp, line, column - 1);
             }
         } catch (Throwable e) {
+            Log.e(TAG, "ERROR: " + e);
         }
         try {
-            if (engine.getGameField()[line + 1][column] == "") {
+            if (Objects.equals(engine.getGameField()[line + 1][column], "")) {
                 engine.setGameField(engine.getGameField()[line + 1][column], line, column);
                 engine.setGameField(tmp, line + 1, column);
             }
         } catch (Throwable e) {
+            Log.e(TAG, "ERROR: " + e);
         }
         try {
-            if (engine.getGameField()[line - 1][column] == "") {
+            if (Objects.equals(engine.getGameField()[line - 1][column], "")) {
                 engine.setGameField(engine.getGameField()[line - 1][column], line, column);
                 engine.setGameField(tmp, line - 1, column);
             }
         } catch (Throwable e) {
+            Log.e(TAG, "ERROR: " + e);
         }
         arrayToField();
         checkIsFinished();
@@ -262,14 +261,13 @@ public class FieldActivity extends Activity implements View.OnClickListener {
 
     private void checkIsFinished() {
         int checker = 0;
-        int tmp = -1; //here we put number of the current button to check whether it equals to the sequence
+        int tmp; //here we put number of the current button to check whether it equals to the sequence
         finished = false;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 if (engine.getGameField()[i][j].equals(""))
                     tmp = 0; //if button is empty (without a num), put 0
-                else tmp = Integer.valueOf(engine.getGameField()[i][j]);
-                //System.out.println(Integer.valueOf(engine.getGameField()[i][j]));
+                else tmp = Integer.parseInt(engine.getGameField()[i][j]);
                 if (i == 3 && j == 3) break; //skip the last button #16
                 if (tmp - checker++ != 1) { //if next button minus preview NOT equals 1 then it is NOT the sequence
                     finished = false;
@@ -278,25 +276,20 @@ public class FieldActivity extends Activity implements View.OnClickListener {
             }
         }
         if (finished) {
-            //String scores = chronometer.getText().toString();
-            String scores = timeCounter.timerValue.getText().toString();//!!!!!!!!!!!!!!!!!!
-            //chronometer.stop();
+            String scores = timeCounter.timerValue.getText().toString();
             Toast.makeText(FieldActivity.this, "Congrats, you won!", Toast.LENGTH_SHORT).show();
 
             //***High score creating
 
             //Load the saved high scores to compare to current ones
-            //prefs = getSharedPreferences("storeField", MODE_PRIVATE);
             String savedText = prefs.getString(highScoresActivity.getAPP_PREFERENCES(), "");
 
             if (savedText.compareTo(scores) > 0) {
                 //If the current high scores better then the saved before ones than save the current scores
-                SimpleDateFormat LocaleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm");
+                SimpleDateFormat LocaleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.getDefault());
                 LocaleDateFormat.setTimeZone(TimeZone.getDefault());
-                //prefs = getSharedPreferences(highScoresActivity.getAPP_PREFERENCES(), MODE_PRIVATE);
-                //SharedPreferences.Editor edit = prefs.edit();
                 edit.putString(highScoresActivity.getAPP_PREFERENCES(), scores);
-                edit.putString(highScoresActivity.getAPP_PREFERENCES_DATE(), String.valueOf(LocaleDateFormat.format(new Date())));
+                edit.putString(highScoresActivity.getAPP_PREFERENCES_DATE(), LocaleDateFormat.format(new Date()));
                 edit.apply();
             }
             Intent intent = new Intent(this, HighScoresActivity.class);
@@ -318,11 +311,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         Log.d(TAG, "FieldActivity: onResume()");
         Intent intent = getIntent();
         contin = intent.getBooleanExtra("contin", false);
-        //if (contin == false) contin = true;
-        /*if (contin) {
-            getPreviousConsistence();
-            arrayToField();
-        }*/
     }
 
     @Override
@@ -339,7 +327,6 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     protected void onStop() {
         super.onStop();
         Log.d(TAG, "FieldActivity: onStop()");
-        //putCurrentConsistence();
     }
 
     @Override

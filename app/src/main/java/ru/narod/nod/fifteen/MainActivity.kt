@@ -8,25 +8,24 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.google.android.gms.ads.AdView
+import ru.narod.nod.fifteen.databinding.ActivityMainBinding
 import kotlin.system.exitProcess
 
 class MainActivity : Activity(), View.OnClickListener {
     //Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15;
-    private lateinit var btnContinue: Button
-    private lateinit var btnStart: Button
-    private lateinit var btnHS: Button
-    private lateinit var btnRules: Button
-    private lateinit var btnExit: Button
     private lateinit var adView: AdView
     private var contin: Boolean? = null
     private lateinit var prefs: SharedPreferences
     private lateinit var edit: SharedPreferences.Editor
 
+    private lateinit var binding: ActivityMainBinding
+
     //***Идентификатор приложения: ca-app-pub-8956716360419559~6814211023
     //***Идентификатор рекламного блока: ca-app-pub-8956716360419559/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         contin = false
 
         // Initialize the Mobile Ads SDK.
@@ -34,29 +33,19 @@ class MainActivity : Activity(), View.OnClickListener {
         val ads = Ads(this)
         adView.loadAd(ads.specialAdRequest)
 
-        //region Button implementation
-        btnContinue = findViewById(R.id.btnContinue)
-        btnStart = findViewById(R.id.btnStart)
-        btnHS = findViewById(R.id.btnHS)
-        btnRules = findViewById(R.id.btnRules)
-        btnExit = findViewById(R.id.btnExit)
-
         //make the "Continue" button active or deactive
         prefs = getSharedPreferences("storeField", MODE_PRIVATE)
         edit = prefs.edit()
-        if (prefs.getBoolean("deactivate_contin", false)) {
-            btnContinue.isClickable = false
-            btnContinue.setTextColor(Color.GRAY)
-        } else {
-            btnContinue.isClickable = true
-            btnContinue.setTextColor(btnStart.textColors)
-        }
+
         //endregion
-        btnContinue.setOnClickListener(this)
-        btnStart.setOnClickListener(this)
-        btnHS.setOnClickListener(this)
-        btnRules.setOnClickListener(this)
-        btnExit.setOnClickListener(this)
+        binding.run {
+            btnContinue.setOnClickListener(this@MainActivity)
+            btnStart.setOnClickListener(this@MainActivity)
+            btnHS.setOnClickListener(this@MainActivity)
+            btnRules.setOnClickListener(this@MainActivity)
+            btnExit.setOnClickListener(this@MainActivity)
+        }
+
         theFirstStart()
     }
 
@@ -104,12 +93,6 @@ class MainActivity : Activity(), View.OnClickListener {
     override fun onResume() {
         super.onResume()
         //make the "Continue" button active or deactive
-        if (prefs.getBoolean("deactivate_contin", false)) {
-            btnContinue.isClickable = false
-            btnContinue.setTextColor(Color.GRAY)
-        } else {
-            btnContinue.isClickable = true
-            btnContinue.setTextColor(btnStart.textColors)
-        }
+        binding.btnContinue.isEnabled = prefs.getBoolean("deactivate_contin", false)
     }
 }
