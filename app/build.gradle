@@ -1,6 +1,18 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.android'
 
+
+// Create a variable called keystorePropertiesFile, and initialize it to your
+// keystore.properties file, in the rootProject folder.
+def keystorePropertiesFile = rootProject.file("../signing-keys/fifteen/.keys/keystore.properties")
+
+// Initialize a new Properties() object called keystoreProperties.
+def keystoreProperties = new Properties()
+
+// Load your keystore.properties file into the keystoreProperties object.
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+
 android {
     namespace 'ru.narod.nod.fifteen'
     compileSdk 34
@@ -14,11 +26,25 @@ android {
         applicationId "ru.narod.nod.fifteen"
         minSdk 21
         targetSdk 34
-        versionCode 16
+        versionCode commitCount()
         versionName "1.2.0"
     }
-    buildTypes {
+    signingConfigs {
+        // Keys are kept on git@gitlab.com:neronovs/signing-keys.git
         release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "String", "PROGRAM_NAME", '"AnCalc DEBUG"'
+        }
+        release {
+            signingConfig signingConfigs.release
+            buildConfigField "String", "PROGRAM_NAME", '"AnCalculator :)"'
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -43,4 +69,19 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}
+
+def commitCount() {
+    final def stdout = new ByteArrayOutputStream()
+    description = "git rev-list --full-history --all"
+    println(description)
+    exec {
+        commandLine 'git', 'rev-list', '--full-history', '--all'
+        standardOutput = stdout
+    }
+    final String output = stdout.toString()
+    final List<String> commits = output.split("\n")
+    final int code = commits.size()
+    println("Version Code: " + code)
+    return code
 }
