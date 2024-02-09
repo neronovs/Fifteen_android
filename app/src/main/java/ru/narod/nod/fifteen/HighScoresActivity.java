@@ -9,7 +9,7 @@ import com.google.android.gms.ads.AdView;
 
 public class HighScoresActivity extends Activity {
 
-    private final String APP_PREFERENCES = "HighScoreSettings";
+    final static String APP_PREFERENCES = "HighScoreSettings";
     private final String APP_PREFERENCES_DATE = "Date";
     TextView hsText, hsDate;
     AdView adView;
@@ -31,16 +31,17 @@ public class HighScoresActivity extends Activity {
 
         hsText = findViewById(R.id.hsText);
         hsDate = findViewById(R.id.hsDate);
+
+        loadHighScore();
     }
 
-    public String loadHighScore() {
+    private void loadHighScore() {
 
         final SharedPreferences prefs = getSharedPreferences("storeField", MODE_PRIVATE);
         final String savedText = prefs.getString(APP_PREFERENCES, "");
         final String savedDate = prefs.getString(APP_PREFERENCES_DATE, "");
         hsText.setText(savedText);
         hsDate.setText(savedDate);
-        return savedText;
     }
 
     public String getAPP_PREFERENCES() {

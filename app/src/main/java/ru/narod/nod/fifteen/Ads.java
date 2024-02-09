@@ -32,7 +32,7 @@ class Ads {
 
     private AdRequest testAd () {
         // Initialize the Mobile Ads SDK.
-        MobileAds.initialize(context.getApplicationContext(), "ca-app-pub-8956716360419559~4528395824");
+        MobileAds.initialize(context.getApplicationContext(), adBlock);
         return new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 // Check the LogCat to get the test device ID

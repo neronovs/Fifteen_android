@@ -3,11 +3,10 @@ package ru.narod.nod.fifteen
 import android.app.Activity
 import android.content.Intent
 import android.content.SharedPreferences
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import com.google.android.gms.ads.AdView
+import ru.narod.nod.fifteen.HighScoresActivity.APP_PREFERENCES
 import ru.narod.nod.fifteen.databinding.ActivityMainBinding
 import kotlin.system.exitProcess
 
@@ -55,8 +54,8 @@ class MainActivity : Activity(), View.OnClickListener {
         val highScoresActivity = HighScoresActivity()
         val savedText = prefs.getString(highScoresActivity.apP_PREFERENCES, "")
         if (savedText == "") {
-            edit.putString(highScoresActivity.apP_PREFERENCES, "99:99")
-            edit.putString(highScoresActivity.apP_PREFERENCES_DATE, "01.09.2016")
+            edit.putString(highScoresActivity.apP_PREFERENCES, "--:--")
+            edit.putString(highScoresActivity.apP_PREFERENCES_DATE, "--.--.----")
             edit.putBoolean("deactivate_contin", true)
             edit.apply()
         }
@@ -92,7 +91,10 @@ class MainActivity : Activity(), View.OnClickListener {
 
     override fun onResume() {
         super.onResume()
-        //make the "Continue" button active or deactive
-        binding.btnContinue.isEnabled = prefs.getBoolean("deactivate_contin", false)
+        binding.run {
+            //make the "Continue" and "High scores" buttons active or inactive
+            btnContinue.isEnabled = prefs.getBoolean("deactivate_contin", false)
+            btnHS.isEnabled = prefs.getString(APP_PREFERENCES, "")?.isNotEmpty() == true
+        }
     }
 }
