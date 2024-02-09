@@ -1,5 +1,7 @@
 package ru.narod.nod.fifteen;
 
+import static ru.narod.nod.fifteen.MainActivity.DEACTIVATE_CONTINUE_KEY;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -23,6 +25,8 @@ import java.util.Objects;
 import java.util.TimeZone;
 
 public class FieldActivity extends Activity implements View.OnClickListener {
+    static final String CONTINUE_KEY = "contin";
+
     //View's declaration
     private final String TAG = "FieldActivity";
     private Engine engine;
@@ -46,7 +50,7 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         finished = false; //for checking if the game is done (finished)
         //Get the boolean data from Intent about was pressed the "continue" button or not
         Intent intent = getIntent();
-        contin = intent.getBooleanExtra("contin", false);
+        contin = intent.getBooleanExtra(CONTINUE_KEY, false);
 
         // Initialize the Mobile Ads SDK.
         //Chronometer chronometer;
@@ -122,10 +126,10 @@ public class FieldActivity extends Activity implements View.OnClickListener {
 
             timeCounter.savePref(); //save current timer in the properties through the timer object's method
 
-            edit.putBoolean("deactivate_contin", false);
+            edit.putBoolean(DEACTIVATE_CONTINUE_KEY, false);
             edit.apply();
         } else {
-            edit.putBoolean("deactivate_contin", true);
+            edit.putBoolean(DEACTIVATE_CONTINUE_KEY, true);
             edit.apply();
         }
     }
@@ -291,7 +295,7 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         super.onResume();
         Log.d(TAG, "FieldActivity: onResume()");
         Intent intent = getIntent();
-        contin = intent.getBooleanExtra("contin", false);
+        contin = intent.getBooleanExtra(CONTINUE_KEY, false);
     }
 
     @Override

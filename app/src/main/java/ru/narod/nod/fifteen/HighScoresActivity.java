@@ -9,23 +9,20 @@ import com.google.android.gms.ads.AdView;
 
 public class HighScoresActivity extends Activity {
 
-    final static String APP_PREFERENCES = "HighScoreSettings";
-    private final String APP_PREFERENCES_DATE = "Date";
-    TextView hsText, hsDate;
-    AdView adView;
+    final static String HIGH_SCORE_SETTINGS_KEY = "HighScoreSettings";
+    private final static String HIGH_SCORE_DATE_KEY = "Date";
+    private TextView hsText, hsDate;
 
     public HighScoresActivity() {
-
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_high_scores);
-        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//deny to change orientation of a screen
 
         // Initialize the Mobile Ads SDK.
-        adView = findViewById(R.id.adViewHS);
+        AdView adView = findViewById(R.id.adViewHS);
         final Ads ads = new Ads(this);
         adView.loadAd(ads.getSpecialAdRequest());
 
@@ -38,17 +35,17 @@ public class HighScoresActivity extends Activity {
     private void loadHighScore() {
 
         final SharedPreferences prefs = getSharedPreferences("storeField", MODE_PRIVATE);
-        final String savedText = prefs.getString(APP_PREFERENCES, "");
-        final String savedDate = prefs.getString(APP_PREFERENCES_DATE, "");
+        final String savedText = prefs.getString(HIGH_SCORE_SETTINGS_KEY, "");
+        final String savedDate = prefs.getString(HIGH_SCORE_DATE_KEY, "");
         hsText.setText(savedText);
         hsDate.setText(savedDate);
     }
 
     public String getAPP_PREFERENCES() {
-        return APP_PREFERENCES;
+        return HIGH_SCORE_SETTINGS_KEY;
     }
 
     public String getAPP_PREFERENCES_DATE() {
-        return APP_PREFERENCES_DATE;
+        return HIGH_SCORE_DATE_KEY;
     }
 }

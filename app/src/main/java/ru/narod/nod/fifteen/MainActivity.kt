@@ -6,14 +6,14 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import com.google.android.gms.ads.AdView
-import ru.narod.nod.fifteen.HighScoresActivity.APP_PREFERENCES
+import ru.narod.nod.fifteen.FieldActivity.CONTINUE_KEY
+import ru.narod.nod.fifteen.HighScoresActivity.HIGH_SCORE_SETTINGS_KEY
 import ru.narod.nod.fifteen.databinding.ActivityMainBinding
 import kotlin.system.exitProcess
 
 class MainActivity : Activity(), View.OnClickListener {
-    //Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15;
     private lateinit var adView: AdView
-    private var contin: Boolean? = null
+    private var isContinue: Boolean? = null
     private lateinit var prefs: SharedPreferences
     private lateinit var edit: SharedPreferences.Editor
 
@@ -25,7 +25,7 @@ class MainActivity : Activity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        contin = false
+        isContinue = false
 
         // Initialize the Mobile Ads SDK.
         adView = findViewById(R.id.adViewMain)
@@ -48,25 +48,37 @@ class MainActivity : Activity(), View.OnClickListener {
         theFirstStart()
     }
 
+    override fun onResume() {
+        super.onResume()
+        binding.run {
+            //make the "Continue" and "High scores" buttons active or inactive
+            btnContinue.isEnabled = !prefs.getBoolean(DEACTIVATE_CONTINUE_KEY, true)
+            btnHS.isEnabled = prefs.getString(HIGH_SCORE_SETTINGS_KEY, "")?.isNotEmpty() == true
+        }
+    }
+
+
     //Check the app for the first start
     private fun theFirstStart() {
         //make the first HighScores record
         val highScoresActivity = HighScoresActivity()
         val savedText = prefs.getString(highScoresActivity.apP_PREFERENCES, "")
         if (savedText == "") {
-            edit.putString(highScoresActivity.apP_PREFERENCES, "--:--")
-            edit.putString(highScoresActivity.apP_PREFERENCES_DATE, "--.--.----")
-            edit.putBoolean("deactivate_contin", true)
-            edit.apply()
+            edit.run {
+                putString(highScoresActivity.apP_PREFERENCES, "--:--")
+                putString(highScoresActivity.apP_PREFERENCES_DATE, "--.--.----")
+                putBoolean(DEACTIVATE_CONTINUE_KEY, true)
+                apply()
+            }
         }
     }
 
     override fun onClick(v: View) {
         when (v.id) {
             R.id.btnContinue -> {
-                contin = true
+                isContinue = true
                 val intent = Intent(this, FieldActivity::class.java)
-                intent.putExtra("contin", contin)
+                intent.putExtra(CONTINUE_KEY, isContinue)
                 startActivity(intent)
             }
 
@@ -89,12 +101,7 @@ class MainActivity : Activity(), View.OnClickListener {
         }
     }
 
-    override fun onResume() {
-        super.onResume()
-        binding.run {
-            //make the "Continue" and "High scores" buttons active or inactive
-            btnContinue.isEnabled = prefs.getBoolean("deactivate_contin", false)
-            btnHS.isEnabled = prefs.getString(APP_PREFERENCES, "")?.isNotEmpty() == true
-        }
+    companion object {
+        const val DEACTIVATE_CONTINUE_KEY = "deactivate_contin"
     }
 }
