@@ -59,7 +59,7 @@
     <!-- AdMob ad unit IDs -->
 
     <string name="is">is</string>
-    <string name="is_rus"></string>
+    <string name="is_rus"> </string>
     <string name="time">Time:</string>
     <string name="time_rus">Время:</string>
     <string name="high_scores_head">High scores</string>
@@ -73,5 +73,7 @@
 
     <string name="banner_home_footer">ca-app-pub-8956716360419559/9767677420</string>
     <string name="interstitial_full_screen">ca-app-pub-8956716360419559/9767677420</string>
+
+    <string name="menu_close">Close</string>
 
 </resources>

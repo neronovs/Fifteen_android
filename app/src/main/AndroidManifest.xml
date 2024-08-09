@@ -13,7 +13,7 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        tools:ignore="AllowBackup,DiscouragedApi,GoogleAppIndexingWarning">
 
         <activity
             android:name=".MainActivity"
@@ -25,18 +25,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".FieldActivity"
             android:configChanges="keyboardHidden|orientation"
             android:exported="false" />
+
         <activity
             android:name=".HighScoresActivity"
             android:configChanges="keyboardHidden|orientation"
             android:exported="false" />
+
         <activity
             android:name=".RulesActivity"
             android:configChanges="keyboardHidden|orientation"
             android:exported="false" />
+
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false" />
+
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"

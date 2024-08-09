@@ -42,6 +42,7 @@ class MainActivity : Activity(), View.OnClickListener {
             btnStart.setOnClickListener(this@MainActivity)
             btnHS.setOnClickListener(this@MainActivity)
             btnRules.setOnClickListener(this@MainActivity)
+            btnPrivacyPolicy.setOnClickListener(this@MainActivity)
             btnExit.setOnClickListener(this@MainActivity)
         }
 
@@ -94,6 +95,11 @@ class MainActivity : Activity(), View.OnClickListener {
 
             R.id.btnRules -> {
                 val intent = Intent(this, RulesActivity::class.java)
+                startActivity(intent)
+            }
+
+            R.id.btnPrivacyPolicy -> {
+                val intent = Intent(this, PrivacyPolicyActivity::class.java)
                 startActivity(intent)
             }
 
