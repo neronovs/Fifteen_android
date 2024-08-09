@@ -15,17 +15,12 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     namespace 'ru.narod.nod.fifteen'
-    compileSdk 34
+    compileSdk 35
 
-    dexOptions {
-        incremental = true
-        preDexLibraries = false
-        javaMaxHeapSize "5g" // 2g should be also OK
-    }
     defaultConfig {
         applicationId "ru.narod.nod.fifteen"
         minSdk 21
-        targetSdk 34
+        targetSdk 35
         versionCode commitCount()
         versionName "1.2.0"
     }
@@ -64,8 +59,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.core:core-ktx:1.12.0'
-    implementation 'com.google.android.gms:play-services-ads-lite:22.6.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'com.google.android.gms:play-services-ads-lite:23.2.0'
     testImplementation 'junit:junit:4.13.2'
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
