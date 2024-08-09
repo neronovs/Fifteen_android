@@ -19,6 +19,8 @@
     <string name="_15">15</string>
     <string name="empty"/>
 
+    <string name="menu_privacy_policy_title">Privacy policy</string>
+
     <string name="the_fifteen">The fifteen</string>
     <string name="the_fifteen_rus">Пятнашки</string>
 
@@ -28,6 +30,8 @@
     <string name="rules_rus">Правила</string>
     <string name="high_scores">High scores</string>
     <string name="high_scores_rus">Результаты</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_policy_rus">Приватность</string>
     <string name="exit">Exit</string>
     <string name="exit_rus">Выход</string>
     <string name="cont">Continue</string>
