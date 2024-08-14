@@ -16,6 +16,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+
 import com.google.android.gms.ads.AdView;
 
 import java.text.SimpleDateFormat;
@@ -40,7 +42,7 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     private TimeCounter timeCounter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_field);
 
@@ -49,13 +51,13 @@ public class FieldActivity extends Activity implements View.OnClickListener {
 
         finished = false; //for checking if the game is done (finished)
         //Get the boolean data from Intent about was pressed the "continue" button or not
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
         contin = intent.getBooleanExtra(CONTINUE_KEY, false);
 
         // Initialize the Mobile Ads SDK.
         //Chronometer chronometer;
-        AdView adView = findViewById(R.id.adViewField);
-        Ads ads = new Ads(this);
+        final AdView adView = findViewById(R.id.adViewField);
+        final Ads ads = new Ads(this);
         adView.loadAd(ads.getSpecialAdRequest());
 
         //region Declaration of views
@@ -90,8 +92,9 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         engine = new Engine();
         highScoresActivity = new HighScoresActivity();
 
-        if (null == timeCounter)
+        if (null == timeCounter) {
             timeCounter = new TimeCounter(FieldActivity.this);
+        }
 
         //if was pressed "continue" then get the previous Field consistence
         if (contin) {
@@ -99,17 +102,21 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         }
 
         timeCounter.startTime = SystemClock.uptimeMillis() - timeCounter.startTime;
-        if (contin)
+        if (contin) {
             timeCounter.loadPref();
+        }
         timeCounter.customHandler.postDelayed(timeCounter.updateTimerThread, 0);
 
         //sets the squared size for cells
-        DisplayMetrics dm = new DisplayMetrics();
+        final DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
-        int mainTableLayoutWeight;
-        if (dm.widthPixels < dm.heightPixels) //needs because of the device orientation
+        final int mainTableLayoutWeight;
+        //needs because of the device orientation
+        if (dm.widthPixels < dm.heightPixels) {
             mainTableLayoutWeight = dm.widthPixels - 24;
-        else mainTableLayoutWeight = dm.heightPixels - 24;
+        } else {
+            mainTableLayoutWeight = dm.heightPixels - 24;
+        }
         params = arrBut[0][0].getLayoutParams();
         params.height = params.width = mainTableLayoutWeight / 4;
         arrayToField();
@@ -148,38 +155,40 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     public void arrayToField() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                if (engine.getGameField()[i][j].equals("1"))
+                if (engine.getGameField()[i][j].equals("1")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b01);
-                else if (engine.getGameField()[i][j].equals("2"))
+                } else if (engine.getGameField()[i][j].equals("2")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b02);
-                else if (engine.getGameField()[i][j].equals("3"))
+                } else if (engine.getGameField()[i][j].equals("3")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b03);
-                else if (engine.getGameField()[i][j].equals("4"))
+                } else if (engine.getGameField()[i][j].equals("4")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b04);
-                else if (engine.getGameField()[i][j].equals("5"))
+                } else if (engine.getGameField()[i][j].equals("5")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b05);
-                else if (engine.getGameField()[i][j].equals("6"))
+                } else if (engine.getGameField()[i][j].equals("6")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b06);
-                else if (engine.getGameField()[i][j].equals("7"))
+                } else if (engine.getGameField()[i][j].equals("7")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b07);
-                else if (engine.getGameField()[i][j].equals("8"))
+                } else if (engine.getGameField()[i][j].equals("8")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b08);
-                else if (engine.getGameField()[i][j].equals("9"))
+                } else if (engine.getGameField()[i][j].equals("9")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b09);
-                else if (engine.getGameField()[i][j].equals("10"))
+                } else if (engine.getGameField()[i][j].equals("10")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b10);
-                else if (engine.getGameField()[i][j].equals("11"))
+                } else if (engine.getGameField()[i][j].equals("11")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b11);
-                else if (engine.getGameField()[i][j].equals("12"))
+                } else if (engine.getGameField()[i][j].equals("12")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b12);
-                else if (engine.getGameField()[i][j].equals("13"))
+                } else if (engine.getGameField()[i][j].equals("13")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b13);
-                else if (engine.getGameField()[i][j].equals("14"))
+                } else if (engine.getGameField()[i][j].equals("14")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b14);
-                else if (engine.getGameField()[i][j].equals("15"))
+                } else if (engine.getGameField()[i][j].equals("15")) {
                     arrBut[i][j].setBackgroundResource(R.drawable.b15);
-                else if (engine.getGameField()[i][j].equals(""))
-                    arrBut[i][j].setBackgroundResource(R.drawable.empty);
+                } else {
+                    if (engine.getGameField()[i][j].isEmpty())
+                        arrBut[i][j].setBackgroundResource(R.drawable.empty);
+                }
 
                 //sets the squared size for cells
                 arrBut[i][j].setLayoutParams(params);
@@ -189,7 +198,7 @@ public class FieldActivity extends Activity implements View.OnClickListener {
 
     @SuppressLint("NonConstantResourceId")
     @Override
-    public void onClick(View v) {
+    public void onClick(final View v) {
         //region Switch button's construction
         switch (v.getId()) {
             case R.id.btn1 -> actionOnTheField(0, 0);
@@ -212,8 +221,8 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         //endregion
     }
 
-    public void actionOnTheField(int line, int column) {
-        String tmp = engine.getGameField()[line][column];
+    public void actionOnTheField(final int line, final int column) {
+        final String tmp = engine.getGameField()[line][column];
         try {
             if (Objects.equals(engine.getGameField()[line][column + 1], "")) {
                 engine.setGameField(engine.getGameField()[line][column + 1], line, column);
@@ -256,34 +265,38 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         finished = false;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                if (engine.getGameField()[i][j].equals(""))
+                if (engine.getGameField()[i][j].isEmpty()) {
                     tmp = 0; //if button is empty (without a num), put 0
-                else tmp = Integer.parseInt(engine.getGameField()[i][j]);
+                } else {
+                    tmp = Integer.parseInt(engine.getGameField()[i][j]);
+                }
                 if (i == 3 && j == 3) break; //skip the last button #16
                 if (tmp - checker++ != 1) { //if next button minus preview NOT equals 1 then it is NOT the sequence
                     finished = false;
                     break;
-                } else finished = true;
+                } else {
+                    finished = true;
+                }
             }
         }
         if (finished) {
-            String scores = timeCounter.timerValue.getText().toString();
+            final String scores = timeCounter.timerValue.getText().toString();
             Toast.makeText(FieldActivity.this, "Congrats, you won!", Toast.LENGTH_SHORT).show();
 
             //***High score creating
 
             //Load the saved high scores to compare to current ones
-            String savedText = prefs.getString(highScoresActivity.getAPP_PREFERENCES(), "");
+            @Nullable final String savedText = prefs.getString(highScoresActivity.getAPP_PREFERENCES(), null);
 
-            if (savedText.compareTo(scores) > 0) {
+            if ((savedText == null || savedText.equals("--:--")) || savedText.compareTo(scores) > 0) {
                 //If the current high scores better then the saved before ones than save the current scores
-                SimpleDateFormat LocaleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.getDefault());
+                final SimpleDateFormat LocaleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.getDefault());
                 LocaleDateFormat.setTimeZone(TimeZone.getDefault());
                 edit.putString(highScoresActivity.getAPP_PREFERENCES(), scores);
                 edit.putString(highScoresActivity.getAPP_PREFERENCES_DATE(), LocaleDateFormat.format(new Date()));
                 edit.apply();
             }
-            Intent intent = new Intent(this, HighScoresActivity.class);
+            final Intent intent = new Intent(this, HighScoresActivity.class);
             startActivity(intent);
 
             finish();
@@ -294,7 +307,7 @@ public class FieldActivity extends Activity implements View.OnClickListener {
     protected void onResume() {
         super.onResume();
         Log.d(TAG, "FieldActivity: onResume()");
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
         contin = intent.getBooleanExtra(CONTINUE_KEY, false);
     }
 
@@ -307,14 +320,14 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         timeCounter.pauseCounter();
     }
 
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+    protected void onRestoreInstanceState(final Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Log.d(TAG, "onRestoreInstanceState");
         getPreviousConsistence();
         arrayToField();
     }
 
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(final Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
         putCurrentConsistence();

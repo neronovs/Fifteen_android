@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import com.google.android.gms.ads.AdView
 import ru.narod.nod.fifteen.FieldActivity.CONTINUE_KEY
 import ru.narod.nod.fifteen.HighScoresActivity.HIGH_SCORE_SETTINGS_KEY
@@ -53,8 +54,11 @@ class MainActivity : Activity(), View.OnClickListener {
         super.onResume()
         binding.run {
             //make the "Continue" and "High scores" buttons active or inactive
-            btnContinue.isEnabled = !prefs.getBoolean(DEACTIVATE_CONTINUE_KEY, true)
-            btnHS.isEnabled = prefs.getString(HIGH_SCORE_SETTINGS_KEY, "")?.isNotEmpty() == true
+            val isContinueEnabled = !prefs.getBoolean(DEACTIVATE_CONTINUE_KEY, true)
+            btnContinue.isVisible = isContinueEnabled
+
+            val highScore = prefs.getString(HIGH_SCORE_SETTINGS_KEY, null)
+            btnHS.isVisible = highScore != null && highScore != "--:--"
         }
     }
 
@@ -66,8 +70,6 @@ class MainActivity : Activity(), View.OnClickListener {
         val savedText = prefs.getString(highScoresActivity.apP_PREFERENCES, "")
         if (savedText == "") {
             edit.run {
-                putString(highScoresActivity.apP_PREFERENCES, "--:--")
-                putString(highScoresActivity.apP_PREFERENCES_DATE, "--.--.----")
                 putBoolean(DEACTIVATE_CONTINUE_KEY, true)
                 apply()
             }
