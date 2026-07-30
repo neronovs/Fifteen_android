@@ -196,29 +196,22 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    @SuppressLint("NonConstantResourceId")
+    private static final int[] FIELD_BUTTONS = {
+            R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4,
+            R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8,
+            R.id.btn9, R.id.btn10, R.id.btn11, R.id.btn12,
+            R.id.btn13, R.id.btn14, R.id.btn15, R.id.btn16
+    };
+
     @Override
     public void onClick(final View v) {
-        //region Switch button's construction
-        switch (v.getId()) {
-            case R.id.btn1 -> actionOnTheField(0, 0);
-            case R.id.btn2 -> actionOnTheField(0, 1);
-            case R.id.btn3 -> actionOnTheField(0, 2);
-            case R.id.btn4 -> actionOnTheField(0, 3);
-            case R.id.btn5 -> actionOnTheField(1, 0);
-            case R.id.btn6 -> actionOnTheField(1, 1);
-            case R.id.btn7 -> actionOnTheField(1, 2);
-            case R.id.btn8 -> actionOnTheField(1, 3);
-            case R.id.btn9 -> actionOnTheField(2, 0);
-            case R.id.btn10 -> actionOnTheField(2, 1);
-            case R.id.btn11 -> actionOnTheField(2, 2);
-            case R.id.btn12 -> actionOnTheField(2, 3);
-            case R.id.btn13 -> actionOnTheField(3, 0);
-            case R.id.btn14 -> actionOnTheField(3, 1);
-            case R.id.btn15 -> actionOnTheField(3, 2);
-            case R.id.btn16 -> actionOnTheField(3, 3);
+        final int id = v.getId();
+        for (int i = 0; i < FIELD_BUTTONS.length; i++) {
+            if (FIELD_BUTTONS[i] == id) {
+                actionOnTheField(i / 4, i % 4);
+                return;
+            }
         }
-        //endregion
     }
 
     public void actionOnTheField(final int line, final int column) {

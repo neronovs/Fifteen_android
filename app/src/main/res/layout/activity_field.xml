@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wooden6"
+    android:fitsSystemWindows="true"
     android:padding="8dp"
     android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context="ru.narod.nod.fifteen.MainActivity">
