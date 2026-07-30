@@ -108,8 +108,7 @@ public class FieldActivity extends Activity implements View.OnClickListener {
         timeCounter.customHandler.postDelayed(timeCounter.updateTimerThread, 0);
 
         //sets the squared size for cells
-        final DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        final DisplayMetrics dm = getResources().getDisplayMetrics();
         final int mainTableLayoutWeight;
         //needs because of the device orientation
         if (dm.widthPixels < dm.heightPixels) {

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.SystemClock;
 import android.widget.TextView;
 
@@ -42,7 +43,7 @@ class TimeCounter {
         continTheRunnable = true;
         startTime = 0L;
 
-        customHandler = new Handler();
+        customHandler = new Handler(Looper.getMainLooper());
 
         timeInMilliseconds = 0L;
         timeSwapBuff = 0L;
